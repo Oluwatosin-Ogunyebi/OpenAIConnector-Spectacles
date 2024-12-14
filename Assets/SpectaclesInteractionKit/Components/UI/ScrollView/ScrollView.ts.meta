@@ -1,0 +1,55 @@
+- !<AssetImportMetadata/14a0e732-86b0-427f-b1fe-3699a5bc0b6b>
+  ImporterSettings: !<AssetImporterSettings/4e8f4d40-b806-4610-a39c-897ab93c1f53>
+    {}
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 8ba7b68a-4b25-4d72-a4a4-a57730a77680
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 8ba7b68a-4b25-4d72-a4a4-a57730a77680
+  PackageType: NotAPackage
+  AssetDataMap:
+    TypeScriptAsset: !<own> e98fd325-103d-4b36-835b-64373a02227c
+  PackagePolicy: CannotBeUnpacked
+  DependentFiles:
+    []
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e98fd325-103d-4b36-835b-64373a02227c>
+  Icon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    _debugDrawEnabled: false
+    _enableScrollInertia: false
+    _scrollLimit: false
+    enableHorizontalScroll: false
+    enableScrollLimit: false
+    enableVerticalScroll: false
+    scrollAreaBounds: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - enableHorizontalScroll: false
+      enableVerticalScroll: true
+      enableScrollLimit: true
+      _debugDrawEnabled: false
+      _enableScrollInertia: true
+      _scrollLimit: 0.300000
+      scrollAreaBounds: !<Vec2> {x: 1.000000, y: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input bool _debugDrawEnabled = false
+    - // @input bool enableHorizontalScroll = false
+    - // @input bool enableVerticalScroll = true
+    - // @input bool _enableScrollInertia = true
+    - // @input bool enableScrollLimit = true
+    - '// @input float _scrollLimit = 0.3 {"widget":"slider", "min":0, "max":1, "step":0.01}'
+    - '// @input vec2 scrollAreaBounds = "{1, 1}"'
+  SvgIcon: ""

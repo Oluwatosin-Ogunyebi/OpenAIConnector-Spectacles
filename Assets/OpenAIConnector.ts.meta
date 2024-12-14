@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/da7ae4f7-04ca-4d3d-8e0c-0b00a6f505ab>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 9ec8165f-e406-443b-9c21-087a390da50e
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 9ec8165f-e406-443b-9c21-087a390da50e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 606f840e-3a9a-4fa8-b6b2-e4474feddb8f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/58fee344-27f5-4582-9e9a-7a3bc561a42e>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/606f840e-3a9a-4fa8-b6b2-e4474feddb8f>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 2c05a3fc-7383-463b-95c8-de0ac0fa7340
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    buttonForImageAndText: false
+    buttonForText: false
+    imagePromptText: false
+    imgurClientID: false
+    openAIClientID: false
+    promptText: false
+    responseText: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - buttonForImageAndText: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
+      buttonForText: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
+      responseText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      imagePromptText: Describe the contents of this image.
+      promptText: Roast me as a snapchat user.
+      openAIClientID: '"YOUR_OPENAI_API_KEY_HERE"'
+      imgurClientID: '"YOUR_IMGUR_CLIENT_ID_HERE"'
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Interactable buttonForImageAndText
+    - // @input Interactable buttonForText
+    - // @input Component.Text responseText
+    - '// @input string imagePromptText = "Describe the contents of this image."'
+    - '// @input string promptText = "Roast me as a snapchat user."'
+    - '// @input string openAIClientID = "YOUR_OPENAI_API_KEY_HERE"'
+    - '// @input string imgurClientID = "YOUR_IMGUR_CLIENT_ID_HERE"'

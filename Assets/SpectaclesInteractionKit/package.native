@@ -1,0 +1,40 @@
+- !<NativePackageDescriptor/be230f2e-d00c-4bf5-890e-aba4d64330f9>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 3
+    patch: 0
+    build: 24110404
+    type: Unset
+  Description: |-
+    Release
+    
+    Documentation:
+    https://docs.snap.com/spectacles/spectacles-frameworks/spectacles-interaction-kit/get-started
+    
+    https://docs.snap.com/lens-studio/api/interfaces/Lens_Scripting.Packages_SpectaclesInteractionKit_SIK.SIKAPI.html
+    
+    Preliminary Setup:
+    - Ensure the main camera has a Device Tracking component (w/ tracking mode set to World).
+    - Ensure the device type override is set to Spectacles (cogwheel at the top-right of the preview panel > Device Type Override > Spectacles).
+    - Ensure that this package is unpacked in your scene (right-click the package in Asset Browser and unpack if given the option).
+  SvgIcon: ""
+  InternalVersion: 1
+  VersionMajor: 0
+  VersionMinor: 9
+  VersionPatch: 0
+  UpdateCheckpoint: 50
+  ExportUid: 0d5f0b8a-abef-4b56-858a-c231557b3cfe
+  ComponentUid: 0f7a0bbe-777c-41a5-b979-0b0430f25836
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure/00000000-0000-0000-0000-000000000000>
+    Name: SpectaclesInteractionKit
+    AssetId: 1aPW5eMfMPeP1615dXiqyN
+    Hash: f9a8f5cd7ffade0f50b7449534734776
+    Version:
+      major: 0
+      minor: 9
+      patch: 0
+      build: 0

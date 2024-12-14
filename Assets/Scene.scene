@@ -1,0 +1,3730 @@
+- !<Scene/0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99>
+  PackagePath: ""
+  objects:
+    - !<own> 00000000-0000-0065-0000-000000000064
+    - !<own> 0005641c-028d-459a-0000-000000014b4d
+    - !<own> 05335e5e-4499-4459-a82b-fb33edb085bd
+    - !<own> 6b58587e-9b96-4c0c-beba-eb55203a7dc6
+  layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
+    userLayers:
+      []
+    HasOrtho: true
+  RenderOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
+  RenderPreviewOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
+  RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
+  PhysicsRootWorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/00000000-0000-0065-0000-000000000064>
+  PrefabRemaps:
+    []
+  Name: Camera Object
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 00000000-0000-0065-0000-000000000065
+    - !<own> e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1
+- !<Camera/00000000-0000-0065-0000-000000000065>
+  PrefabRemaps:
+    []
+  Name: Camera
+  Enabled: true
+  renderLayer: 1
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 20.000000
+  Near: 1.000000
+  Far: 10000.000000
+  Fov: 63.541019
+  ClearColor: !<CameraClearColor/00000000-0000-0000-0000-000000000000>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth/00000000-0000-0000-0000-000000000000>
+    Mode: Value
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Perspective
+  DepthMode: Regular
+  DeviceProperty: All
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0005641c-028d-459a-0000-000000014b4d>
+  PrefabRemaps:
+    []
+  Name: Lighting
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 00056e79-b066-62ca-0000-000000001406
+    - !<own> 0005641c-028d-4630-0000-000000014b56
+  Components:
+    []
+- !<SceneObject/0005641c-028d-4630-0000-000000014b56>
+  PrefabRemaps:
+    []
+  Name: Light
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 40.000000, y: 85.000000, z: 20.000000}
+    rotation: {x: 70.000000, y: 10.000000, z: 150.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0005641c-028d-463e-0000-000000014b59
+- !<LightSource/0005641c-028d-463e-0000-000000014b59>
+  PrefabRemaps:
+    []
+  Name: Light Source
+  Enabled: true
+  renderLayer: 1835007
+  LightType: Directional
+  Intensity: 1.000000
+  CastShadows: false
+  ShadowDensity: 0.440000
+  ShadowBlurRadius: 4.000000
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: true
+  AutoShadowFrustumSize: true
+  AutoShadowFrustumSizeExtend: 2.000000
+  ShadowFrustumSize: 30.000000
+  ShadowFrustumNearClipPlane: 1.000000
+  ShadowFrustumFarClipPlane: 1000.000000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  UseEstimation: false
+  EstimationIntensity: 1.000000
+  EstimationSharpness: 1.000000
+  EnvMapExposure: 1.000000
+  EnvMapRotation: 0.000000
+  DiffuseEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  SpecularEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  InnerConeAngle: 0.000000
+  OuterConeAngle: 45.000000
+  DecayType: None
+  DecayLimit: false
+  DecayRange: 40.000000
+- !<SceneObject/00056e79-b066-62ca-0000-000000001406>
+  PrefabRemaps:
+    []
+  Name: Ambient Light
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 65.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 00056e79-b066-62f1-0000-000000001409
+- !<LightSource/00056e79-b066-62f1-0000-000000001409>
+  PrefabRemaps:
+    []
+  Name: Light Source
+  Enabled: true
+  renderLayer: 1835007
+  LightType: Ambient
+  Intensity: 1.000000
+  CastShadows: false
+  ShadowDensity: 1.000000
+  ShadowBlurRadius: 0.000000
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: false
+  AutoShadowFrustumSize: false
+  AutoShadowFrustumSizeExtend: 2.000000
+  ShadowFrustumSize: 30.000000
+  ShadowFrustumNearClipPlane: 1.000000
+  ShadowFrustumFarClipPlane: 1000.000000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  UseEstimation: false
+  EstimationIntensity: 1.000000
+  EstimationSharpness: 1.000000
+  EnvMapExposure: 1.000000
+  EnvMapRotation: 0.000000
+  DiffuseEnvTexture: !<reference> 2013a19b-93c1-4f21-b7ea-876a33550c7b
+  SpecularEnvTexture: !<reference> d795fd46-e16b-4cb9-8dfb-4ef227298f7a
+  Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  InnerConeAngle: 0.000000
+  OuterConeAngle: 45.000000
+  DecayType: None
+  DecayLimit: false
+  DecayRange: 40.000000
+- !<SceneObject/0143e2e5-3d66-4e9d-b94c-a09dc4a2446a>
+  PrefabRemaps:
+    []
+  Name: ring-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.703730, z: -0.000002}
+    rotation: {x: -0.000202, y: -0.000189, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> aae13529-0fe3-4178-81cb-5fe348e48f79
+  Components:
+    []
+- !<ScriptComponent/0410ceb5-8d7c-482c-b260-37296d23d0fc>
+  PrefabRemaps:
+    []
+  Name: Interactable
+  Enabled: true
+  ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
+  ScriptInputsDefault:
+    targetingMode: true
+    enableInstantDrag: true
+    allowMultipleInteractors: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      targetingMode: !<float> 3.000000
+      enableInstantDrag: false
+      allowMultipleInteractors: true
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/05335e5e-4499-4459-a82b-fb33edb085bd>
+  PrefabRemaps:
+    - 0143e2e5-3d66-4e9d-b94c-a09dc4a2446a: 43d0e3f6-94eb-4ee1-a4b3-12cc32c39486
+    - 05335e5e-4499-4459-a82b-fb33edb085bd: ac190d7f-8f8a-427c-b328-fcb2c71a54e3
+    - 071c7399-d240-46d9-adc7-bdd07b289234: 05243f1b-f8a9-4eee-b12a-418bd365fa45
+    - 08342bce-4d83-4059-b908-9ff396ac5d4c: d54c61ff-e215-476a-95ec-82e3ddc2bb53
+    - 09620da6-1b38-4daf-9932-2f5b022566af: 9ed0157f-fd08-47e6-9180-d9eaa60dae8e
+    - 0e936f0b-7f8d-4a0b-9695-5a09a528c9eb: 44d3ae72-34ce-490d-97d1-811ee37f1a40
+    - 101e0656-bffd-4366-b94e-5adf217b22d7: fa0dcbdf-ddc9-4890-90e2-d81f925fe239
+    - 12821b11-eeb8-442a-bc28-a0c11552df9f: 68c7b547-24e9-465d-9de7-2368fabff0b0
+    - 129b98fe-dd08-4223-be90-261d63a4fb51: ec66e9a7-c3ab-4c3d-87fc-675ee0b99805
+    - 130a32a5-6106-482d-ac1b-83a0239cdfe7: 3f9892ea-ded0-4c59-ac79-5f72c2580b41
+    - 1384dbe7-a120-4d02-98f7-8ba5d47e8bbd: 7dd90ddd-3a7e-4e11-b114-e6a0dd273b4a
+    - 15df196c-b8dd-4c4a-ab28-3c41d8b210f4: 66a8dd87-df9a-4166-bc02-99d45a2caff6
+    - 16d955e2-e4ce-4637-82a0-9c55a938f12f: 254b9e85-b5d1-400f-8c84-83dd52f95100
+    - 190b19b4-798f-4e0d-bd25-876d70c5aeeb: beabd77f-6564-4eb1-9cda-7d3df9128e67
+    - 1dcc9d63-b92f-405b-832a-093bafe65ac4: 746f9b2a-02f1-486b-b70a-611355381f7f
+    - 1fc49fe8-905f-4202-bdd8-8fe676cc9ff3: 3a3fe018-7d5d-4ce2-8a13-411b9a6b2d0d
+    - 23eb8cd8-eb80-47fe-8b0b-695949fe2365: dfa95e7e-64fb-4020-8444-8022e0d510a6
+    - 2593eac8-06fb-406e-a89a-4fefa9c07a17: 88a2a29b-d368-412c-9f01-3bd535c31027
+    - 25b5c85c-cdfa-4265-8dde-0f685988c792: c6ca57a4-4187-47c4-9817-27f2853e83c5
+    - 25e2d4ed-969b-43ed-9fdd-c42dec863deb: 68c03b96-ff3b-4c4c-ada6-b8db24e084fb
+    - 26907fa5-b779-476c-a4c8-3a46e110cd3e: 61c73054-e783-481d-9736-b731ab8896d3
+    - 277408e4-1d1f-4004-9fe0-0c83f4590eea: a7ac0bc1-703e-43f5-8f34-6e1cc30c61fb
+    - 2d3ff4bd-7c40-445c-993b-09c94fd79fa6: 5922e7e5-b979-4848-947a-3f53d2fafc83
+    - 2eb8ed65-93ae-4624-b525-df6fa42f4d71: e1e61e4a-f61f-4b8e-9778-77240c5d03b4
+    - 2f0f80fe-29b1-4670-8247-e9fcbb520136: c0fbe2e8-b696-42bd-aa0d-28c8c92aca11
+    - 2fd82781-416c-4d2f-bd6a-e6f5f0f60ebc: e7c7be4e-0d9b-4cd3-baea-a871d82011d6
+    - 3016d770-154c-4dc7-9c44-37e6922f1457: faa471eb-2331-4766-902e-ad90ebaada39
+    - 306a1910-7df8-475b-8aba-d6b7de43aa4e: 743452d1-5aaa-477e-a77d-10b518eabdb2
+    - 30c42dad-b091-43b7-ac1e-57a9e6718a80: 022bb054-542f-44f4-bb45-962f06351c51
+    - 329ca3bd-5bf5-4c0e-aab3-e9c23b91b99d: c7fc765f-3e34-42ed-b79c-d0d0f19dfd37
+    - 35b65ad5-8252-424e-bf0d-2decaae0cd79: bc7ca399-42d5-43ce-8b46-6e31b628daf7
+    - 36347798-7e99-4c03-a20c-adc413d7fc13: ff21c245-9565-4f69-827d-5d3a6411b557
+    - 37bf6b5c-fd84-4320-a660-735aa25bdf84: 43019c02-fdbb-4c37-a3e6-58a33e870488
+    - 39c9f241-88af-4f82-843c-e68430ad4522: ca180b07-36ad-49ea-a5f9-c22e23697d15
+    - 3bea292e-0f91-46ec-bc14-7c1928be83ee: e5f5a9b5-8c25-4543-8704-b054151e7f27
+    - 3eba7b56-dca4-443c-b0b8-d38495499c7e: 70290c16-3e1e-4ebd-8841-ee066580ac95
+    - 4101b18f-0d3d-47d4-adf2-c08c861a2022: 45ddc26d-8076-436c-86a7-4864751e3270
+    - 43623891-5d65-48c0-9f46-118381c2fec8: 7c03fc5d-a618-491d-815e-9698ccc95eb8
+    - 45e9eb60-74f6-4d85-a688-3e7eeae5dfd8: a53b5990-7f09-4804-a3ac-d5306340a40d
+    - 4a47f6d8-4325-4296-8bb1-6655df55e905: 3ca998f8-03b3-4480-9fb6-c106f2952b90
+    - 4a865dcf-de94-4d7c-9831-3a9f0794d28d: b9d14d3a-7945-428c-a768-41692c2eba14
+    - 4b219203-ea3c-40f8-98df-0599435de9e0: 99e6c117-7864-41d8-b39d-e853018e43ac
+    - 4ba8809d-8937-4fbb-8547-ba7cef94819c: d4da8107-4c33-4f45-b961-1df209595381
+    - 4d79543f-3519-49a1-a08e-6ccb185c1fa1: 4c194481-fd5b-43b0-9e1b-2dd8726745ae
+    - 4df14e40-0ec5-4b6d-870d-e3b6dd9a0d08: e3ec5982-f5aa-45f3-baae-b2c56d5e0bcd
+    - 5161961d-ddd9-4e02-b02d-df7aacbafb2b: 9faf2521-a7a5-4e36-9485-5c8084723790
+    - 53c1395c-a725-4cf8-bd27-763472512533: ea015d35-5918-4f78-a6f5-a17df2637bd4
+    - 55cc38d4-a69f-4f05-bfb1-7e404c39ea74: 8ac837c8-53c2-4114-915e-b0265e3e9901
+    - 573cecf3-5799-454f-8a9f-826eb7e25552: 2fb017cb-455d-49d8-8112-5a05da7b338e
+    - 5881061f-9b7c-42a5-bdee-240fb1e78158: 340699f0-9c85-4b33-a3f1-67f303dd78d6
+    - 591ecc04-7aff-4cec-aad0-f40988dab2da: 6167dd36-c853-49b0-b2ae-7bdf862ab8c3
+    - 6131237d-ba5e-4a1f-a100-80c176b73e55: 75c70980-fa79-4d52-9576-c9b558df1e70
+    - 6226d9d3-eccd-45c0-a7d6-a34dbb2eb2bc: 49bc520e-979b-41dd-af92-c39d30a5a1c3
+    - 635b3644-3343-4f8d-8a86-6e4876f5319c: 89b8d96b-b23a-4c1d-9afd-ea5ada766330
+    - 646de05d-ea43-45de-ac69-3444b2155c86: 8e635d88-9a0d-4a5d-9f36-9c7bc7dec824
+    - 6490f505-a702-4a60-b11e-4c64334d56a8: 45c0ee0b-4eae-4c81-8af1-44947508de3f
+    - 65e7cfde-2c3a-426b-b23f-d6d9d52222cd: 24bab02f-73f1-439d-bb0c-0559574f0782
+    - 66d1b41b-604d-497c-aae7-80cdbaec2c0e: adab9e6d-b430-459b-a3ef-286096d8456d
+    - 66eb832a-1e9d-4b71-a454-4b8260b5ede1: 3b2ad7c8-6228-4421-aad9-65db4e6860b7
+    - 6acfa7cf-1b7d-4d19-8dc4-62783a45a78b: 8ab59f68-ec36-4c83-8ae2-b9629037fd04
+    - 6e4dc796-a860-4b96-ae08-710fdc92323c: c6d77d83-ee46-4487-a43f-d23b0ae9de25
+    - 73a9aaa8-b564-4355-835b-42f90793c3be: 1ff24423-e2c4-43dd-922e-71a93eaf6518
+    - 75992968-df12-4ff1-993e-8ffae2c576a8: c34bc6ff-bcac-4506-988c-488a03a3fd02
+    - 77a9ae2e-cf17-4e6c-942f-3828657704e9: 93a82b13-f1ae-404a-b6f3-f6fa4c3d454a
+    - 787ebca5-ab09-41b1-be4a-b4e613490bbd: b1c0f72d-600f-41a7-bb62-316ec7473dfe
+    - 797b7433-6800-4a0a-a12c-bbce117865aa: 20700869-1aef-485f-a00d-64943ec2a96c
+    - 799faa66-d31a-4d72-bfa7-4452b26d15d2: 815b6ca2-77e6-4e1c-8ffd-a39df8483042
+    - 7a118ab1-224c-49dc-9b58-906c9197358f: f1e10bfb-c13f-486f-9058-a205aa2a22a5
+    - 7c7a56b2-9a23-44bb-a295-c9d32f89c0f9: 146c3d55-6548-4c7f-a4a4-22f402575f4f
+    - 80544473-fb7f-42ba-92ea-3f46563ab0fd: f0e07390-6185-4a35-9a7b-632bf9d48126
+    - 805d60b6-1bef-42d0-a51d-0b7f3b8bfe4b: 37a62259-1ce7-4744-b6ea-dc2c55f35328
+    - 82331b2e-357c-4d7d-9292-b87c3f53cb65: fa8a056a-2062-4c94-a29d-dedf42c65e7d
+    - 82e4d3ce-7671-4de7-b916-e0921f8c286b: e54e9514-91f3-4922-87e0-e2ac31cc4855
+    - 854d6ac0-8455-4571-87fd-d6406b3da993: 1a77b076-e485-4ba9-8978-3f0ab2b2d7fd
+    - 87b5e89f-5c8b-468b-ab32-97d7be7758c2: 6796d74c-36de-4973-b60f-26723675de0e
+    - 8ee241b0-c800-4cd8-8ece-9b559b6be98e: c99ee9c2-c940-4c10-9c00-6df31f99c027
+    - 9081cc37-1451-45d6-9263-20ddacec170a: ac3ceda4-1236-4a0b-b52a-e8a75ab781be
+    - 923607ae-7773-47d3-8121-bfe784927084: ad36bd15-0d0d-49b2-a712-033b99866b14
+    - 92f2b8f3-95cb-41ea-a066-409349449cb2: 4e42b98e-ee9f-4953-b355-a82cfc02463a
+    - 93d4d7b4-e851-428a-9a4d-5266de4f60ed: 6c82bb54-cde7-40cc-b09a-ae0407d4a7e4
+    - 98f878ff-dad4-4acc-bebe-f64472d36d3a: dc97552e-2a04-4019-8979-482f91a5824f
+    - 99e879df-1b59-4c20-aa77-8b945823f30a: bb442796-5475-4695-9191-7b4a8924ddf6
+    - a2d82a40-61b8-4383-9bd9-16725e2e070c: 113a8fde-8503-4cd6-97e0-8257930cb223
+    - a5fe30ec-3b1f-4a3d-a460-f4432615f4a7: b1a805b2-6eb9-49e5-918e-db0608d22c04
+    - a703b3a3-e61c-44d3-82f5-77948a9441d1: f24eade7-4784-4f7b-8f89-10cd7e47127e
+    - a851da66-48ab-4e31-a00e-63f3cbf7b16e: fc8e7153-7b17-491b-9c4b-1a7d19a6e707
+    - aae13529-0fe3-4178-81cb-5fe348e48f79: 43126ca5-16da-40f9-82b7-c7a8926063bb
+    - afc7b077-5e02-4900-aa27-76b3c43d0bdf: 17aeff26-95dc-4958-804b-97bfc549c671
+    - b2484ffd-6084-4344-b6e9-8a716b86b102: 3bc29fda-0d40-4a4c-a1d1-ef088f23beb6
+    - b2e5d0a9-cc44-4e3b-8464-aae9c8a7ce70: b6ce59a2-7157-40d0-acd2-fa7d4fb00afc
+    - b87e02c9-943e-4387-adef-faa0291ba58b: 7d75cc0b-46e2-4df2-bae8-0a79d58b2566
+    - ba4a8d82-3330-4154-93f4-ef1c726cd75f: 9cedc16a-c9e5-4a68-864c-3a6193939290
+    - ba770b34-ba0c-4331-818a-be19919cac6d: b7be8856-93cb-4049-893c-1b5bca4b2fb6
+    - bc211a72-8349-4550-adbf-90a00a0c9dc5: f05448db-5a08-4d04-9b55-ec8dc072831d
+    - bd887303-5ab6-4ad0-81c5-808db8164051: e61d4d85-a08b-4b79-8a78-bd11a94171f2
+    - bece8169-fb1b-4e3f-8e29-e2c945187e46: a5dcc3e5-e051-4ad2-9f3c-361dc8e16680
+    - c0b9bb24-67e2-4ce5-af3f-bb7b8f2d804f: 5eda9b75-dd34-4471-bcf6-9264e77b5106
+    - c285c8f7-e4a2-4874-bea2-951bb4716cc4: 5108b158-1992-4fd3-a4de-e59d1ab57470
+    - c7543d27-ac2f-4532-a422-b5c180aaa254: 49316d12-58fb-4a4a-b09c-cc6a9303dbe6
+    - c7dcb734-86d4-4f3d-9242-2636df861c8e: 6a3dbaa3-d10c-4f71-840d-2b8b8184b67c
+    - c83805aa-762f-460f-ad2d-c510444e5ffe: 82686826-4088-45dd-a8f0-03683796ce78
+    - c857aab2-6a0e-400e-be5e-a6e50a46bedc: 5c910008-d09a-4cf8-b0cb-12e5e0e0cffd
+    - ca9f318e-57dc-4dcd-8928-d2c78fa7ec10: 001d8b74-6a85-4cdd-b231-fd1bdfc8e8d0
+    - ce6cee13-e90f-4427-b638-4fcb81df3928: 40f935c2-ac26-43a7-9d4f-2a8c80446a36
+    - cf314287-1348-4ea2-954b-5031a92e97e5: b50d0664-596f-4bd5-9d00-f8f4d7e27a90
+    - d031fb51-584a-4d4c-8f8c-5d9a9070503b: b1f777fc-9def-4cf7-9504-fc75ebd8523b
+    - d05f80da-5ab6-45ca-8904-6d65c892edad: 31059286-43ff-450e-8473-4be6a35e2271
+    - d0b4ce0b-e92f-45c6-9f9c-3b4e9fbfa2b8: ac31778e-bd43-42a4-97bc-4f485fb095fc
+    - d41e433c-cdd8-4047-8013-0eafc977b04e: 8e3b2e69-294f-497e-a2fe-30431bb76e90
+    - d421e9ba-a302-4d00-a01e-4b13d2899bc2: ed26aed2-3168-4335-8f84-4fe70d0a1333
+    - d7303b6d-0487-448b-8498-098fb805851d: a0a63f72-25a0-4d69-9417-5662e98b01e3
+    - d971e3b1-9f65-4928-a8b7-708d67da3e9c: ecb433df-f587-40a4-8dee-5b1879ca1550
+    - d9ea854f-5888-464e-9278-be871ec863c7: a041ce3c-f6e7-494b-9fb8-0da10b5a0225
+    - dbb09f20-002c-4cef-ac71-5c9531919ebd: 4e6d1f6c-d7ff-4da0-b482-b0c1316e394c
+    - decd5550-3568-4e32-9e01-a9fe286cf01f: 95af3b28-6f17-49e5-80c3-e8a9c88ee332
+    - defa21ad-ba56-4fe7-b4a8-37d3ac84bf2d: e798d31a-2bad-4d59-9110-f038120ad232
+    - e0d3582d-bf3c-44cf-97d8-765c87f5aa1c: d2fbbe47-d72e-4471-a1f1-02ffbcbe9212
+    - e85ae15a-94fe-486d-bee1-c6fe443b2418: 88104fa0-ad2d-43a1-8271-80188b594b11
+    - f13158cc-c1c6-49ce-b78c-dde4afafd2dd: b92e7c34-d016-4929-94af-9b325dfef94c
+    - f3adddd2-3e87-4554-a006-91e164ef18d8: 215027b3-748f-4737-8ae7-d31403ea7638
+    - f443cf96-fa30-42e8-9bdc-f3a717125c39: 7b545c21-569f-42ee-a8bc-6788a927d730
+    - f46024f2-3574-4b85-ae29-ff338aeb4ba3: a7e3803f-d6eb-43f5-a3ba-c5146b5dd058
+    - f5124302-8295-47f1-8077-eb7a25f432c4: 0b47d35b-d9ff-43aa-8c18-6b104c9945a7
+    - fa871fe5-0fe5-4dfb-a37d-88f16e97863f: 34c92e27-4c85-440a-bdf3-52d7aef59d1c
+    - fa893903-fe39-4de8-869a-ddc5c6b23f94: b0156873-8a9f-49b9-957b-a6c2c4d8356f
+    - fbd41660-37a9-4f0b-8889-71191ba08f98: dbb15efd-eddd-45ff-917d-5b143092a640
+  Name: SpectaclesInteractionKit
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3eba7b56-dca4-443c-b0b8-d38495499c7e
+    - !<own> 2fd82781-416c-4d2f-bd6a-e6f5f0f60ebc
+  Components:
+    []
+- !<SceneObject/071c7399-d240-46d9-adc7-bdd07b289234>
+  PrefabRemaps:
+    []
+  Name: RightHandMesh
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 55cc38d4-a69f-4f05-bfb1-7e404c39ea74
+- !<SceneObject/08342bce-4d83-4059-b908-9ff396ac5d4c>
+  PrefabRemaps:
+    []
+  Name: ring-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 11.824800, z: -0.000000}
+    rotation: {x: -2.274930, y: -6.337840, z: -8.604530}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3bea292e-0f91-46ec-bc14-7c1928be83ee
+  Components:
+    []
+- !<SceneObject/09620da6-1b38-4daf-9932-2f5b022566af>
+  PrefabRemaps:
+    []
+  Name: ring-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.703710, z: 0.000001}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 787ebca5-ab09-41b1-be4a-b4e613490bbd
+  Components:
+    []
+- !<SceneObject/0e936f0b-7f8d-4a0b-9695-5a09a528c9eb>
+  PrefabRemaps:
+    []
+  Name: ring-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.001444, y: 2.703720, z: 0.000001}
+    rotation: {x: 88.027298, y: -5.497920, z: 5.333360}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0143e2e5-3d66-4e9d-b94c-a09dc4a2446a
+  Components:
+    []
+- !<SceneObject/101e0656-bffd-4366-b94e-5adf217b22d7>
+  PrefabRemaps:
+    []
+  Name: pinky-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.008174, y: 2.218150, z: 0.000077}
+    rotation: {x: 84.965103, y: 6.336930, z: -173.675003}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f13158cc-c1c6-49ce-b78c-dde4afafd2dd
+  Components:
+    []
+- !<SceneObject/12821b11-eeb8-442a-bc28-a0c11552df9f>
+  PrefabRemaps:
+    []
+  Name: index-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.837170, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/129b98fe-dd08-4223-be90-261d63a4fb51>
+  PrefabRemaps:
+    []
+  Name: wrist_to_thumb
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000001, y: -0.000005, z: 0.000002}
+    rotation: {x: 26.024099, y: -37.686901, z: 24.403400}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2f0f80fe-29b1-4670-8247-e9fcbb520136
+  Components:
+    []
+- !<SceneObject/130a32a5-6106-482d-ac1b-83a0239cdfe7>
+  PrefabRemaps:
+    []
+  Name: mid-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.002905, y: 3.650320, z: -0.000094}
+    rotation: {x: -2.676470, y: 0.000075, z: -0.000412}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7c7a56b2-9a23-44bb-a295-c9d32f89c0f9
+  Components:
+    []
+- !<SceneObject/1384dbe7-a120-4d02-98f7-8ba5d47e8bbd>
+  PrefabRemaps:
+    []
+  Name: wrist_to_ring
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: -0.000006, z: 0.000002}
+    rotation: {x: 0.192403, y: 6.380900, z: 6.216870}
+    scale: {x: 1.000000, y: 0.999999, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 08342bce-4d83-4059-b908-9ff396ac5d4c
+  Components:
+    []
+- !<SceneObject/15df196c-b8dd-4c4a-ab28-3c41d8b210f4>
+  PrefabRemaps:
+    []
+  Name: LeftHandModel
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 75992968-df12-4ff1-993e-8ffae2c576a8
+    - !<own> c857aab2-6a0e-400e-be5e-a6e50a46bedc
+  Components:
+    - !<own> 25e2d4ed-969b-43ed-9fdd-c42dec863deb
+- !<SceneObject/16d955e2-e4ce-4637-82a0-9c55a938f12f>
+  PrefabRemaps:
+    []
+  Name: mid-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.002904, y: 3.650310, z: -0.000110}
+    rotation: {x: -2.676430, y: -0.000566, z: -0.015133}
+    scale: {x: 0.999999, y: 0.999999, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 87b5e89f-5c8b-468b-ab32-97d7be7758c2
+  Components:
+    []
+- !<SceneObject/190b19b4-798f-4e0d-bd25-876d70c5aeeb>
+  PrefabRemaps:
+    []
+  Name: ring-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.703720, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/1d85dbb9-0125-4af3-b288-6ab60407feb6>
+  PrefabRemaps:
+    []
+  Name: ContainerFrame
+  Enabled: true
+  ScriptAsset: !<reference> 94ea82ba-1d42-4617-b71f-c92262f5960b
+  ScriptInputsDefault:
+    border: true
+    constantPadding: true
+    isContentInteractable: true
+    allowTranslation: true
+    minimumSize: true
+    maximumSize: true
+    xAlways: true
+    yAlways: true
+    useSnapping: true
+    itemSnapping: true
+    worldSnapping: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      autoShowHide: false
+      innerSize: !<Vec2> {x: 15.000000, y: 23.000000}
+      border: !<float> 4.000000
+      constantPadding: !<Vec2> {x: 0.000000, y: 0.000000}
+      allowScaling: false
+      autoScaleContent: false
+      isContentInteractable: false
+      allowTranslation: true
+      minimumSize: !<Vec2> {x: 10.000000, y: 10.000000}
+      maximumSize: !<Vec2> {x: 300.000000, y: 300.000000}
+      useBillboarding: true
+      xOnTranslate: true
+      xAlways: false
+      yOnTranslate: true
+      yAlways: false
+      useSnapping: false
+      itemSnapping: false
+      worldSnapping: false
+      showFollowButton: true
+      useFOVFollow: true
+      isFollowing: true
+      showCloseButton: false
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/1dcc9d63-b92f-405b-832a-093bafe65ac4>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.218170, z: 0.000000}
+    rotation: {x: 0.000050, y: -0.000056, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d9ea854f-5888-464e-9278-be871ec863c7
+  Components:
+    []
+- !<SceneObject/1fc49fe8-905f-4202-bdd8-8fe676cc9ff3>
+  PrefabRemaps:
+    []
+  Name: wrist_to_index
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000001, y: -0.000005, z: 0.000002}
+    rotation: {x: -0.140613, y: -15.148800, z: 17.637899}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 306a1910-7df8-475b-8aba-d6b7de43aa4e
+  Components:
+    []
+- !<SceneObject/23eb8cd8-eb80-47fe-8b0b-695949fe2365>
+  PrefabRemaps:
+    []
+  Name: index-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000003, y: 11.787900, z: -0.000003}
+    rotation: {x: 9.215320, y: 17.707500, z: 16.168699}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> bece8169-fb1b-4e3f-8e29-e2c945187e46
+  Components:
+    []
+- !<SceneObject/2593eac8-06fb-406e-a89a-4fefa9c07a17>
+  PrefabRemaps:
+    []
+  Name: index-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.009134, y: 2.837150, z: 0.000078}
+    rotation: {x: -87.845497, y: -5.462180, z: -5.671890}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e0d3582d-bf3c-44cf-97d8-765c87f5aa1c
+  Components:
+    []
+- !<SceneObject/25b5c85c-cdfa-4265-8dde-0f685988c792>
+  PrefabRemaps:
+    []
+  Name: pinky-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.002793, y: 3.304380, z: 0.000052}
+    rotation: {x: 1.238250, y: -0.000460, z: 0.010196}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c7543d27-ac2f-4532-a422-b5c180aaa254
+  Components:
+    []
+- !<Skin/25e2d4ed-969b-43ed-9fdd-c42dec863deb>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    mid-3_end_end_end_end: !<reference> 3016d770-154c-4dc7-9c44-37e6922f1457
+    LeftHandRig: !<reference> 75992968-df12-4ff1-993e-8ffae2c576a8
+    ring-2: !<reference> 43623891-5d65-48c0-9f46-118381c2fec8
+    LeftHandModel: !<reference> 15df196c-b8dd-4c4a-ab28-3c41d8b210f4
+    pinky-1: !<reference> 25b5c85c-cdfa-4265-8dde-0f685988c792
+    pinky-3_end_end_end: !<reference> defa21ad-ba56-4fe7-b4a8-37d3ac84bf2d
+    ring-1: !<reference> 35b65ad5-8252-424e-bf0d-2decaae0cd79
+    index-3: !<reference> 6490f505-a702-4a60-b11e-4c64334d56a8
+    wrist_to_ring: !<reference> 73a9aaa8-b564-4355-835b-42f90793c3be
+    index-1: !<reference> c83805aa-762f-460f-ad2d-c510444e5ffe
+    pinky-2: !<reference> c7543d27-ac2f-4532-a422-b5c180aaa254
+    index-0: !<reference> 306a1910-7df8-475b-8aba-d6b7de43aa4e
+    LeftHandMesh: !<reference> c857aab2-6a0e-400e-be5e-a6e50a46bedc
+    wrist_to_pinky: !<reference> 7a118ab1-224c-49dc-9b58-906c9197358f
+    wrist_to_thumb: !<reference> 129b98fe-dd08-4223-be90-261d63a4fb51
+    index-3_end_end_end: !<reference> 4101b18f-0d3d-47d4-adf2-c08c861a2022
+    mid-3: !<reference> 87b5e89f-5c8b-468b-ab32-97d7be7758c2
+    index-3_end: !<reference> d7303b6d-0487-448b-8498-098fb805851d
+    index-3_end_end: !<reference> 6131237d-ba5e-4a1f-a100-80c176b73e55
+    pinky-0: !<reference> f46024f2-3574-4b85-ae29-ff338aeb4ba3
+    pinky-3: !<reference> 82331b2e-357c-4d7d-9292-b87c3f53cb65
+    mid-1: !<reference> 805d60b6-1bef-42d0-a51d-0b7f3b8bfe4b
+    thumb-3_end_end_end: !<reference> 30c42dad-b091-43b7-ac1e-57a9e6718a80
+    mid-3_end: !<reference> 53c1395c-a725-4cf8-bd27-763472512533
+    mid-3_end_end: !<reference> d0b4ce0b-e92f-45c6-9f9c-3b4e9fbfa2b8
+    ring-0: !<reference> 2d3ff4bd-7c40-445c-993b-09c94fd79fa6
+    pinky-3_end: !<reference> 4a47f6d8-4325-4296-8bb1-6655df55e905
+    wrist_to_index: !<reference> 1fc49fe8-905f-4202-bdd8-8fe676cc9ff3
+    thumb-3_end_end: !<reference> 5161961d-ddd9-4e02-b02d-df7aacbafb2b
+    mid-0: !<reference> ce6cee13-e90f-4427-b638-4fcb81df3928
+    ring-3_end_end_end_end: !<reference> 787ebca5-ab09-41b1-be4a-b4e613490bbd
+    ring-3_end: !<reference> 4d79543f-3519-49a1-a08e-6ccb185c1fa1
+    pinky-3_end_end_end_end: !<reference> d971e3b1-9f65-4928-a8b7-708d67da3e9c
+    mid-3_end_end_end: !<reference> b87e02c9-943e-4387-adef-faa0291ba58b
+    thumb-2: !<reference> 2eb8ed65-93ae-4624-b525-df6fa42f4d71
+    ring-3: !<reference> decd5550-3568-4e32-9e01-a9fe286cf01f
+    ring-3_end_end: !<reference> 8ee241b0-c800-4cd8-8ece-9b559b6be98e
+    thumb-0: !<reference> 2f0f80fe-29b1-4670-8247-e9fcbb520136
+    thumb-3_end: !<reference> 36347798-7e99-4c03-a20c-adc413d7fc13
+    thumb-1: !<reference> 99e879df-1b59-4c20-aa77-8b945823f30a
+    wrist: !<reference> ba4a8d82-3330-4154-93f4-ef1c726cd75f
+    thumb-3: !<reference> 6226d9d3-eccd-45c0-a7d6-a34dbb2eb2bc
+    mid-2: !<reference> 16d955e2-e4ce-4637-82a0-9c55a938f12f
+    wrist_to_mid: !<reference> fbd41660-37a9-4f0b-8889-71191ba08f98
+    index-3_end_end_end_end: !<reference> 12821b11-eeb8-442a-bc28-a0c11552df9f
+    index-2: !<reference> bd887303-5ab6-4ad0-81c5-808db8164051
+    ring-3_end_end_end: !<reference> 09620da6-1b38-4daf-9932-2f5b022566af
+    thumb-3_end_end_end_end: !<reference> fa893903-fe39-4de8-869a-ddc5c6b23f94
+    pinky-3_end_end: !<reference> d421e9ba-a302-4d00-a01e-4b13d2899bc2
+- !<ScriptComponent/26907fa5-b779-476c-a4c8-3a46e110cd3e>
+  PrefabRemaps:
+    []
+  Name: MobileInteractor
+  Enabled: true
+  ScriptAsset: !<reference> 7876e94e-1942-4993-ab2d-d35e572dbe74
+  ScriptInputsDefault:
+    _drawDebug: true
+    sphereCastEnabled: true
+    _maxRaycastDistance: true
+    indirectTargetingVolumeMultiplier: true
+    indirectDragThreshold: true
+    initializePositionAndRotationFilter: true
+    _touchpadScrollSpeed: true
+    touchpadDragThreshold: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _drawDebug: false
+      sphereCastEnabled: false
+      spherecastRadii: !<float[]>
+        - 0.500000
+      spherecastDistanceThresholds: !<float[]>
+        - 0.000000
+      _maxRaycastDistance: !<float> 500.000000
+      indirectTargetingVolumeMultiplier: !<float> 1.000000
+      indirectDragThreshold: !<float> 3.000000
+      initializePositionAndRotationFilter: true
+      _touchpadScrollSpeed: !<float> 250.000000
+      touchpadDragThreshold: 0.050000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/277408e4-1d1f-4004-9fe0-0c83f4590eea>
+  PrefabRemaps:
+    []
+  Name: HandVisual
+  Enabled: true
+  ScriptAsset: !<reference> f9b29b39-ec8c-41bd-8b53-769ae9b818b8
+  ScriptInputsDefault:
+    autoJointMapping: true
+    wrist: true
+    thumbToWrist: true
+    thumbBaseJoint: true
+    thumbKnuckle: true
+    thumbMidJoint: true
+    thumbTip: true
+    indexToWrist: true
+    indexKnuckle: true
+    indexMidJoint: true
+    indexUpperJoint: true
+    indexTip: true
+    middleToWrist: true
+    middleKnuckle: true
+    middleMidJoint: true
+    middleUpperJoint: true
+    middleTip: true
+    ringToWrist: true
+    ringKnuckle: true
+    ringMidJoint: true
+    ringUpperJoint: true
+    ringTip: true
+    pinkyToWrist: true
+    pinkyKnuckle: true
+    pinkyMidJoint: true
+    pinkyUpperJoint: true
+    pinkyTip: true
+    occluderEnabled: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handType: left
+      handMesh: !<reference.RenderMeshVisual> 635b3644-3343-4f8d-8a86-6e4876f5319c
+      root: !<reference.SceneObject> 15df196c-b8dd-4c4a-ab28-3c41d8b210f4
+      autoJointMapping: true
+      wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbBaseJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      glowEnabled: true
+      unitPlaneMesh: !<reference.RenderMesh> a453f19f-0832-419f-bd8f-b3296b433b23
+      tipGlowMaterial: !<reference.Material> 26460eea-cbec-488e-aefd-efde6c5d0085
+      idleColor: !<Vec4> {x: 1.000000, y: 0.686275, z: 0.000000, w: 1.000000}
+      pinchDownColor: !<Vec4> {x: 0.968627, y: 0.827451, z: 0.000000, w: 1.000000}
+      tapProximityThreshold: !<float> 8.000000
+      pinchTexture: !<reference.Texture> 3391429c-5c74-4b5c-b9fc-4ad3ba30bda4
+      tapTexture: !<reference.Texture> e33d2c7f-1d12-4250-92fb-433c25ce1923
+      occluderEnabled: false
+      occluderUnitPlaneMesh: !<reference.RenderMesh> a453f19f-0832-419f-bd8f-b3296b433b23
+      radialGradientOcclusionMaterial: !<reference.Material> af45ff34-c96f-42c2-8446-8282edf6dece
+  ScriptTypes:
+    "":
+      {}
+- !<Text/29bbf35c-5569-4776-8e96-2180409bdea3>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 8
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: Image and Text
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 711473f0-eaf8-4cdb-8d22-e1d2e07c6345
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
+- !<SceneObject/2d3ff4bd-7c40-445c-993b-09c94fd79fa6>
+  PrefabRemaps:
+    []
+  Name: ring-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 11.824800, z: 0.000000}
+    rotation: {x: -4.158420, y: -5.389360, z: 8.544330}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 35b65ad5-8252-424e-bf0d-2decaae0cd79
+  Components:
+    []
+- !<SceneObject/2eb8ed65-93ae-4624-b525-df6fa42f4d71>
+  PrefabRemaps:
+    []
+  Name: thumb-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.054705, y: 3.957050, z: -0.004463}
+    rotation: {x: -2.614390, y: -0.009460, z: -0.205101}
+    scale: {x: 0.999999, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6226d9d3-eccd-45c0-a7d6-a34dbb2eb2bc
+  Components:
+    []
+- !<SceneObject/2f0f80fe-29b1-4670-8247-e9fcbb520136>
+  PrefabRemaps:
+    []
+  Name: thumb-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000005, y: 4.399180, z: -0.000010}
+    rotation: {x: -1.007350, y: 44.900501, z: -1.551620}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 99e879df-1b59-4c20-aa77-8b945823f30a
+  Components:
+    []
+- !<SceneObject/2fd82781-416c-4d2f-bd6a-e6f5f0f60ebc>
+  PrefabRemaps:
+    []
+  Name: "[OPTIONAL] Visuals"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d031fb51-584a-4d4c-8f8c-5d9a9070503b
+    - !<own> b2484ffd-6084-4344-b6e9-8a716b86b102
+    - !<own> 6e4dc796-a860-4b96-ae08-710fdc92323c
+  Components:
+    []
+- !<SceneObject/3016d770-154c-4dc7-9c44-37e6922f1457>
+  PrefabRemaps:
+    []
+  Name: mid-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.166710, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/306a1910-7df8-475b-8aba-d6b7de43aa4e>
+  PrefabRemaps:
+    []
+  Name: index-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: 11.787900, z: -0.000005}
+    rotation: {x: 0.059034, y: 19.848200, z: -15.906400}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c83805aa-762f-460f-ad2d-c510444e5ffe
+  Components:
+    []
+- !<SceneObject/30c42dad-b091-43b7-ac1e-57a9e6718a80>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: 3.549810, z: -0.000001}
+    rotation: {x: -0.000000, y: 0.176026, z: -0.000014}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> fa893903-fe39-4de8-869a-ddc5c6b23f94
+  Components:
+    []
+- !<SceneObject/329ca3bd-5bf5-4c0e-aab3-e9c23b91b99d>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.549800, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/35b65ad5-8252-424e-bf0d-2decaae0cd79>
+  PrefabRemaps:
+    []
+  Name: ring-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.002705, y: 3.534420, z: -0.000008}
+    rotation: {x: 1.238040, y: -0.000494, z: 0.017060}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 43623891-5d65-48c0-9f46-118381c2fec8
+  Components:
+    []
+- !<SceneObject/36347798-7e99-4c03-a20c-adc413d7fc13>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.549810, z: -0.000001}
+    rotation: {x: -0.000121, y: 23.491301, z: -0.000033}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5161961d-ddd9-4e02-b02d-df7aacbafb2b
+  Components:
+    []
+- !<ScriptComponent/375b6d19-cf2a-4a1f-ad57-0fa1adce82b8>
+  PrefabRemaps:
+    []
+  Name: ButtonFeedback
+  Enabled: true
+  ScriptAsset: !<reference> 99b48019-5088-4691-9ae6-beb39874357f
+  ScriptInputsDefault:
+    buttonType: true
+    useGlowMesh: true
+    glowRenderMeshVisual: true
+    maxBlendShapeWeight: true
+    meshBlendShapeName: true
+    glowBlendShapeName: true
+    glowIdleMaterial: true
+    glowHoverMaterial: true
+    glowPinchedMaterial: true
+    meshToggledPinchedMaterial: true
+    meshToggledHoverMaterial: true
+    meshToggledIdleMaterial: true
+    meshStatePinchedMaterial: true
+    meshStateHoverMaterial: true
+    meshStateIdleMaterial: true
+    persistentPinchedState: true
+    defaultIcon: true
+    onIcon: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      buttonType: 0
+      renderMeshVisual: !<reference.RenderMeshVisual> af730234-23d9-4653-88db-ceb57086548f
+      useGlowMesh: false
+      glowRenderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      maxBlendShapeWeight: !<float> 1.000000
+      meshBlendShapeName: Pinch
+      meshIdleMaterial: !<reference.Material> 7b4b9cea-ed98-4be8-935a-5021c1011214
+      meshHoverMaterial: !<reference.Material> 037f4a9b-253e-426f-bf75-d4676e341333
+      meshPinchedMaterial: !<reference.Material> d847673e-59e3-489d-9c87-292a4046be7f
+      glowBlendShapeName: Pinch
+      glowIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      glowHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      glowPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStatePinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStateHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStateIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      persistentPinchedState: false
+      defaultIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      onIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/37bf6b5c-fd84-4320-a660-735aa25bdf84>
+  PrefabRemaps:
+    []
+  Name: mid-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 3.166730, z: 0.000001}
+    rotation: {x: 0.000103, y: 0.000102, z: 0.000010}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 66d1b41b-604d-497c-aae7-80cdbaec2c0e
+  Components:
+    []
+- !<Text/3836af18-5bef-4e96-bc8a-a9413c99f2c6>
+  PrefabRemaps:
+    []
+  Name: Text 2
+  Enabled: true
+  RenderOrder: 9
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: WAIT FOR OPEN AI RESPONSE TO APPEAR HERE
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 50
+  Font: !<reference> 709203b6-8b83-40d7-8dda-e5adc4fd2875
+  LayoutRect:
+    left: -15.000000
+    bottom: -2.250000
+    right: 15.000000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.035000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+    CapitilizationOverride: None
+  DepthTest: false
+  TwoSided: false
+- !<SceneObject/39c9f241-88af-4f82-843c-e68430ad4522>
+  PrefabRemaps:
+    []
+  Name: InteractorLineVisual
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 80544473-fb7f-42ba-92ea-3f46563ab0fd
+- !<SceneObject/3bea292e-0f91-46ec-bc14-7c1928be83ee>
+  PrefabRemaps:
+    []
+  Name: ring-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.002705, y: 3.534420, z: 0.000029}
+    rotation: {x: 1.238160, y: -0.000262, z: -0.000026}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f443cf96-fa30-42e8-9bdc-f3a717125c39
+  Components:
+    []
+- !<SceneObject/3eba7b56-dca4-443c-b0b8-d38495499c7e>
+  PrefabRemaps:
+    []
+  Name: "[REQUIRED] Core"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d05f80da-5ab6-45ca-8904-6d65c892edad
+    - !<own> 799faa66-d31a-4d72-bfa7-4452b26d15d2
+    - !<own> 4b219203-ea3c-40f8-98df-0599435de9e0
+    - !<own> ba770b34-ba0c-4331-818a-be19919cac6d
+    - !<own> f3adddd2-3e87-4554-a006-91e164ef18d8
+  Components:
+    []
+- !<SceneObject/4101b18f-0d3d-47d4-adf2-c08c861a2022>
+  PrefabRemaps:
+    []
+  Name: index-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.837170, z: 0.000002}
+    rotation: {x: -0.000076, y: -0.000000, z: -0.000013}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 12821b11-eeb8-442a-bc28-a0c11552df9f
+  Components:
+    []
+- !<SceneObject/43623891-5d65-48c0-9f46-118381c2fec8>
+  PrefabRemaps:
+    []
+  Name: ring-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.001204, y: 3.309410, z: 0.000061}
+    rotation: {x: 0.145060, y: 0.000496, z: 0.002001}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> decd5550-3568-4e32-9e01-a9fe286cf01f
+  Components:
+    []
+- !<SceneObject/45e9eb60-74f6-4d85-a688-3e7eeae5dfd8>
+  PrefabRemaps:
+    []
+  Name: pinky-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000007, y: 11.453500, z: 0.000008}
+    rotation: {x: 1.584790, y: -17.344000, z: -21.859100}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c7dcb734-86d4-4f3d-9242-2636df861c8e
+  Components:
+    []
+- !<SceneObject/4a47f6d8-4325-4296-8bb1-6655df55e905>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.218160, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000011, z: -0.000012}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d421e9ba-a302-4d00-a01e-4b13d2899bc2
+  Components:
+    []
+- !<SceneObject/4a865dcf-de94-4d7c-9831-3a9f0794d28d>
+  PrefabRemaps:
+    []
+  Name: index-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.008392, y: 3.222930, z: -0.000121}
+    rotation: {x: -0.204897, y: -0.651952, z: -2.287250}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2593eac8-06fb-406e-a89a-4fefa9c07a17
+  Components:
+    []
+- !<SceneObject/4b219203-ea3c-40f8-98df-0599435de9e0>
+  PrefabRemaps:
+    []
+  Name: RightHandInteractor
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 591ecc04-7aff-4cec-aad0-f40988dab2da
+- !<ScriptComponent/4ba8809d-8937-4fbb-8547-ba7cef94819c>
+  PrefabRemaps:
+    []
+  Name: HandVisual
+  Enabled: true
+  ScriptAsset: !<reference> f9b29b39-ec8c-41bd-8b53-769ae9b818b8
+  ScriptInputsDefault:
+    autoJointMapping: true
+    wrist: true
+    thumbToWrist: true
+    thumbBaseJoint: true
+    thumbKnuckle: true
+    thumbMidJoint: true
+    thumbTip: true
+    indexToWrist: true
+    indexKnuckle: true
+    indexMidJoint: true
+    indexUpperJoint: true
+    indexTip: true
+    middleToWrist: true
+    middleKnuckle: true
+    middleMidJoint: true
+    middleUpperJoint: true
+    middleTip: true
+    ringToWrist: true
+    ringKnuckle: true
+    ringMidJoint: true
+    ringUpperJoint: true
+    ringTip: true
+    pinkyToWrist: true
+    pinkyKnuckle: true
+    pinkyMidJoint: true
+    pinkyUpperJoint: true
+    pinkyTip: true
+    occluderEnabled: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handType: right
+      handMesh: !<reference.RenderMeshVisual> 55cc38d4-a69f-4f05-bfb1-7e404c39ea74
+      root: !<reference.SceneObject> e85ae15a-94fe-486d-bee1-c6fe443b2418
+      autoJointMapping: true
+      wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbBaseJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thumbTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      indexTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      middleTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ringTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyToWrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyKnuckle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyMidJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyUpperJoint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinkyTip: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      glowEnabled: true
+      unitPlaneMesh: !<reference.RenderMesh> a453f19f-0832-419f-bd8f-b3296b433b23
+      tipGlowMaterial: !<reference.Material> 26460eea-cbec-488e-aefd-efde6c5d0085
+      idleColor: !<Vec4> {x: 1.000000, y: 0.686275, z: 0.000000, w: 1.000000}
+      pinchDownColor: !<Vec4> {x: 0.968627, y: 0.827451, z: 0.000000, w: 1.000000}
+      tapProximityThreshold: !<float> 8.000000
+      pinchTexture: !<reference.Texture> 3391429c-5c74-4b5c-b9fc-4ad3ba30bda4
+      tapTexture: !<reference.Texture> e33d2c7f-1d12-4250-92fb-433c25ce1923
+      occluderEnabled: false
+      occluderUnitPlaneMesh: !<reference.RenderMesh> a453f19f-0832-419f-bd8f-b3296b433b23
+      radialGradientOcclusionMaterial: !<reference.Material> af45ff34-c96f-42c2-8446-8282edf6dece
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/4d79543f-3519-49a1-a08e-6ccb185c1fa1>
+  PrefabRemaps:
+    []
+  Name: ring-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.703710, z: 0.000002}
+    rotation: {x: 0.000000, y: 0.000000, z: -0.000033}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8ee241b0-c800-4cd8-8ece-9b559b6be98e
+  Components:
+    []
+- !<SceneObject/4df14e40-0ec5-4b6d-870d-e3b6dd9a0d08>
+  PrefabRemaps:
+    []
+  Name: wrist_to_thumb
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: -0.000006, z: 0.000002}
+    rotation: {x: 27.434401, y: -41.097198, z: -59.864601}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 65e7cfde-2c3a-426b-b23f-d6d9d52222cd
+  Components:
+    []
+- !<SceneObject/5161961d-ddd9-4e02-b02d-df7aacbafb2b>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 3.549810, z: -0.000001}
+    rotation: {x: 0.000118, y: -23.667299, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 30c42dad-b091-43b7-ac1e-57a9e6718a80
+  Components:
+    []
+- !<SceneObject/53c1395c-a725-4cf8-bd27-763472512533>
+  PrefabRemaps:
+    []
+  Name: mid-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: 3.166710, z: 0.000002}
+    rotation: {x: 0.000000, y: 0.000019, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d0b4ce0b-e92f-45c6-9f9c-3b4e9fbfa2b8
+  Components:
+    []
+- !<RenderMeshVisual/55cc38d4-a69f-4f05-bfb1-7e404c39ea74>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 9999
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> e22e919c-a7b1-4d7b-91ab-67d2d30b6d92
+  Mesh: !<reference> 47f5077e-1337-41f0-8131-4bd28ad21552
+  Skin: !<reference> 6acfa7cf-1b7d-4d19-8dc4-62783a45a78b
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/573cecf3-5799-454f-8a9f-826eb7e25552>
+  PrefabRemaps:
+    []
+  Name: RightHandVisual
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e85ae15a-94fe-486d-bee1-c6fe443b2418
+  Components:
+    - !<own> 4ba8809d-8937-4fbb-8547-ba7cef94819c
+- !<SceneObject/5881061f-9b7c-42a5-bdee-240fb1e78158>
+  PrefabRemaps:
+    []
+  Name: mid-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 11.483100, z: -0.000001}
+    rotation: {x: 1.935390, y: 5.930260, z: 3.282900}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ca9f318e-57dc-4dcd-8928-d2c78fa7ec10
+  Components:
+    []
+- !<ScriptComponent/591ecc04-7aff-4cec-aad0-f40988dab2da>
+  PrefabRemaps:
+    []
+  Name: HandInteractor
+  Enabled: true
+  ScriptAsset: !<reference> 4d0b0ec7-e669-4c4e-b2f7-32b9c59f24cc
+  ScriptInputsDefault:
+    _drawDebug: true
+    sphereCastEnabled: true
+    spherecastRadii: true
+    spherecastDistanceThresholds: true
+    _maxRaycastDistance: true
+    indirectTargetingVolumeMultiplier: true
+    indirectDragThreshold: true
+    handType: true
+    raycastAlgorithm: true
+    forcePokeOnNonDominantPalmProximity: true
+    directColliderEnterRadius: true
+    directColliderExitRadius: true
+    directDragThreshold: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _drawDebug: false
+      sphereCastEnabled: false
+      spherecastRadii: !<float[]>
+        - 0.500000
+        - 2.000000
+        - 4.000000
+      spherecastDistanceThresholds: !<float[]>
+        - 0.000000
+        - 12.000000
+        - 30.000000
+      _maxRaycastDistance: !<float> 500.000000
+      indirectTargetingVolumeMultiplier: !<float> 1.000000
+      indirectDragThreshold: !<float> 40.000000
+      handType: right
+      raycastAlgorithm: Proxy
+      forcePokeOnNonDominantPalmProximity: false
+      directColliderEnterRadius: !<float> 1.000000
+      directColliderExitRadius: 1.500000
+      directDragThreshold: !<float> 3.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/6131237d-ba5e-4a1f-a100-80c176b73e55>
+  PrefabRemaps:
+    []
+  Name: index-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.837170, z: 0.000001}
+    rotation: {x: 0.000189, y: -0.000000, z: 0.000044}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4101b18f-0d3d-47d4-adf2-c08c861a2022
+  Components:
+    []
+- !<SceneObject/6226d9d3-eccd-45c0-a7d6-a34dbb2eb2bc>
+  PrefabRemaps:
+    []
+  Name: thumb-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.122141, y: 3.547710, z: 0.009542}
+    rotation: {x: -59.788200, y: 5.800900, z: 165.218002}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 36347798-7e99-4c03-a20c-adc413d7fc13
+  Components:
+    []
+- !<RenderMeshVisual/635b3644-3343-4f8d-8a86-6e4876f5319c>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 9999
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5604ac47-c036-412b-b0a1-c1e45d270138
+  Mesh: !<reference> 5c27929e-6edc-4e3d-8eda-539ff8335c2a
+  Skin: !<reference> 25e2d4ed-969b-43ed-9fdd-c42dec863deb
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/646de05d-ea43-45de-ac69-3444b2155c86>
+  PrefabRemaps:
+    []
+  Name: MouseInteractor
+  Enabled: true
+  ScriptAsset: !<reference> fa8d58de-519f-43c1-a79d-1bfa5fdecfb0
+  ScriptInputsDefault:
+    _drawDebug: true
+    sphereCastEnabled: true
+    spherecastRadii: true
+    spherecastDistanceThresholds: true
+    _maxRaycastDistance: true
+    indirectTargetingVolumeMultiplier: true
+    indirectDragThreshold: true
+    mouseTargetingMode: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _drawDebug: false
+      sphereCastEnabled: false
+      spherecastRadii: !<float[]>
+        - 0.500000
+        - 2.000000
+        - 4.000000
+      spherecastDistanceThresholds: !<float[]>
+        - 0.000000
+        - 12.000000
+        - 30.000000
+      _maxRaycastDistance: !<float> 500.000000
+      indirectTargetingVolumeMultiplier: !<float> 1.000000
+      indirectDragThreshold: !<float> 3.000000
+      mouseTargetingMode: !<float> 2.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/6490f505-a702-4a60-b11e-4c64334d56a8>
+  PrefabRemaps:
+    []
+  Name: index-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.009104, y: 2.837160, z: -0.000745}
+    rotation: {x: -88.447800, y: 0.630570, z: -5.443090}
+    scale: {x: 1.000000, y: 1.000000, z: 0.999998}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d7303b6d-0487-448b-8498-098fb805851d
+  Components:
+    []
+- !<SceneObject/65e1d7bb-7e74-495f-a678-d8eda1d83a89>
+  PrefabRemaps:
+    []
+  Name: Image and Text Prompt Button Text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.250000, y: 1.250000, z: 1.250000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 29bbf35c-5569-4776-8e96-2180409bdea3
+- !<SceneObject/65e7cfde-2c3a-426b-b23f-d6d9d52222cd>
+  PrefabRemaps:
+    []
+  Name: thumb-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000009, y: 4.399180, z: 0.000004}
+    rotation: {x: 1.097870, y: 44.900902, z: 1.556590}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 98f878ff-dad4-4acc-bebe-f64472d36d3a
+  Components:
+    []
+- !<SceneObject/66d1b41b-604d-497c-aae7-80cdbaec2c0e>
+  PrefabRemaps:
+    []
+  Name: mid-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 3.166730, z: 0.000000}
+    rotation: {x: 0.000104, y: 0.000103, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9081cc37-1451-45d6-9263-20ddacec170a
+  Components:
+    []
+- !<SceneObject/66eb832a-1e9d-4b71-a454-4b8260b5ede1>
+  PrefabRemaps:
+    []
+  Name: pinky-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.005382, y: 2.681950, z: -0.000140}
+    rotation: {x: -5.666390, y: -0.000025, z: -0.000013}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 101e0656-bffd-4366-b94e-5adf217b22d7
+  Components:
+    []
+- !<SceneObject/6850f894-4b43-4d1b-b9f2-5bba19c507fb>
+  PrefabRemaps:
+    []
+  Name: OpenAI Connector UI
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -35.000000, z: -30.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ca4aeee2-0b9a-4c59-ae9d-2302b7e35f72
+    - !<own> 9193b762-3968-47f1-a379-0ac788974ca9
+    - !<own> f4a1e791-8f12-4b52-855c-92e1eb8b80e0
+  Components:
+    - !<own> 1d85dbb9-0125-4af3-b288-6ab60407feb6
+- !<Skin/6acfa7cf-1b7d-4d19-8dc4-62783a45a78b>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    ring-2: !<reference> f443cf96-fa30-42e8-9bdc-f3a717125c39
+    pinky-1: !<reference> c7dcb734-86d4-4f3d-9242-2636df861c8e
+    pinky-3_end_end_end: !<reference> d9ea854f-5888-464e-9278-be871ec863c7
+    ring-1: !<reference> 3bea292e-0f91-46ec-bc14-7c1928be83ee
+    RightHandModel: !<reference> e85ae15a-94fe-486d-bee1-c6fe443b2418
+    index-3: !<reference> 2593eac8-06fb-406e-a89a-4fefa9c07a17
+    wrist_to_ring: !<reference> 1384dbe7-a120-4d02-98f7-8ba5d47e8bbd
+    index-1: !<reference> bece8169-fb1b-4e3f-8e29-e2c945187e46
+    pinky-2: !<reference> 66eb832a-1e9d-4b71-a454-4b8260b5ede1
+    index-0: !<reference> 23eb8cd8-eb80-47fe-8b0b-695949fe2365
+    ring-3_end_end_end: !<reference> a2d82a40-61b8-4383-9bd9-16725e2e070c
+    RightHandMesh: !<reference> 071c7399-d240-46d9-adc7-bdd07b289234
+    wrist_to_thumb: !<reference> 4df14e40-0ec5-4b6d-870d-e3b6dd9a0d08
+    index-3_end_end_end: !<reference> 82e4d3ce-7671-4de7-b916-e0921f8c286b
+    mid-3: !<reference> 7c7a56b2-9a23-44bb-a295-c9d32f89c0f9
+    index-3_end: !<reference> e0d3582d-bf3c-44cf-97d8-765c87f5aa1c
+    index-3_end_end: !<reference> fa871fe5-0fe5-4dfb-a37d-88f16e97863f
+    pinky-0: !<reference> 45e9eb60-74f6-4d85-a688-3e7eeae5dfd8
+    pinky-3: !<reference> 101e0656-bffd-4366-b94e-5adf217b22d7
+    mid-1: !<reference> ca9f318e-57dc-4dcd-8928-d2c78fa7ec10
+    mid-3_end: !<reference> dbb09f20-002c-4cef-ac71-5c9531919ebd
+    thumb-3_end_end_end: !<reference> c285c8f7-e4a2-4874-bea2-951bb4716cc4
+    ring-0: !<reference> 08342bce-4d83-4059-b908-9ff396ac5d4c
+    mid-3_end_end: !<reference> 37bf6b5c-fd84-4320-a660-735aa25bdf84
+    mid-3_end_end_end: !<reference> 66d1b41b-604d-497c-aae7-80cdbaec2c0e
+    RightHandRig: !<reference> afc7b077-5e02-4900-aa27-76b3c43d0bdf
+    mid-3_end_end_end_end: !<reference> 9081cc37-1451-45d6-9263-20ddacec170a
+    pinky-3_end: !<reference> f13158cc-c1c6-49ce-b78c-dde4afafd2dd
+    wrist_to_index: !<reference> 923607ae-7773-47d3-8121-bfe784927084
+    thumb-3_end_end: !<reference> 797b7433-6800-4a0a-a12c-bbce117865aa
+    pinky-3_end_end_end_end: !<reference> c0b9bb24-67e2-4ce5-af3f-bb7b8f2d804f
+    ring-3_end: !<reference> 0143e2e5-3d66-4e9d-b94c-a09dc4a2446a
+    mid-0: !<reference> 5881061f-9b7c-42a5-bdee-240fb1e78158
+    ring-3_end_end_end_end: !<reference> 190b19b4-798f-4e0d-bd25-876d70c5aeeb
+    ring-3_end_end: !<reference> aae13529-0fe3-4178-81cb-5fe348e48f79
+    thumb-0: !<reference> 65e7cfde-2c3a-426b-b23f-d6d9d52222cd
+    thumb-3_end: !<reference> a5fe30ec-3b1f-4a3d-a460-f4432615f4a7
+    thumb-1: !<reference> 98f878ff-dad4-4acc-bebe-f64472d36d3a
+    ring-3: !<reference> 0e936f0b-7f8d-4a0b-9695-5a09a528c9eb
+    thumb-2: !<reference> a851da66-48ab-4e31-a00e-63f3cbf7b16e
+    wrist: !<reference> 93d4d7b4-e851-428a-9a4d-5266de4f60ed
+    thumb-3: !<reference> cf314287-1348-4ea2-954b-5031a92e97e5
+    mid-2: !<reference> 130a32a5-6106-482d-ac1b-83a0239cdfe7
+    wrist_to_mid: !<reference> d41e433c-cdd8-4047-8013-0eafc977b04e
+    pinky-3_end_end: !<reference> 1dcc9d63-b92f-405b-832a-093bafe65ac4
+    index-3_end_end_end_end: !<reference> b2e5d0a9-cc44-4e3b-8464-aae9c8a7ce70
+    index-2: !<reference> 4a865dcf-de94-4d7c-9831-3a9f0794d28d
+    thumb-3_end_end_end_end: !<reference> 329ca3bd-5bf5-4c0e-aab3-e9c23b91b99d
+    wrist_to_pinky: !<reference> 92f2b8f3-95cb-41ea-a066-409349449cb2
+- !<SceneObject/6b58587e-9b96-4c0c-beba-eb55203a7dc6>
+  PrefabRemaps:
+    - 01fd142c-d9dc-44a2-bf57-889c5f60789f: 0a8093a8-229e-49f7-9312-90d23e90141b
+    - 0205030c-d9b9-435e-817d-6d42ba3a7945: f707cc10-1fb4-4c3f-9e66-bf380b8620bc
+    - 0379b502-cc55-4086-a05c-b51dd268c230: e5b902f0-c25a-441c-a85b-6045ac540fbb
+    - 0410ceb5-8d7c-482c-b260-37296d23d0fc: 608e86ed-07df-46b1-98ab-f9bb2f870ad7
+    - 04e76b30-475a-4390-b615-5057cc5cbfd9: 973e3fe1-e4c5-45fc-be0d-4eac1dcf43e5
+    - 067282b8-9391-435a-84b8-fecdb98ce688: a4e7cc77-4438-4951-a3aa-099f6757c73e
+    - 09ed956e-5cbc-455c-a713-88d969035c3b: 11d56616-f948-461b-b3db-53d6dde0ae86
+    - 0a07c7f5-a08a-4bb3-ad10-3eec75bbc423: e88e4db4-b6b2-44a9-bd17-6c9011b8e644
+    - 0a1d7056-6954-4063-91f7-a339a4027329: 6a33931c-fdec-4d9b-901d-04729f7a7ae0
+    - 0baa1cba-89fe-435f-aa83-b74492aa7887: beded760-58e6-45ab-bd17-24b5992510e8
+    - 0c4e18a3-db72-4095-8ca2-348d3f125628: 33f492b0-e9d9-4f0b-95b5-97a671b34814
+    - 0df35465-e078-430b-9836-aba2ddee256c: 6bdccbc6-b628-4234-9f7f-d3917af7bde8
+    - 0e3dadd3-3610-4aec-bc38-5cc319b4edce: 4202d8ae-59d0-4473-b889-12810a91bbb8
+    - 0f80bcd3-a11d-4efa-874a-28e5d1af799e: 11a80ba5-e8ce-4744-b8b6-4ee2a5f46a14
+    - 0fa4a92e-4a55-4fcf-a242-91a0a9b56e4e: 3a6e9c48-fc44-4263-8ab4-f1bbd4edddae
+    - 106ff319-41af-45ab-a7b8-e925d4369d14: 00e2b362-a6ac-47dd-8d34-d18819af8e54
+    - 1165b306-9fe6-4427-8d6f-acb014f476e3: 49b99126-17e7-41d6-8e6a-5f9fc89777b8
+    - 11924992-2f8b-4333-9d25-754570e46918: 9a46a89a-89ba-479e-bbf1-043e519f7e7f
+    - 11c0201a-30c2-4d77-8976-eadcf7644c28: bcf057f4-cae6-44d9-95a8-a47a485a1508
+    - 127b81dd-86d0-467b-8515-862f7e5aa69c: 4493d350-e467-4e65-95db-06c1ce0b9728
+    - 130fb5ae-228b-4a18-b9da-fdaa5d5547b5: 5b26f0f8-fc57-4744-8579-aea3062028b0
+    - 143f9673-0185-4375-9dc0-83c3d1d26891: 03dcbf0a-3b67-4c4f-b95b-b961f5a8cb01
+    - 144aa95e-80e2-46ae-8fb7-bb0ec23c45aa: e45c0298-933c-4a7b-bf3e-0541c3dd10bb
+    - 146f3bb5-3e6e-45f3-a65a-8daa427397eb: d99b75d4-1f54-4bfd-865c-a97a2f7a1fca
+    - 151456b9-c313-4f98-8a45-9cfc01f49d15: 136b496f-54d3-416c-aaf5-e1c37d4b56a8
+    - 16494003-d6f9-4653-a4fc-08bf005dbc26: d28d7444-18d3-40ca-a530-32e5c0ba74d7
+    - 16d231a4-8339-424d-9cf6-6ae3fbf3bd89: 38d4bbce-6308-4711-808c-171176a375b2
+    - 176e260e-0eb8-45b9-a3af-b23c24a0560e: f2100026-9dfb-4684-8fff-566b3e272be6
+    - 17e779fe-00b8-4b1f-b5c3-dc909ca8dea2: 8105e532-4351-418e-9ed2-28b307cad51f
+    - 185828d2-144c-400d-9b4b-afe442223fa1: fb0d48fa-23cd-4d7c-834f-aa8491b379d3
+    - 18c16703-8c89-4ff4-9638-d0d36a8db47b: 0cc4b210-33f0-4c4d-8ca5-8eca4ce74dfa
+    - 191d0b82-8305-47ff-a0fa-22b3eb0147da: 7ba91452-e532-4c64-ac6a-92312238a646
+    - 194f8bd3-498a-42fc-a5ee-f1e2a2caade7: 6711aaab-38dc-4a4d-8e56-e29085c3fb70
+    - 19d4caa8-ab26-418f-897a-805c2a1ef223: 3c8bbe1d-7725-4f68-b06d-f897d6fc5026
+    - 1a53b709-bc69-4ca6-a158-eccca438b9d7: 862b22a6-466a-4954-940e-c5f301164dbc
+    - 1c732f67-e18d-4341-b0a4-2e678bb673c9: e5145432-f894-4565-b4d7-75323ce5d975
+    - 1d85dbb9-0125-4af3-b288-6ab60407feb6: 13993a3c-65c4-44a0-bc80-dfec8b31dfce
+    - 1db0daa5-7d14-424f-a29c-0edbeb3297b1: 3c64332c-490d-4b34-b94b-4f90350cf5db
+    - 1dd4e0cb-4134-4475-b775-ec536cb1c486: a72f4dc0-5333-4a7f-933f-4757c1ec64db
+    - 1e14072b-7bff-4fde-9016-ae7654a3831f: 3404d763-22c8-4b0f-bea5-3dbbe642a170
+    - 20ba61f9-16ac-4b67-ba0a-ffd7a435264a: cdd978e4-dd74-426b-b848-bddb89f2a101
+    - 213f95a6-6851-45f2-b0aa-2ea52a804e54: 7ee5cfd6-7f32-491a-afd0-ad2c420d073f
+    - 216fe160-9de2-42e5-88cf-b172a160c6ef: c72846aa-76b0-4666-a079-27282d9872ae
+    - 226e06d3-6a15-4c92-80a0-f7e095f97bbf: c32556d2-9912-4aa3-974d-cd59fb7bc972
+    - 22c46197-a6f9-40ee-8548-a2d1886397bb: ebf57e4d-e152-43a8-9507-435ad0aca8b2
+    - 23514a3a-c037-45c7-9b66-0ebca8284684: 75c74dfe-3751-49b4-8c7e-f2a910b88df6
+    - 23f7d8d3-ef85-46a9-88e7-d75b4ddf5e5d: fc94f64e-d393-49e4-9ca1-52ff0fe4b8c5
+    - 255412a7-a17b-4496-86d8-74e266ed5bbb: 212dbf44-25dd-45b0-bbc5-cb75f3f24d01
+    - 273007f2-2415-4a4d-89aa-d8121829b60f: 07523073-c85e-4964-967b-11d909e68e13
+    - 28129a42-9f1c-4781-b43d-c15759801b71: 8ea8e6bb-3644-4c7d-b7bb-61265a7d60c3
+    - 28b2e7bd-2700-4275-b838-a67c25265ff5: 7d8c25f4-878f-4092-a22a-7e6bdaa001f6
+    - 28f37dfa-ac8a-44bb-b1de-769f56c90181: 94e8f4a8-9606-4a5d-9f0c-f7ad0f812e05
+    - 290eb1ee-8396-4891-a6cd-4bee386eb8e9: f3c4d9b9-0efb-46ad-a163-dc33d7cb044f
+    - 29821f9e-fcd5-4e79-bad8-54cbc610e17f: 3ca7a350-e519-49d2-9c5c-785e103d6178
+    - 29bbf35c-5569-4776-8e96-2180409bdea3: b2e82204-2aef-4bc5-b08c-f8849a4f5867
+    - 2a97099a-24f2-45a4-af6a-99b0b394f39d: f4c39d02-3d48-4715-a5c7-2ce8add3a036
+    - 2b153e16-5db3-4777-90b9-6a4b94b58620: d36b08f0-be12-4d59-85d6-de6d3dd82002
+    - 2b1ea13d-9eaa-49d1-85fd-9dc5d109a012: 3118a621-e990-4c17-8c25-c85dfa9400c7
+    - 2c34f8f9-a91a-4033-be77-51038819adbb: 72dcd3d5-b985-450c-a8e6-d358f5676d2b
+    - 2d25795b-4ba6-4e71-9590-4ae3f2029f18: 4f5e90b3-c743-4580-a6d8-3fa435645183
+    - 2dcba8d5-6e7d-4bb2-84fe-08e9bb713608: dbe369b9-7eb8-4990-99b0-3e6714b065bc
+    - 2ff03e3c-9218-4122-a248-7a231d1bb626: 61b870d7-c08e-493d-88c3-18a632dd9cba
+    - 2ffa6f54-7468-4376-aee4-0397d9dd3a63: 2dcc5f21-bd12-436d-87d3-61a7eacf6502
+    - 30223140-eb31-4e19-b47f-b8cb698904b6: c968046a-d03e-4e8f-9453-20c93c971f45
+    - 315844ec-e3b8-471b-a418-28bc9cce8f0f: c3650949-6ad3-44c7-832c-6daacae3f145
+    - 31b49863-a861-401f-b750-27786c906971: 7abac0b7-84c9-4c19-9626-fbb16d43a711
+    - 32a210fa-8ccb-4bd9-baaa-43f79a84321a: a2f5f411-a6e2-4231-ac21-b9076a6684f3
+    - 3336becf-dda7-43e3-aa15-e3b4b1db09d0: c0687706-e047-46dc-98e0-8d57c62999e2
+    - 3397104f-e166-4a7c-8791-5dd28152a59f: 824a26ba-11bd-4e7a-9cf7-442a8482dfa9
+    - 343ce028-bf7a-43db-b1d0-9504344df4e1: 9eba3f17-a195-4491-8aee-dcbfbd022c13
+    - 34b33664-ebf6-4996-b12a-38e3185840ab: 4a31e006-c0a5-49ae-a3ec-450de08d020a
+    - 34e32e82-f534-4de0-8e2a-f6696b928ed1: da125586-bf85-4162-9a9f-9ff2421263bc
+    - 358787f3-77bb-46a4-b876-86c55afe5a7f: 57d3e391-276e-42ce-9887-45b4c549ae34
+    - 3623dc8d-3974-444f-a2a3-e9a3de176478: 1f04db06-28d9-4fac-a189-e9f2ac4bb9f2
+    - 36848a8d-c22f-4a3f-904e-d0c71eb61ad1: 406b0ce7-cdb3-4aee-949a-80537b64b39f
+    - 368e80b9-82e9-4b8f-98ac-f2616b5381b4: fd6b9636-9253-486d-96ef-a52e8fcf481e
+    - 37b6e08e-6f08-4ae7-9efb-8a561d19c4a6: 1c8ce480-9086-43aa-b2bb-f186bc175529
+    - 3836af18-5bef-4e96-bc8a-a9413c99f2c6: 35411407-f9a6-427e-9f69-920bd607bfcc
+    - 386d6a71-93e3-442c-8bf1-a72e046a6405: a3f2b078-e905-429a-86d5-65726cefabfc
+    - 39081930-dd20-48fc-a1c2-b29d9975a2e2: f1c809a3-3ed1-4479-8f2e-60f3d7b0a502
+    - 3b2cc268-6266-4989-a646-c215891c055c: c233b5a9-a1df-4232-83be-d5a070fbb589
+    - 3dafe93f-d569-416e-828c-6cb398f6050b: 376127b8-a367-4e27-a42f-932d7f1fadff
+    - 3dec75bd-8ea2-4024-96fc-f7c392648260: 8e49c9b8-af1e-4718-ad4c-d0e02b2a009f
+    - 3e17ac2e-1c56-4f53-ad2d-c64f95a7bb3c: b9071ba2-1553-4f1d-bd5c-3e43d200bbc5
+    - 3eea6aa3-c162-4cde-a563-6dd7a14fba66: 2b8c9e8d-90c3-43b5-8baf-3f74d0c068c2
+    - 3fd4856e-518a-45b2-9ad7-e200d28bbadf: 12a2c29a-0210-4026-a069-f97a5139be00
+    - 3ff40c21-d13f-4d67-8d6e-c03ed7b6df9a: c523f342-58fb-482f-b0ef-d95797896406
+    - 4025e1cb-e080-4253-a389-5f2438711d51: 409de2a2-5e1c-43ae-85b2-2e61de5209f0
+    - 4126c69b-c632-4a87-9571-1923c7c78ade: 782eccb0-cecc-408d-a0f3-0ea9ea4b9ec6
+    - 417f29cc-6dfa-4bd6-a4ab-c4c3dd97b75d: 3e511368-f7e6-4909-999c-ca0c8b3cf71e
+    - 42b6b95f-ed27-4232-8839-f3db1cc8a985: e82fadcf-5604-49ae-8536-e0d2511fc92c
+    - 42e0601b-a27e-4684-b837-ea12fe087a7c: a7a56e91-a8fe-4365-9989-1fe790bf3042
+    - 44bad15f-7d07-41fe-92ac-c1a360ff7af4: c06d9d0e-c403-4e99-b665-44b12ff009dd
+    - 458483a1-1af5-40d9-b3cb-1dce26552529: c153f60a-0c23-473d-90cb-7e4ea89cff83
+    - 45fead42-e7ef-43d4-b91f-a90a02a125a9: 031d0b47-a11a-41ad-a095-74077f047aec
+    - 4639fde6-81a1-4b09-92ce-35799869e2a0: c6820d0c-1290-498a-9728-5d24bda6391a
+    - 4672a294-c79a-49ea-bcf7-e49d08d593e9: f0b59528-3b83-49e6-a1ce-4b9c27b70785
+    - 4808d1c5-ddc7-45be-a138-6d18aa2aaac0: 21782617-e0b1-477b-b25c-78f4e45c8a8b
+    - 481b593d-1386-4e38-b553-f1c3027328ea: 684262b8-f30c-4c54-b583-2864d27193cf
+    - 48779a14-e7d6-4b19-9cc0-7b5bfcb78045: 4d1adaf8-4f39-43ad-a321-8b2dbe76382e
+    - 48fa92b4-4e0d-4854-ac16-1c0b1ab333fd: eaa995b4-7a7f-4a16-8574-7ee6a1a08097
+    - 4932ef24-99ee-4d4d-9019-df15ff4512a7: f0a8ca68-6d22-40df-89e2-e35ba9598946
+    - 4c43d91f-bcff-4c12-a4bc-66c1fcfa92da: 6d9389bc-1d6b-4992-a039-623a844fc57f
+    - 4d85e0a2-669e-4ff9-b44c-7f03483d6376: 1124c072-bcde-448b-bc8e-6bda1e415314
+    - 4e39f728-c4e4-49cf-89d7-70517e280c2b: 6a83cf13-2787-4e68-846d-1f0ae9c05c0d
+    - 4ebdb6e7-d79f-4de4-8cda-362f33a29175: 141d1088-9e16-4663-a2e9-d4d52a00f46c
+    - 4f192766-0eb1-47b3-b09f-a4d0941bef14: 3bc46d60-13b1-4b6e-bbdd-fb8c67f401a5
+    - 4f4273ea-ebe1-4e3b-b341-f2a095fdc508: cbff2ec6-67f3-4108-a509-f82c9d48be99
+    - 4f582f56-8bf8-45cf-947f-f6eecbf09b88: 0c80c2bc-de8b-4d14-97cd-0846dc9d2e09
+    - 4fab5e7c-71e1-46fe-bd7b-d1e363e3b2ca: 34da76c9-54a0-4724-aadb-a8e3c6d5a31a
+    - 5070ac64-d8ad-4e9d-90dd-ca6f0fd4759c: 050576d5-df35-43b4-baed-86224543f9b9
+    - 50b4c075-ddbd-424f-a762-8c14b1e0d3ae: 87e8b072-5716-416c-90b2-53fa646990c3
+    - 52a75bd3-4226-4e08-b877-f598cd69aa21: 64c42a0a-dd56-40aa-996d-e2f087602d1a
+    - 52f60318-3751-419c-9519-12db1756d7b5: 7a31ec08-3e57-4408-b2a2-25186db37f99
+    - 52fadbff-6051-43a4-88dd-d241557d78f7: ff232887-8a8e-4e85-b45e-8c0cb2bb1d90
+    - 5341c67b-a119-443f-a3f0-2c1b018b1b9c: d8dd488e-c6f7-48c8-9eda-266e17c2c7ac
+    - 53f06753-c6ec-4b45-b69c-088a3e68ab6a: d7f33d2a-0b98-4189-9aa7-db280d6221d2
+    - 543d3976-35ab-4935-a2b6-b6522ca93edd: e8b082d8-f27c-4a5d-84c6-36db479c5620
+    - 546fcb93-6cec-439e-bcb3-6a10b52c372e: 1ac669c0-f816-490e-a23f-4ddea4ccce77
+    - 5543524a-3730-46dd-8629-c7110b01c092: 79504511-e0be-406a-8adc-0497225855c6
+    - 5558c16e-20a5-4a98-968c-5b34af8528a2: 2b04f855-4e21-4335-a006-db76a27c6b07
+    - 58110505-e382-41b2-87b5-c9dad6b75e24: 769ecd10-fa96-4a50-a17c-37a9d9ece224
+    - 5a0af58d-5c93-4dd6-9e05-b4f3ea22e333: 14f235f1-92f4-4c59-980b-274913fa34dd
+    - 5acfb4cc-c268-4979-b25d-3d8f2ea63a7f: bb3a4ffd-b498-4350-9410-7c866a4b6760
+    - 5af25b62-d1c8-41f3-8179-2fe8025326b4: c1f6fc84-3ba2-4632-b3cb-f623c5ca53fd
+    - 5c1038a9-c32d-459c-b1f7-dbb6a6d5e5ec: 8570cc97-5f6c-45eb-bde6-4bd9d142bd97
+    - 5c1ca32b-cfff-48d2-b20c-a344408546ba: fb4ff3e5-e44a-4b76-97cb-4d804a0accaa
+    - 5c5d56cf-11a6-4e6f-96ef-c91fe240fdc3: ba856dac-19e1-41d5-abcb-0ea9fc29c2fa
+    - 5cb88f18-45a1-4c9e-9eb8-395dbd7dc575: 45370c5a-99f9-4e7d-8fa4-8f021253d085
+    - 5e4fd105-e114-4e10-9060-711e78cc2536: 5665402c-6a17-4402-9d64-b1a353b03a9b
+    - 5e65ff39-9b80-4e02-9321-eba6ff1461fa: 67ee32c5-498f-4490-98df-81e0b1ef040a
+    - 5f1b37ce-986c-43e6-80e1-ea08f9ab89a9: 9778fcc8-828f-45df-8c58-52b7c90fada7
+    - 5f6c5879-8643-4df9-b5d9-485e7c8938d9: 2d77d331-fc1f-462a-a15e-97940751c379
+    - 612d7803-3b3f-47fb-923c-d7974576a14a: 3d5bbf0a-915b-4595-9446-09a78de767bc
+    - 61cae4d7-ea24-4185-8afa-ad7dd73a3187: 452cb9f7-b98a-4c6a-ab9b-44b5ac991898
+    - 61f7a525-187b-47d8-925e-3054e16a864a: 5afc1014-c577-468c-b6d8-1f93b31cef5a
+    - 6268af0b-9338-4bc8-aa6f-80cd23bf25a2: 955f0db4-83dd-4c94-aef1-69618d682c6f
+    - 633ba126-a4d8-471e-a43a-4f127cdf7539: e83083b3-f917-45bf-87ea-dce4431eb6ad
+    - 63d70836-7683-4ced-a48a-6d4e5c4e47fb: dd075be7-a3a2-4246-9294-f17ffe00c050
+    - 63f8e8c3-b566-43d9-a4e1-bb03ea5f27df: 60669c37-f410-4320-ab66-fbb83b2bfced
+    - 64e5b849-a4e1-4f7c-aba8-d9bda1075f2a: a73b94d8-0c23-4f3b-9ade-d271fda8957d
+    - 65e1d7bb-7e74-495f-a678-d8eda1d83a89: 956bd92d-3de1-4517-bd12-1e0aead3719a
+    - 65e9f868-891d-4f17-903f-18e911fc21d6: 51f8d10c-3006-4370-846d-d23db46883a9
+    - 65f2a543-dc37-403e-97f9-5b51a8f21e12: d26be543-bb2c-406b-9fcf-5cf730b5a000
+    - 663f30aa-4004-45b6-922e-62da2e6c6a6b: a2b62f40-f544-46cd-a294-83da4fb7b342
+    - 667deaa5-58ac-46b9-ab16-35f780ec53d1: a56b94b4-cc6c-49ad-a69e-2db021ad2c9c
+    - 66ee2e49-c43b-49f1-a166-558dc4bc8d1c: b9269efe-5893-4915-9b6c-3f761eba158a
+    - 6850f894-4b43-4d1b-b9f2-5bba19c507fb: fc2489fe-d222-4424-9a8c-51073e2d1f2f
+    - 68c07195-81ca-4bcb-b4c6-0805a4d1f413: 562b3e26-323d-4921-ab44-8f8660b20a5c
+    - 691bf102-93cc-4948-834b-5a93fb4cd563: daa5b5bc-4d7e-4a0e-9811-29e82c244130
+    - 6a2d4073-f473-48af-905f-1ecbf9135138: c837def6-246b-4e5c-93b6-540d3c5b5676
+    - 6b58587e-9b96-4c0c-beba-eb55203a7dc6: e40c1394-d438-41ea-ab0c-c9dd6f0b1404
+    - 6c0894da-dd29-4dab-9ce9-aac44f695048: 48ce9219-a24f-46c2-82a9-e3e6bcbf4e54
+    - 6c3c551e-5079-4a1b-b3b5-c2af4a197510: e9f27a42-d551-4917-826d-5139b5b3d107
+    - 6cb2034e-8525-4f1d-94cd-83a1b34e3c7a: 9b763740-e4cd-44a3-9e25-78e09afdb81b
+    - 6ce4009b-fa69-457a-8c8a-579233516bbf: 76694c8d-90b4-4457-9c98-a7e1c92ef9ae
+    - 6cff80a6-cc64-43f2-8e88-6f3027c259f7: 7fb64d8b-817d-4fe2-b682-55e08db9e209
+    - 6d95b08c-b99a-469a-b020-52be010c0d7f: 54cf0738-9e22-4adb-829b-27c6621f8480
+    - 6ea7262b-7ee5-4379-938d-2e79a834d07e: 3e280c32-cd2d-4001-90c6-0be551a9a69d
+    - 6f031a34-73e4-4587-b917-3469a313fc05: aff77c14-7ae4-4680-877b-e39e4745fe85
+    - 6f6c9ebd-8c6e-4fed-8b4b-06d4b67b20e4: 40ef5023-c404-46e4-9acf-5f43ce568fb1
+    - 6f9f7734-5651-4c2c-bd86-4a785ce9de74: 8c74b19d-f6e1-45b2-b990-7a7b1264e948
+    - 70183318-561e-4a7a-9e65-6071b73fa7cb: 165e7684-9549-46c8-ab55-5840612d0902
+    - 7072ae1e-a7ed-4858-9cd9-0b97ae86b946: 73b203ea-f73e-41cf-baef-fa208a16baaf
+    - 7289c663-01ee-4194-bca0-0aaa51bf2041: 948eafeb-2790-4bdc-905f-5d1f3850d96b
+    - 736c6a53-1474-421e-a248-93bfb3b3c368: a52e5b46-75b7-4eb1-b70a-bb45e52ef010
+    - 73808f4d-9426-4f78-bfcf-b088cabfcb0f: 9337c82e-1cc7-41c0-8ab6-ff5dc9910ff4
+    - 7489a6e7-55e0-44fb-9dc8-e5d67958fe58: 5b313757-1426-477a-b365-cc971edf0203
+    - 758863f7-34a0-4492-824c-0b8f24c6f2ce: 2fee266d-aba7-40c3-b626-f4e969fefd9b
+    - 77074a83-098a-40f1-bde0-d91e20a38583: c96e3ffa-08cc-45ee-acf4-170e45955a43
+    - 776fcffe-b42b-428b-bdd9-18b0d376e0f6: 428a27c9-09a9-4668-a46d-0d39bebca410
+    - 77c912a6-5acf-46c3-95e1-7ecf80fd89c7: 11f8ace8-2476-4a38-8592-675895e36265
+    - 77dd817f-5f88-4364-b617-76cc83679f6e: 6a4f067e-54a8-4243-b99b-c8af3e170590
+    - 78577d11-e882-4484-94ca-0dd4ace55ffc: 8ed532d9-02c2-4d68-b197-68249c425624
+    - 790684aa-df20-4de2-b26c-3fa4b2518a84: 9ffcde47-2ae5-43ab-92ac-a76f8a8aeefe
+    - 7b2d81fc-2c58-40ac-876b-31fc78cab345: 33dec9e2-5feb-4fdd-b47c-da6f2db86765
+    - 7b4a61c8-834f-45b0-9d66-bea4ee521d38: 0c8db836-1c80-4265-99b8-e6010121e19e
+    - 7c3d0fbc-953e-4a1f-8758-bebd116a1169: 5e04aac1-8a72-4f48-a25a-2a4d63f9e11a
+    - 7c7c5d24-d9fe-483d-9827-287f837c97a2: 98e59be0-c8a7-4245-a00b-406715c7270a
+    - 7cbcecf7-f39a-4450-956b-60abe0afad30: 7ceae405-f4e6-4ed0-9dfc-c6de50a54b37
+    - 7ccf6af5-e631-4b3b-a22b-6ec3b26d5ae9: 34c0f4a4-fce2-479a-950a-2496af6be07e
+    - 7d0dd414-ccb3-41b1-a7c6-ea1bc537ef1d: 558a49a4-5efd-42c3-a03c-b261533d3afb
+    - 7d1be539-97bf-4f0e-87ae-3b515349746a: f4da23f8-7de1-455a-b2c5-2937f85ef1f9
+    - 7de6b324-ccb7-4aec-b336-9d6e6df49b21: df6c5efa-3f1f-49fd-b7f2-968233a80709
+    - 7eeab9fc-8df0-41fd-8aea-0037a10dd4c5: 32a4c7db-9139-46a5-a708-591752fb6755
+    - 7fcc219a-4eaf-4527-a601-775a4dbc6ad7: c23926bf-c43c-40e7-85b8-f2f362681224
+    - 8029225d-9e61-45b1-8275-30aedb8432aa: d36d0726-fd49-4801-80be-ec515efd5adc
+    - 80b3c660-b7fe-4e70-a8a4-d94f5b5ea1fb: 016da9d7-8617-427d-b9be-7c10abfcb803
+    - 81379359-a96e-488e-85f9-7e8d568456fc: e6ac815d-2b69-45b5-8f53-bbe1df64a9f7
+    - 815416c1-0419-4799-8137-40691e6bb4d2: 3bff419b-5ccf-447c-9c52-8f6f131f64f2
+    - 818b81db-8a3d-447f-ab02-7d14d8a43a74: 8b19ca7c-c5eb-4eaf-90fc-0188595f1adf
+    - 81ae9c86-9466-48dc-8a08-78bc4b804aa7: 78f4a638-7e6a-41d2-a536-a0d393183302
+    - 82ec5443-69a7-478d-ae1d-12b789adcf56: 4a82bad4-7d84-44c1-bf16-8569e5fc198f
+    - 83c62c0c-f033-4f44-82fd-047b135b579a: 4ff1f49b-cd00-45d6-a4ad-d99bf8acfa58
+    - 83c8a670-7976-4508-bd4c-fb719d192104: b0f4d000-e9ae-4fe0-a251-d6f5c5a3b1a5
+    - 8422c584-4e47-497a-b886-6f8328137702: 707d3aa8-75e1-4e3e-ae85-1a0af2a67154
+    - 84dc3312-0c05-4084-ad5a-05061bdd1d28: 3356c4f9-0b91-4e5b-bf87-0866f2c554c4
+    - 84fdff93-264e-497d-bf69-66ffb07e3cfc: 78ec9e3d-4f87-4306-8ba1-85da387e2e95
+    - 858e9d57-e0f1-4818-9b47-a05e6fe9c450: 222992d6-4962-4b44-83c9-ceee911eb089
+    - 8617416b-dedf-4714-823e-5c6d4cad6e99: 001ebd4f-3877-4182-94e0-a89a515f3f41
+    - 86ccacd6-59d8-48a9-bbf9-14135223039a: f89c0785-23d5-4ad0-ba29-376bd7b27419
+    - 873c1e86-8c25-499b-b6f1-f08f239aa9ac: 85234663-a467-4747-aa3c-49bdb3ec08e5
+    - 87bd87e9-9446-4a16-a14e-5c5f8a611353: 360d049d-f394-4e02-b8a7-0ad95499f2d4
+    - 87f8e696-4370-492d-9917-e254ed552863: c5e47709-c962-4747-89b7-5382a7bbcfe4
+    - 8834ef24-8a47-4ed8-b045-06a732413877: 73c5fd62-e417-482c-ac9f-c0dd83fe8e68
+    - 89646663-b605-47fb-b6b3-722c4a7bb012: c3aee8d3-fce7-4121-a145-10edf674d5ef
+    - 897c297d-35bc-48bc-acf0-bd81522fe0f9: 652932b5-1e37-435d-b8f6-4f10c5547267
+    - 8a4ca380-5983-483f-b62d-2b8c5bc0ce5e: 6c69fd61-a4e2-4122-8bae-ac6b48bbc41f
+    - 8a51d3b3-4fbe-4657-a6e9-6405a564d8ae: 6225fc6c-dd67-4951-80a1-2a5050b9f442
+    - 8b3fe46f-d104-4adc-b6a5-886c5512a9ef: b5c59adf-2811-4895-a74b-3f422771e35e
+    - 8c46da84-a184-4eed-be4a-8fe9b0dfb6bf: 0e838ca7-ad79-4695-ad14-e38c243f353d
+    - 8cc02144-98fb-443d-b344-ec9c08c6ea7e: f321eef1-5cd9-4d4a-aafb-b08a0b4cb696
+    - 8cf3411e-e19b-4c4c-bc6f-0a8b1b5342f5: 051cbaba-f5cd-41ee-a98b-a15127cc958e
+    - 8d03e0bc-b8f9-4607-9ba6-b0442f42b2d8: c552c522-8b13-4e7b-8a95-0d747d9df22e
+    - 8d134fc0-15f9-4784-a15e-e49a032af5c7: bc29c959-e4fc-4f82-8234-eef3019d1206
+    - 8de2aec1-b844-4e87-93ce-122cd41e10a8: 32b46109-e793-42d3-80ab-38ca1e8a1e2d
+    - 8de8c32f-f3de-45e0-8b22-a14a8c68bb38: 0bd7994a-c1d2-4538-ad62-9f0cd6d69fbc
+    - 8e9c12f8-4a86-4256-9cf8-05901b61e9ca: 8083dca2-0e79-42a1-be0d-15dbd15e7186
+    - 8f2cfed2-98c1-4985-8f72-700b84d2542b: 3fe1edce-dee6-4fe0-b515-d5496fd447f6
+    - 913879d7-0622-41bf-8304-3ef15f3a810d: 252f396c-6b91-4f3a-8440-00ae28acdf84
+    - 913e86b3-7462-4258-95a6-90b747c6f723: 3d80ee9e-2a07-4325-a795-a469135746e1
+    - 92033043-45d6-4af9-975b-c033c7bb62ec: cf618fda-8253-476b-9510-b5ebcdd4cf5c
+    - 920e9f21-3228-4d63-8bf4-ea8c75c31fc1: 4cbd729a-8803-4623-879d-f77bd7a3a64f
+    - 934f4238-7890-4ac0-be4a-7e9d5e8530bc: 337b5d57-3698-47a1-9613-6d07973b875c
+    - 93f6804e-b0e2-4b43-85a2-daf9559606e9: 404d3eb4-c257-46a6-b9db-69277b44dc9c
+    - 94c5b785-127b-4868-a93a-9f75817d0023: 33f828f7-2700-4a57-b9b7-2231d75e555e
+    - 94f69b21-d005-42a3-b411-15b1f0cb93d3: 70c635e9-a4a2-467d-bf94-81b2bc325e43
+    - 95eac053-cc19-4e1f-b7a1-f05c7714be67: e822645c-ebc4-4914-a938-5d0eaefdaccc
+    - 9666a06a-6431-419e-8617-1e4701727e67: 685b2873-db75-4581-9d9d-1d533c22eb64
+    - 96882643-2435-4a7f-904b-195f90d890bf: fbd2b9c4-805e-479a-8eb5-4d5fab9ae639
+    - 969a1e78-2525-44c8-aa66-0f232991b7e9: e0843107-a4c0-42d9-b386-171dcf2ac852
+    - 9786a062-025f-40ac-8637-b20ec70d4e84: 66dcfd5e-3a0d-4147-9654-752616f0e223
+    - 9835199b-a6e8-45cd-92b6-08424d818e5d: 995fcef1-3e67-4590-808a-621f163f8959
+    - 9b6ad575-3c97-4dbd-b023-9640fe34ed2e: 23e71a7e-e588-45ff-b45d-969cf4ed66e1
+    - 9cb1b184-0560-423a-a43b-bcc4991befc8: d740de18-62f2-4f39-9d10-9bee9bf77549
+    - 9cc16752-5f33-4252-93a1-b8363685047c: e7a06634-dc45-4b01-9133-7f70531ecad5
+    - 9e245a17-edf9-4219-89a3-578b436169a5: ffe56a10-d5b6-4422-b219-f0e821685520
+    - 9e53729a-69b3-4de9-8ff4-939952311dff: a2fb0019-345b-45c2-92af-008a704b44af
+    - 9e757826-7036-4a1a-a46e-da9e6c97e168: bc1d2fad-3412-41f1-9829-3a2f31326968
+    - 9f04e28b-0759-4f17-b871-b613700ed65a: 15c22893-118b-4735-934d-22c2d9797afa
+    - 9f493847-b646-479a-b1cc-cc1e4dfbba4b: a006056c-7439-4170-b109-aff56c9a7f1d
+    - 9f5d7ac7-91ef-4e75-b667-19ee1435d682: 3f63d9f9-a90f-4fd2-9905-1b261fbcb624
+    - 9f84c3f8-1302-43d1-a41a-bfb30736c1da: 295cdf88-d81d-4e2b-a2b9-09566d163157
+    - 9ff055b3-e55c-49e3-9758-b4bd35521a36: 486be4e9-2adc-4807-9b14-e7cfa15df969
+    - a0b92e0a-f105-43b9-8299-61dc9949d58f: 2eba8e44-06cb-4edf-8028-bdee0ac4c9db
+    - a0d6c8bb-f2ae-41fe-93c5-834e506c5180: 7f317cc6-1454-4bb6-8334-dec6798b533d
+    - a0f47b6a-4257-4cfa-ac41-93929da0dae9: 6c20a6a0-2086-4495-b396-b547ddb2f0b8
+    - a10b36ba-88a7-4536-bce0-e054c9d23bab: bb274b80-c0e1-4bee-adda-37cabb94ef23
+    - a11be1cd-0763-4764-ba94-510754341b08: 650fb7b7-3cd5-42e0-9b6c-29036794853d
+    - a3685f7b-8d38-4a4b-8065-3443f8f5a5e4: 58a46b4a-f6b3-4d23-ac38-190b52bdd799
+    - a39c20f9-a5f7-48c0-83e3-9e8f234badad: 2628a436-020d-41b0-aa12-90c8cb45c1eb
+    - a3ab2a5d-e62c-4f6d-a6f7-6fc549b2e727: bee10be0-c79f-4465-b038-3dabfce07fe0
+    - a3d2b9e6-4b1e-4e75-b52a-a61e66eb45d1: e27229bb-fff7-421b-9d9d-1e81b7c5e764
+    - a4358b0a-50b2-42e6-9608-ef013ea6c1c3: 59ceb274-0c9c-403f-8976-60683cadbc79
+    - a4a65fbb-7e1c-45fd-8952-a99ff5907b00: 12260084-8981-4571-b621-b755f472b5dc
+    - a55b312d-d9d1-4d68-8b5d-acd1be364147: 33a8c6cf-1d46-4c84-8f1b-37517ef7ac70
+    - a59eb672-6203-4ae5-a908-032a2c693b3a: 8a9b3960-9355-4066-b620-7d3fbd42d93c
+    - a62d3041-bd7c-4c44-8411-9ea0f2a70c9b: 2356590b-8c5a-4b2f-b182-45f2db462a0b
+    - a67a6f3a-8635-4c1c-bdbc-0a317786e61d: 656565c2-10a4-44ec-b44a-3082435545cc
+    - a794e910-dbbc-4cdb-b0d4-2ba7114f0edf: 1c4c4c1c-a80e-4c64-9490-8f5404f589a3
+    - a7ae8a0f-af29-4bf9-86e3-68fbb5bf42e5: f240df73-1b9f-497f-b8dc-f30a28fdbc12
+    - a7bf5a5e-1cdf-4a56-a78a-a3acd35383f6: 405de18b-1683-4e73-bff0-aee9ea9285f5
+    - a8f36f30-ca75-4730-bd5f-ab32e8a99e55: 42a38935-437c-4707-82a0-649b6cd71dd9
+    - acc5cc6f-a48d-453a-a7b2-677f98a14999: 320b8a51-a31d-413c-96e0-ab2001fbd1cb
+    - ad5ee313-f231-4e90-a0ee-62de75dc1ce5: d98cacee-5925-4d78-83c1-642740310ef8
+    - ae2cf2a8-9a26-4828-995b-b64943a9f500: c7d679b5-4996-462c-a268-1a92280c5bcd
+    - af1c7daf-6ce4-4034-89eb-284fa00287c4: 1cf32ff4-bc7e-4ffa-b760-700eb7faad30
+    - af291415-2f40-4fd7-84dd-0499b233d893: 05fd62ca-9a50-4079-b328-94a1365abd75
+    - afa8d5f8-c4fb-4517-ab88-2551f3276e6d: 93f96432-f1d7-4975-a0e1-292402e22b81
+    - b0590ae3-337f-409f-bdbc-defb4fd4bc63: 44cb8068-dc6e-45cc-9070-d11dfa0daab2
+    - b063f187-5cfa-4b6b-8a0a-f7cd03cc1471: 3cc81ca1-1b16-4637-9489-e2a039783fc5
+    - b069dfac-77a0-4a15-93ea-4c6e47d9864f: 7bcc27d5-a80b-444c-9143-29fed8bf2908
+    - b0f95ec6-219b-44bc-8646-ba6626791edf: 1d0c3129-65f8-4706-a286-bf64ccde4625
+    - b1a56485-a859-4b5e-9a0f-5df42f6d3a0a: a0419048-bf52-48b1-93f0-dc17a61579d7
+    - b301e94b-6ca9-4109-815c-b341292cfa6c: 878c9ef3-eeb9-4c71-9fe6-de43c756c6a7
+    - b38ee760-e10c-44a4-9d3f-5a6c4fc66152: 1e28c070-6636-4885-96a1-6c1862d01f2b
+    - b3cb59f7-e39b-41c9-ae2f-3059f9ed837c: e0f97b1d-e687-4bc3-998c-98f5577c80b4
+    - b41660ac-8e4c-478a-9b19-0fac5df2d3b4: 0cd90dc5-0373-433a-86da-b28b771c48d6
+    - b41cb01a-19a2-4c5c-986e-c4ed2cf3e15a: d0e2a154-9ce5-46b7-8fad-1a0b1581d573
+    - b50beaec-67c7-41f4-bad6-7dac40c95c5c: d3776c93-d27a-4d0c-814a-4c9f94a788ea
+    - b5d71ecb-2965-4ccc-a3f3-1b98e6df44e2: 2d938b98-1367-4121-b49b-bbcdbb5bbbf2
+    - b60bb7bf-2403-4953-bb19-81ea11e0e5e9: 4f0d438d-751b-4c21-9df3-22dc61130a05
+    - b7232079-84bf-4877-9644-32252c538dda: 40f8e1e3-c471-4bba-86ef-9a415f8bd055
+    - b76df0a9-b1ba-48cf-b6fc-323c319b16fc: f25ab795-0588-41df-a65c-750aad76b41d
+    - b8d1ad2b-25fa-4fb1-a4b9-8664bbc512e4: 9bdfb797-05a2-4322-a4dc-81d0cd7b7f33
+    - b9a9a5e6-77d9-4d18-9bda-46f8326f09a5: 20610e2e-8a8f-4111-85b4-348afb023093
+    - b9dc71df-6f6b-4169-832e-c453f92cac5e: 34e1726a-fbde-442c-945c-4d5c195c6e64
+    - ba53e8c6-231b-4b2e-b107-87441b01fb80: bcb08ccc-4472-46a2-8bb2-a7995dde07c7
+    - baadd39f-23e1-43d1-a25b-52e46110260e: 375557da-32a7-44e7-8d26-8dd79b7afaf6
+    - bb108696-0b00-4d06-ba26-4bcfc7404cd9: a205d23c-297f-4df7-9723-2e379ce15d0d
+    - bb9249cf-d808-4380-92f5-ac97b503fa30: 5648db3f-9c61-46ca-a0b6-d8e2145de5e3
+    - bc958b42-f157-4768-8f46-e72a47e22af8: 1d0c3017-5ca8-4c40-b59c-8a19a30bc427
+    - bcbb2e64-e1a0-4de7-afc7-5ea00160b3b8: 3d84f762-f649-4d58-99ba-2323ea60bc5f
+    - bd3e9c4d-86dd-4abd-91ab-706b244a092f: 9ad366c0-fa03-4cb1-bff5-8e0ffc0f5f24
+    - bdb727eb-f4d2-45e3-93b9-e40e30662586: 9f63f940-f1a7-4ae4-b44c-69b4f330ac9d
+    - bdc47e5f-cb2a-4f55-a825-554e5f03b49a: 96257024-6fdc-4acc-95c1-cff476aa9359
+    - be72cd02-be77-4f84-87db-5a8ee1c1333e: 99895c0c-29b6-4a3e-b2d8-dfb4a50fbbd1
+    - bf411d38-48fe-4b13-bc14-7e5df44817e4: df924a5d-0394-41b8-9293-5cf335ff11d5
+    - bf753e11-26ff-4543-b1da-aac0cb27f001: 3d78cf5e-27ba-47ac-b171-f231f381b1a0
+    - bfc075b4-2c6a-4169-baac-9c2333ea5792: c1f3f089-0c12-44a7-a705-c41ecc0678b9
+    - c0848806-7f1d-4bd2-8cfc-46125156498c: 893e673c-1d21-412c-89ca-efa034b367ca
+    - c0a8bd0a-ef78-45bf-98c4-1f1a32be8108: f02e77ec-819b-45eb-a92d-a142b6f6c5cc
+    - c0bad2c1-757d-4194-8ad2-d8d51a63ac49: 9838e8f6-8651-486b-acf5-211b01f553ae
+    - c1282e55-75db-408b-bffe-bf4b4c51bf32: 47aeb662-b68f-4817-959b-d080577ba0a5
+    - c16369d7-2801-434a-80aa-41a7e312b7db: 5df7f9ba-d2a8-4309-9e5f-71c69ee6ac10
+    - c1d161ec-581a-478f-b3d4-96182c9b3e93: 8fc9eb27-88df-4dfb-a9ad-86b9aad97e79
+    - c2109648-9b67-4fba-913c-0ce2d7a04644: dce8ac2d-1cca-4db4-9d7e-3a2d77598a8f
+    - c21618a7-2c63-4689-be99-40fd8180482d: e0e1a630-d821-448f-8c63-4222366fb79b
+    - c2397f1e-72d6-491f-bca5-3869915cb260: 5e2af669-bc0e-4206-82ad-e3d6554f10c7
+    - c369618f-32e9-4da3-b1ac-f9353dc7dacd: a9b664e8-b7d3-429c-a7b0-a7b9d61bf5c6
+    - c43cc55f-4c6c-4552-aeae-377bfc41a8e6: db6484ac-fdb5-4a80-a9ca-db8df79cc426
+    - c45c176a-20b8-484e-91b1-8c60732d9e20: 96624ec8-7ad9-46db-9dd1-47787dc243d5
+    - c4ac72b4-52f8-4106-86ba-7924821b6e06: e2f9a910-c84b-4e97-909f-59f47a2440e9
+    - c59256a2-b4e1-4b40-8e89-45724357c2a3: f9f0ee88-2b3b-4df2-b8d5-9b2d4dc8dc56
+    - c5e4bd6b-d030-4d35-8ef0-6522ed0a2999: a614a453-2dfc-4a47-9b3d-004abda3051e
+    - c5ec1969-8420-4037-9a5e-9a2792f60175: 71296073-6369-45f7-8d7e-feddad4d8c2a
+    - c76f7960-2abe-4e9d-a056-1e067a127546: b67c09ce-14c9-43b4-bc97-a661745eedae
+    - c7da7279-234f-41dd-9472-c14a8dd8ca65: 755b2204-fdbf-4a94-a0ed-b49c7b6d7ae3
+    - c99836b7-a3e3-4b53-b824-e0e5f8b396da: 0042cb9b-6204-4a18-a9b7-507239621ed9
+    - c9a84a2f-6433-4582-90aa-0c20999fd47b: 9dff3f8f-c348-4440-a0d9-8f9f16dfc975
+    - ca4aeee2-0b9a-4c59-ae9d-2302b7e35f72: c09c341a-abb9-47c2-ae85-3cf0afd40223
+    - cbcce9c0-fa9f-4dff-a678-1c8fb3c55608: 1866e982-8859-4512-8d26-0813f0b1d824
+    - cbe59c30-92bf-49db-a45d-6938b5a5f91d: 2abfc807-3ffe-49fb-9fde-c09189637370
+    - cc157f10-e5c7-4ff0-a3b6-6e2dda1c987d: 6155b61a-1ad7-4ecf-8f60-8332ce803bad
+    - cc4a649f-99e1-4ad5-95ff-20240cd6f690: c49c3020-d74d-43fe-bbfa-ded8a2451fef
+    - cc845a2d-1fe2-46ad-815f-23b940a875e5: 3a885578-8769-48e0-b507-9dc0658f65e9
+    - cd2f698d-d716-46b5-aec5-0dd5f9c49218: a1220a89-f01b-4c23-ae00-62c0cd9643a0
+    - cd5bdc10-a0b5-4558-a34c-47ce984a2d09: f75d7040-df72-458e-9183-2813a0741fd2
+    - cdcbb8ed-9720-4ef3-9674-35e1139cb996: 84451ea9-e6e1-4f3f-a739-a830ae6206ab
+    - ce721afe-3c86-4f99-8bec-b66b11f6aadd: a72d9725-7a55-4a54-b9f5-88b8a78048e8
+    - cea86298-1576-44a0-9031-e863e0fb42cb: 6a55089a-14c8-4ef1-a1a9-0be7336f0087
+    - cee9ef29-12d7-4c56-a94d-86769f8d1507: 80a551eb-7faa-4a96-9b1e-440bccdaec61
+    - cf74d06d-be9d-4da6-8695-842a3cff733d: fc15b487-58cb-4918-a56d-fa07b44d5c54
+    - d02349de-6ecd-4b38-830f-53eb495a6d0a: 72ae8c55-36a5-4cea-8ff6-9fa30cc9f8ed
+    - d21e8c40-0229-45b5-95f7-13ee1e842d35: 7b44fd3f-4b3d-4a50-b2de-c211b85296de
+    - d2c89fda-4400-4e71-86e1-73da5264d74b: 0a4a7312-b206-4425-a6de-3839d9620e1f
+    - d2f59645-3ea5-4315-93d4-92a3e86af09f: 848e7d18-5d67-4557-a29d-41f7ec1f84ea
+    - d2fc60f5-a992-4f9b-8fb5-97d5029c93d1: 7485b46e-34c7-4d16-8c83-85aaeed192f8
+    - d32052bb-4356-441b-845c-281e4421e959: 78c63af4-c800-49ae-b609-149831b30c98
+    - d3ee5ffb-7d86-4e22-bf5b-472d38e13e55: ddb8b269-bafe-48ab-bd44-53c2be283916
+    - d40117a4-5d33-4cfe-8697-d9d1adccdadc: d3f11d21-9c07-435e-8913-8ec47131da91
+    - d4974e2c-87e5-4992-b2d8-664a6a929207: f09c859b-705d-4cde-96d4-362a7ee6ddd2
+    - d51c91cd-b7fc-4c7a-9bb1-dc6fcb8b993b: 1945f900-c07a-4d97-84b5-3910fa1c1376
+    - d63b346b-610a-42c3-9086-c72107f79ab1: 8265c07d-e196-46f3-ac83-db964cd840f5
+    - d7bef8cd-ad7a-4e11-ac79-723e04a9c6ef: e8ca3590-630f-43ea-89ce-445db9053539
+    - d8dda67a-7389-42a3-8d5d-b1af642dfa0c: 904a092b-4cc5-484e-a461-4f5218a653d6
+    - d90676fe-8f7e-4142-a15f-4eb26f02400b: e9750877-ff8c-42bc-8df7-26b7512cd8c2
+    - d94480cc-eb79-42e6-808b-473b6f6148de: f4e93009-89a3-47e4-902b-8a73bfb94db2
+    - d944f73c-75ee-457e-a2f8-a79cb70a0408: 41c8b272-0515-43ad-a91c-a59c1e19f34f
+    - d990caf8-4caa-41da-9acf-d7952510db63: 27d9aad8-25e8-4129-8111-1ac42fd1bbd0
+    - da0effe7-4362-464f-8e01-c34d5b8ab936: e1df8f9f-7e51-46d6-b665-1187bf257e3f
+    - dadc62dd-2798-47b7-ac87-7c2cbc23802c: ebc51be3-0e49-403a-8645-3f6be5f73a7c
+    - db56cee9-31e1-4b8b-ada5-9092f3cc414b: 5bcdf110-476e-4f67-9d6e-80ddf19c3c59
+    - dd99b070-48f2-4a74-ab5c-12fb86b8d23d: 18f007d4-db8e-40b4-8571-1919821b0adc
+    - ddc8d567-b7ad-4735-80b3-1f2ebb59da65: a7f44ce8-2e9e-46e0-bf1e-f56486ec542e
+    - de06bbbc-d0a5-4187-8fce-4fe5c8d64263: 3ae3118a-0d3a-4715-aacd-fb4d45cba106
+    - de1a0f29-c7ca-404d-95f5-77e38567a688: 6b2b350f-d819-4d8a-90c2-d62cdf78f25c
+    - de283617-dd54-4097-82c3-d5e61c8605e9: 30029ba5-9e19-42bb-9d2c-0997dfdf020a
+    - ded5515e-3adb-4beb-ba60-afeffe01422f: d9b0bb7e-bba8-4fde-95f9-21662dd9d26c
+    - e0a59895-d735-4c2c-b15e-c753973e64aa: b17b982b-2055-4fc8-9124-4b70f05a93ea
+    - e25c67fd-6a0d-448d-b616-fae2284344aa: 6b0273d6-edaf-4b50-bfb1-4d52583aa5bc
+    - e2a13c78-715a-4615-9b5b-e13aa15eee27: 74647b7b-8d9b-40e1-930a-fffb3cfe7f10
+    - e365b9f2-9ea1-4d87-b9c9-f9830f52425c: 1c43eb3d-1971-4e45-85d6-58a2b2ee0868
+    - e3781a1a-28f6-48cb-828c-b63efb6cee21: 9ac5ee1f-536e-48a6-8e4e-751c3a586fb0
+    - e3934778-ea1a-4350-9604-c7b452856bad: 1123fd03-49d4-4299-86ae-77815e76c397
+    - e3d84a69-6e4b-49e2-ba34-faf9f859975d: acb68f0e-fcd6-4012-85b4-01a0bf722ad8
+    - e4a35599-5498-4f77-bdcb-9945070eaceb: e7c1fbe3-5f52-48ba-a9c4-7f48fd318be7
+    - e5190745-ac53-4c46-9f12-05638755bf23: 4f03374a-66c6-4794-aee6-2557fa25759e
+    - e58860db-8aa8-40a3-a6ed-1d03032a3b96: d9c39675-6d63-4a39-9e6a-17507daac444
+    - e738b0de-1bc1-48bb-b0dc-e22b0a0a48cc: 71b25eb8-6d36-453d-9072-a847db939af8
+    - e79c8a4d-0d86-4055-bd69-f09bfcaebc9f: 4cd04b00-ba80-4ebc-8349-714c65dc6051
+    - e7e405b3-8caa-4dee-af42-a04d76c6a4af: bc7f3c39-77dc-41fb-a84d-dbb3c2ad5076
+    - e8d67f27-7e46-42f4-a76b-f4b7dd3e6931: 0021bea9-0680-4e73-a1ca-690d879b9c62
+    - e9327a75-e0de-4aa3-bc36-7dfc2dbdac02: a77ca5ab-df9d-4976-8e41-6290b92b0ca5
+    - e9b12594-c1dc-4b86-90ad-8425a86d16d8: ddd0d487-1d51-48fc-b54d-cca2a78104c9
+    - eaa2dea0-137f-445c-894c-40837bef51ae: dba552f0-2d92-455d-b43e-4b5d968d1c7f
+    - eb4ac6df-c8f2-4908-b56c-5295e446f058: 16e15b7c-cf78-4569-a0aa-7f76d15262b4
+    - eb84f670-358e-468f-8b9e-6d893775b98b: 8b0c1ed9-3aa3-4deb-891d-724ad77f0ad6
+    - ec34316e-c88c-4413-983e-9153deb25712: 283372bd-af7d-4166-ae33-2808ce702127
+    - ecf42374-0b5b-4537-a212-f560b1ebb27c: 81571651-2bff-4f88-9149-1bc6c41ebc30
+    - ee910606-96a2-48d0-93d5-0ac518984943: c31e4670-0733-488f-9114-cc91347dc1a1
+    - f0528b80-87e1-4261-a928-451c1c7311a8: 1d34e7cb-921c-4df4-bc3f-102afcfcdf14
+    - f06337f9-0ed8-4c31-82ea-20e715be46ed: 2441a417-00df-4e58-ad57-7930e86bd5fe
+    - f07f7dbc-d96b-499f-b85d-2ac58c2d2bfd: 6a7993b3-7df5-4958-b512-ae13f5d8761a
+    - f0b4ef4c-af66-4543-8a52-39370aa811bf: 630dc747-e269-46ef-b4c2-09b367252f7f
+    - f0fcf9d8-dc1f-45dd-9eb7-7bdad377ac18: 76ceb731-e787-4751-88f3-5a5681b20ed1
+    - f1e9c294-2978-46cc-b11b-60ecf3d7abc2: a3d4cf26-7cf1-40bd-98a2-c04fd095bd22
+    - f3f20032-6a58-4ce2-b5db-361e73019d86: bb1ca9f9-97ff-4827-8fc6-747c11a33ab2
+    - f4243788-75af-4a9e-9de9-abaeb18a0856: 980f8174-c123-4477-b100-49831991fa12
+    - f4a1e791-8f12-4b52-855c-92e1eb8b80e0: c0f4a09a-2f9d-4f99-bc0c-baec78d26d4d
+    - f4d5f137-a4f6-49ae-9c76-a0aab52c4b5e: a306adcb-f13f-4d32-9564-ebab1e8a170b
+    - f4d6a0aa-931d-404e-b132-37fca0081892: 8ec60919-d9bd-40a2-991b-5b1b328fc6a7
+    - f4d6bd72-ecb0-4355-a15a-7e1c393401dd: 45ef2fda-8c42-44df-955d-83451501cca2
+    - f4ec757c-4c98-4785-a3cc-125a98567da8: 2bdae27f-e7af-462c-b130-fa2c56bbb27e
+    - f52939ef-5bed-44e1-9216-23204cb67f8c: 7fe605c7-55b3-4d4c-b83b-7cb85c44d3ac
+    - f54ef572-a79e-437e-9bb6-96b227e00a02: e45f6102-8fc1-4ddc-9299-f52828ff4211
+    - f55096aa-16c4-4161-b8b6-e53ced1f3215: 187c9f3a-c2c6-4067-bc88-17a13be4cb6c
+    - f6a28937-14f1-4e4f-b4ba-677961fe77f1: c1beb256-8773-48d0-98ac-e128abb8f24f
+    - f76cb00e-751f-435a-ae09-b62fe5af44e4: 74ec721c-6355-492b-ae03-a502604d38a3
+    - f7fc5185-626a-4eec-9475-b8d2af46ab05: 6b35f2f2-16d1-4f67-85e4-22865d739937
+    - f82db64c-f40c-4de8-8227-7d2138551f98: 12906b08-999d-4fa9-a598-68c015a6e389
+    - f86d8e5a-2bf1-4cf6-aba9-85e6f3052719: a7eaafe2-9028-4171-aed1-3eb95544db88
+    - f8c7339e-0622-44ee-b9d3-98e33e23fb42: 049e49d6-d393-438c-9029-c6e0f0f89750
+    - f95f2579-8a59-4408-ae46-3e296bf97056: 07de5efa-a627-48c8-9a93-d8bb1f4b140f
+    - faf00a82-b9a0-4925-9695-6875221fbf5b: fc6e8fc3-7088-4d0b-bf04-74e9b442caf3
+    - fb7eb471-d839-411e-80a5-1515da15b627: 30839a2a-250d-4fa4-bb53-c16b79a1e584
+    - fc0ff923-b213-4e67-8220-e7c063d7b095: 0f3002ca-c621-4f8d-a6f7-c0d71ec383a3
+    - fc5d0d38-4f52-4e78-b72c-006238c5b8dc: ea93a276-5ef9-4292-8571-a090e01fd946
+    - fd195b68-34ae-4915-a6c8-0e0b46b386d8: c7c04689-ef69-47ac-a5c6-6746e157c1b3
+    - fd2724bf-ef76-4284-820c-16371b9644bb: ba0462e6-e551-485f-a1b4-97b95d08d54b
+    - fdba42b4-e6c7-4b87-9740-5f9d8503d7c3: cd66aa0d-75bb-4209-ac0b-cfeca32952d8
+    - fee3caaa-b99e-4eae-a923-34436d6eee35: 7c0f11b6-c705-4f24-b7d7-8130d0db9172
+    - feedc4f5-38f1-4d09-b2a0-8b381c3a918f: 9957c96f-a5eb-4f3a-bf4d-72c48bb217a5
+    - ff1d99df-a44e-4954-8d04-cb2bc0d90ed3: 9b3da479-d4e5-484d-a9bc-765129ef23c2
+    - fffd3b36-92b0-4588-b7cf-bd9a7adfb9e7: 19e4338c-a6ef-4742-8321-5cea01a58ed9
+  Name: SIK Examples
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> de1a0f29-c7ca-404d-95f5-77e38567a688
+  Components:
+    []
+- !<SceneObject/6e4dc796-a860-4b96-ae08-710fdc92323c>
+  PrefabRemaps:
+    []
+  Name: "[LEGACY] InteractorLineVisual"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 39c9f241-88af-4f82-843c-e68430ad4522
+  Components:
+    []
+- !<ScriptComponent/7270de10-252e-4fc3-87a9-93dbcb3951f7>
+  PrefabRemaps:
+    []
+  Name: PinchButton
+  Enabled: true
+  ScriptAsset: !<reference> a54c5722-d3fb-4aa5-97ff-f7425978bc59
+  ScriptInputsDefault:
+    editEventCallbacks: true
+    customFunctionForOnButtonPinched: true
+    onButtonPinchedFunctionNames: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      editEventCallbacks: false
+      customFunctionForOnButtonPinched: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      onButtonPinchedFunctionNames: !<string[]>
+        []
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/73a9aaa8-b564-4355-835b-42f90793c3be>
+  PrefabRemaps:
+    []
+  Name: wrist_to_ring
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000001, y: -0.000005, z: 0.000002}
+    rotation: {x: 0.192331, y: 6.274080, z: -6.174470}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2d3ff4bd-7c40-445c-993b-09c94fd79fa6
+  Components:
+    []
+- !<ColliderComponent/758863f7-34a0-4492-824c-0b8f24c6f2ce>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<SceneObject/75992968-df12-4ff1-993e-8ffae2c576a8>
+  PrefabRemaps:
+    []
+  Name: LeftHandRig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 0.999999, y: 0.999999, z: 0.999999}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ba4a8d82-3330-4154-93f4-ef1c726cd75f
+  Components:
+    []
+- !<ScriptComponent/77a9ae2e-cf17-4e6c-942f-3828657704e9>
+  PrefabRemaps:
+    []
+  Name: HandInteractor
+  Enabled: true
+  ScriptAsset: !<reference> 4d0b0ec7-e669-4c4e-b2f7-32b9c59f24cc
+  ScriptInputsDefault:
+    _drawDebug: true
+    sphereCastEnabled: true
+    spherecastRadii: true
+    spherecastDistanceThresholds: true
+    _maxRaycastDistance: true
+    indirectTargetingVolumeMultiplier: true
+    indirectDragThreshold: true
+    raycastAlgorithm: true
+    forcePokeOnNonDominantPalmProximity: true
+    directColliderEnterRadius: true
+    directColliderExitRadius: true
+    directDragThreshold: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _drawDebug: false
+      sphereCastEnabled: false
+      spherecastRadii: !<float[]>
+        - 0.500000
+        - 2.000000
+        - 4.000000
+      spherecastDistanceThresholds: !<float[]>
+        - 0.000000
+        - 12.000000
+        - 30.000000
+      _maxRaycastDistance: !<float> 500.000000
+      indirectTargetingVolumeMultiplier: !<float> 1.000000
+      indirectDragThreshold: !<float> 40.000000
+      handType: left
+      raycastAlgorithm: Proxy
+      forcePokeOnNonDominantPalmProximity: false
+      directColliderEnterRadius: !<float> 1.000000
+      directColliderExitRadius: 1.500000
+      directDragThreshold: !<float> 3.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/787ebca5-ab09-41b1-be4a-b4e613490bbd>
+  PrefabRemaps:
+    []
+  Name: ring-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.703710, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/797b7433-6800-4a0a-a12c-bbce117865aa>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 3.549800, z: -0.000001}
+    rotation: {x: 0.000059, y: -0.000014, z: -0.000073}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c285c8f7-e4a2-4874-bea2-951bb4716cc4
+  Components:
+    []
+- !<SceneObject/799faa66-d31a-4d72-bfa7-4452b26d15d2>
+  PrefabRemaps:
+    []
+  Name: LeftHandInteractor
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 77a9ae2e-cf17-4e6c-942f-3828657704e9
+- !<SceneObject/7a118ab1-224c-49dc-9b58-906c9197358f>
+  PrefabRemaps:
+    []
+  Name: wrist_to_pinky
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000001, y: -0.000005, z: 0.000002}
+    rotation: {x: 0.905911, y: 15.703600, z: -17.047701}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f46024f2-3574-4b85-ae29-ff338aeb4ba3
+  Components:
+    []
+- !<SceneObject/7c7a56b2-9a23-44bb-a295-c9d32f89c0f9>
+  PrefabRemaps:
+    []
+  Name: mid-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.010478, y: 3.166710, z: 0.000270}
+    rotation: {x: -86.458298, y: -5.335180, z: -5.675670}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> dbb09f20-002c-4cef-ac71-5c9531919ebd
+  Components:
+    []
+- !<ScriptComponent/80544473-fb7f-42ba-92ea-3f46563ab0fd>
+  PrefabRemaps:
+    []
+  Name: InteractorLineVisual
+  Enabled: true
+  ScriptAsset: !<reference> 772760e3-b59e-4284-a8b3-60a0f4dfbbcb
+  ScriptInputsDefault:
+    _beginColor: true
+    _endColor: true
+    lineWidth: true
+    lineLength: true
+    lineStyle: true
+    shouldStick: true
+    _interactor: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      lineMaterial: !<reference.Material> 515adedb-808a-4b69-af91-2565a9dc2a21
+      _beginColor: !<Vec3> {x: 1.000000, y: 1.000000, z: 0.000000}
+      _endColor: !<Vec3> {x: 1.000000, y: 1.000000, z: 0.000000}
+      lineWidth: 0.500000
+      lineLength: !<float> 160.000000
+      lineStyle: !<float> 2.000000
+      shouldStick: true
+      _interactor: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/805d60b6-1bef-42d0-a51d-0b7f3b8bfe4b>
+  PrefabRemaps:
+    []
+  Name: mid-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.013405, y: 3.861870, z: 0.000233}
+    rotation: {x: -4.535240, y: -0.003456, z: -0.026343}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 16d955e2-e4ce-4637-82a0-9c55a938f12f
+  Components:
+    []
+- !<SceneObject/82331b2e-357c-4d7d-9292-b87c3f53cb65>
+  PrefabRemaps:
+    []
+  Name: pinky-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.008175, y: 2.218150, z: 0.000011}
+    rotation: {x: 83.677002, y: -4.512030, z: -172.722000}
+    scale: {x: 0.999999, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4a47f6d8-4325-4296-8bb1-6655df55e905
+  Components:
+    []
+- !<SceneObject/82e4d3ce-7671-4de7-b916-e0921f8c286b>
+  PrefabRemaps:
+    []
+  Name: index-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.837150, z: -0.000001}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b2e5d0a9-cc44-4e3b-8464-aae9c8a7ce70
+  Components:
+    []
+- !<RenderMeshVisual/83c8a670-7976-4508-bd4c-fb719d192104>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4ed3d6e9-3cb8-4485-b9e7-0ff7e47f5818
+  Mesh: !<reference> f15bc11b-f9f5-4a21-bc69-f252d5388eac
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    Pinch: 0.000000
+- !<ScriptComponent/854d6ac0-8455-4571-87fd-d6406b3da993>
+  PrefabRemaps:
+    []
+  Name: ConfigurationValidator
+  Enabled: true
+  ScriptAsset: !<reference> 5249534b-e5e3-494c-afad-124a32012655
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/87b5e89f-5c8b-468b-ab32-97d7be7758c2>
+  PrefabRemaps:
+    []
+  Name: mid-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.010479, y: 3.166700, z: 0.000210}
+    rotation: {x: -87.477303, y: 5.565590, z: -5.001890}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 53c1395c-a725-4cf8-bd27-763472512533
+  Components:
+    []
+- !<SceneObject/8ee241b0-c800-4cd8-8ece-9b559b6be98e>
+  PrefabRemaps:
+    []
+  Name: ring-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.703710, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000025}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 09620da6-1b38-4daf-9932-2f5b022566af
+  Components:
+    []
+- !<SceneObject/9081cc37-1451-45d6-9263-20ddacec170a>
+  PrefabRemaps:
+    []
+  Name: mid-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.166730, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/9193b762-3968-47f1-a379-0ac788974ca9>
+  PrefabRemaps:
+    []
+  Name: Text Prompt Button
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 5.505417, z: 2.500000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d7be73da-3738-4c6d-bea5-8503a36dcde1
+  Components:
+    - !<own> af730234-23d9-4653-88db-ceb57086548f
+    - !<own> b020e768-2634-4f04-bf62-a1cbbdc6d946
+    - !<own> 7270de10-252e-4fc3-87a9-93dbcb3951f7
+    - !<own> 97954420-b81f-49dc-9304-430f071897e0
+    - !<own> b65f57f3-8f5c-4b5e-b3fb-7fa55d409981
+    - !<own> 375b6d19-cf2a-4a1f-ad57-0fa1adce82b8
+- !<SceneObject/923607ae-7773-47d3-8121-bfe784927084>
+  PrefabRemaps:
+    []
+  Name: wrist_to_index
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: -0.000006, z: 0.000002}
+    rotation: {x: -0.143142, y: -18.425200, z: -17.556000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 23eb8cd8-eb80-47fe-8b0b-695949fe2365
+  Components:
+    []
+- !<SceneObject/92f2b8f3-95cb-41ea-a066-409349449cb2>
+  PrefabRemaps:
+    []
+  Name: wrist_to_pinky
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: -0.000006, z: 0.000002}
+    rotation: {x: 0.918454, y: 18.264400, z: 17.580700}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 45e9eb60-74f6-4d85-a688-3e7eeae5dfd8
+  Components:
+    []
+- !<SceneObject/93d4d7b4-e851-428a-9a4d-5266de4f60ed>
+  PrefabRemaps:
+    []
+  Name: wrist
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000006, y: -0.000000, z: -0.000002}
+    rotation: {x: -176.654007, y: -5.519800, z: -92.680099}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4df14e40-0ec5-4b6d-870d-e3b6dd9a0d08
+    - !<own> 923607ae-7773-47d3-8121-bfe784927084
+    - !<own> d41e433c-cdd8-4047-8013-0eafc977b04e
+    - !<own> 1384dbe7-a120-4d02-98f7-8ba5d47e8bbd
+    - !<own> 92f2b8f3-95cb-41ea-a066-409349449cb2
+  Components:
+    []
+- !<ColliderComponent/97954420-b81f-49dc-9304-430f071897e0>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<SceneObject/98f878ff-dad4-4acc-bebe-f64472d36d3a>
+  PrefabRemaps:
+    []
+  Name: thumb-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.067615, y: 3.518870, z: 0.000095}
+    rotation: {x: 14.081600, y: -0.000034, z: -0.000013}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a851da66-48ab-4e31-a00e-63f3cbf7b16e
+  Components:
+    []
+- !<SceneObject/99e879df-1b59-4c20-aa77-8b945823f30a>
+  PrefabRemaps:
+    []
+  Name: thumb-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.067402, y: 3.518870, z: -0.005366}
+    rotation: {x: 14.034800, y: -0.274095, z: 1.092330}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2eb8ed65-93ae-4624-b525-df6fa42f4d71
+  Components:
+    []
+- !<SceneObject/a2d82a40-61b8-4383-9bd9-16725e2e070c>
+  PrefabRemaps:
+    []
+  Name: ring-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.703730, z: -0.000001}
+    rotation: {x: -0.000081, y: -0.000080, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 190b19b4-798f-4e0d-bd25-876d70c5aeeb
+  Components:
+    []
+- !<ScriptComponent/a55b312d-d9d1-4d68-8b5d-acd1be364147>
+  PrefabRemaps:
+    []
+  Name: InteractableAudioFeedback
+  Enabled: true
+  ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
+  ScriptInputsDefault:
+    hoverAudioTrack: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
+      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/a5fe30ec-3b1f-4a3d-a460-f4432615f4a7>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.549810, z: 0.000001}
+    rotation: {x: -0.000096, y: -0.000037, z: 0.000014}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 797b7433-6800-4a0a-a12c-bbce117865aa
+  Components:
+    []
+- !<SceneObject/a703b3a3-e61c-44d3-82f5-77948a9441d1>
+  PrefabRemaps:
+    []
+  Name: LeftHandVisual
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 15df196c-b8dd-4c4a-ab28-3c41d8b210f4
+  Components:
+    - !<own> 277408e4-1d1f-4004-9fe0-0c83f4590eea
+- !<SceneObject/a851da66-48ab-4e31-a00e-63f3cbf7b16e>
+  PrefabRemaps:
+    []
+  Name: thumb-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.054883, y: 3.957040, z: -0.000166}
+    rotation: {x: -2.622440, y: -0.000180, z: -0.000073}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> cf314287-1348-4ea2-954b-5031a92e97e5
+  Components:
+    []
+- !<SceneObject/aae13529-0fe3-4178-81cb-5fe348e48f79>
+  PrefabRemaps:
+    []
+  Name: ring-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.703720, z: -0.000000}
+    rotation: {x: 0.000283, y: 0.000276, z: 0.000012}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a2d82a40-61b8-4383-9bd9-16725e2e070c
+  Components:
+    []
+- !<RenderMeshVisual/af730234-23d9-4653-88db-ceb57086548f>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4ed3d6e9-3cb8-4485-b9e7-0ff7e47f5818
+  Mesh: !<reference> f15bc11b-f9f5-4a21-bc69-f252d5388eac
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    Pinch: 0.000000
+- !<SceneObject/afc7b077-5e02-4900-aa27-76b3c43d0bdf>
+  PrefabRemaps:
+    []
+  Name: RightHandRig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 93d4d7b4-e851-428a-9a4d-5266de4f60ed
+  Components:
+    []
+- !<ScriptComponent/b020e768-2634-4f04-bf62-a1cbbdc6d946>
+  PrefabRemaps:
+    []
+  Name: Interactable
+  Enabled: true
+  ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
+  ScriptInputsDefault:
+    targetingMode: true
+    enableInstantDrag: true
+    allowMultipleInteractors: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      targetingMode: !<float> 3.000000
+      enableInstantDrag: false
+      allowMultipleInteractors: true
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/b2484ffd-6084-4344-b6e9-8a716b86b102>
+  PrefabRemaps:
+    []
+  Name: InteractorCursors
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bc211a72-8349-4550-adbf-90a00a0c9dc5
+- !<SceneObject/b2e5d0a9-cc44-4e3b-8464-aae9c8a7ce70>
+  PrefabRemaps:
+    []
+  Name: index-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.837150, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/b5d71ecb-2965-4ccc-a3f3-1b98e6df44e2>
+  PrefabRemaps:
+    []
+  Name: ButtonFeedback
+  Enabled: true
+  ScriptAsset: !<reference> 99b48019-5088-4691-9ae6-beb39874357f
+  ScriptInputsDefault:
+    buttonType: true
+    useGlowMesh: true
+    glowRenderMeshVisual: true
+    maxBlendShapeWeight: true
+    meshBlendShapeName: true
+    glowBlendShapeName: true
+    glowIdleMaterial: true
+    glowHoverMaterial: true
+    glowPinchedMaterial: true
+    meshToggledPinchedMaterial: true
+    meshToggledHoverMaterial: true
+    meshToggledIdleMaterial: true
+    meshStatePinchedMaterial: true
+    meshStateHoverMaterial: true
+    meshStateIdleMaterial: true
+    persistentPinchedState: true
+    defaultIcon: true
+    onIcon: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      buttonType: 0
+      renderMeshVisual: !<reference.RenderMeshVisual> 83c8a670-7976-4508-bd4c-fb719d192104
+      useGlowMesh: false
+      glowRenderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      maxBlendShapeWeight: !<float> 1.000000
+      meshBlendShapeName: Pinch
+      meshIdleMaterial: !<reference.Material> 7b4b9cea-ed98-4be8-935a-5021c1011214
+      meshHoverMaterial: !<reference.Material> 037f4a9b-253e-426f-bf75-d4676e341333
+      meshPinchedMaterial: !<reference.Material> d847673e-59e3-489d-9c87-292a4046be7f
+      glowBlendShapeName: Pinch
+      glowIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      glowHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      glowPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStatePinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStateHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStateIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      persistentPinchedState: false
+      defaultIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      onIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/b65f57f3-8f5c-4b5e-b3fb-7fa55d409981>
+  PrefabRemaps:
+    []
+  Name: InteractableAudioFeedback
+  Enabled: true
+  ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
+  ScriptInputsDefault:
+    hoverAudioTrack: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
+      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/b87e02c9-943e-4387-adef-faa0291ba58b>
+  PrefabRemaps:
+    []
+  Name: mid-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 3.166710, z: -0.000003}
+    rotation: {x: -180.000000, y: -0.000000, z: -180.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3016d770-154c-4dc7-9c44-37e6922f1457
+  Components:
+    []
+- !<SceneObject/ba4a8d82-3330-4154-93f4-ef1c726cd75f>
+  PrefabRemaps:
+    []
+  Name: wrist
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000006, y: -0.000002, z: -0.000000}
+    rotation: {x: 157.399994, y: -83.865097, z: 115.817001}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 129b98fe-dd08-4223-be90-261d63a4fb51
+    - !<own> 1fc49fe8-905f-4202-bdd8-8fe676cc9ff3
+    - !<own> fbd41660-37a9-4f0b-8889-71191ba08f98
+    - !<own> 73a9aaa8-b564-4355-835b-42f90793c3be
+    - !<own> 7a118ab1-224c-49dc-9b58-906c9197358f
+  Components:
+    []
+- !<SceneObject/ba770b34-ba0c-4331-818a-be19919cac6d>
+  PrefabRemaps:
+    []
+  Name: MouseInteractor
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 646de05d-ea43-45de-ac69-3444b2155c86
+- !<ScriptComponent/bb1038a5-5841-48e8-a813-618a4f56b610>
+  PrefabRemaps:
+    []
+  Name: OpenAIConnector
+  Enabled: true
+  ScriptAsset: !<reference> 9ec8165f-e406-443b-9c21-087a390da50e
+  ScriptInputsDefault:
+    imagePromptText: true
+    promptText: true
+    imgurClientID: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      buttonForImageAndText: !<MappingBased.Interactable> 0410ceb5-8d7c-482c-b260-37296d23d0fc
+      buttonForText: !<MappingBased.Interactable> b020e768-2634-4f04-bf62-a1cbbdc6d946
+      responseText: !<reference.Text> 3836af18-5bef-4e96-bc8a-a9413c99f2c6
+      imagePromptText: Describe the contents of this image.
+      promptText: Roast me as a snapchat user.
+      openAIClientID: ""
+      imgurClientID: '"YOUR_IMGUR_CLIENT_ID_HERE"'
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/bc211a72-8349-4550-adbf-90a00a0c9dc5>
+  PrefabRemaps:
+    []
+  Name: CursorController
+  Enabled: true
+  ScriptAsset: !<reference> 33b8ff0f-4908-4414-8821-6b37f1775435
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/bd887303-5ab6-4ad0-81c5-808db8164051>
+  PrefabRemaps:
+    []
+  Name: index-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.008350, y: 3.222920, z: -0.000875}
+    rotation: {x: -0.656684, y: 0.000193, z: -0.059364}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6490f505-a702-4a60-b11e-4c64334d56a8
+  Components:
+    []
+- !<SceneObject/bece8169-fb1b-4e3f-8e29-e2c945187e46>
+  PrefabRemaps:
+    []
+  Name: index-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.017495, y: 3.481400, z: 0.000180}
+    rotation: {x: -8.118590, y: -0.000575, z: 0.000047}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4a865dcf-de94-4d7c-9831-3a9f0794d28d
+  Components:
+    []
+- !<SceneObject/c0b9bb24-67e2-4ce5-af3f-bb7b8f2d804f>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.218170, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/c285c8f7-e4a2-4874-bea2-951bb4716cc4>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.549800, z: -0.000002}
+    rotation: {x: 0.000000, y: 0.000028, z: 0.000033}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 329ca3bd-5bf5-4c0e-aab3-e9c23b91b99d
+  Components:
+    []
+- !<Text/c355bab2-0612-4fae-86d7-afe93b4cdbcc>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 8
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: Text
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 711473f0-eaf8-4cdb-8d22-e1d2e07c6345
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
+- !<SceneObject/c7543d27-ac2f-4532-a422-b5c180aaa254>
+  PrefabRemaps:
+    []
+  Name: pinky-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.005385, y: 2.681950, z: -0.000095}
+    rotation: {x: -5.666190, y: -0.004601, z: -0.046291}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 82331b2e-357c-4d7d-9292-b87c3f53cb65
+  Components:
+    []
+- !<SceneObject/c7dcb734-86d4-4f3d-9242-2636df861c8e>
+  PrefabRemaps:
+    []
+  Name: pinky-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.002791, y: 3.304380, z: 0.000029}
+    rotation: {x: 1.238300, y: 0.000079, z: -0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 66eb832a-1e9d-4b71-a454-4b8260b5ede1
+  Components:
+    []
+- !<SceneObject/c83805aa-762f-460f-ad2d-c510444e5ffe>
+  PrefabRemaps:
+    []
+  Name: index-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.017407, y: 3.481390, z: 0.001771}
+    rotation: {x: -8.084740, y: -0.103266, z: -0.728726}
+    scale: {x: 0.999999, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> bd887303-5ab6-4ad0-81c5-808db8164051
+  Components:
+    []
+- !<SceneObject/c857aab2-6a0e-400e-be5e-a6e50a46bedc>
+  PrefabRemaps:
+    []
+  Name: LeftHandMesh
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000001, y: -0.000001, z: -0.000001}
+    rotation: {x: -90.000000, y: -0.000000, z: -0.000000}
+    scale: {x: 0.999999, y: 0.999999, z: 0.999999}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 635b3644-3343-4f8d-8a86-6e4876f5319c
+- !<SceneObject/ca3295f3-3171-4387-97ec-913b90dfb980>
+  PrefabRemaps:
+    []
+  Name: OpenAIConnector
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bb1038a5-5841-48e8-a813-618a4f56b610
+- !<SceneObject/ca4aeee2-0b9a-4c59-ae9d-2302b7e35f72>
+  PrefabRemaps:
+    []
+  Name: OpenAi Response Text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 33.013519, z: 2.500000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3836af18-5bef-4e96-bc8a-a9413c99f2c6
+- !<SceneObject/ca9f318e-57dc-4dcd-8928-d2c78fa7ec10>
+  PrefabRemaps:
+    []
+  Name: mid-1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.013406, y: 3.861870, z: 0.000154}
+    rotation: {x: -4.535300, y: 0.000290, z: 0.000017}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 130a32a5-6106-482d-ac1b-83a0239cdfe7
+  Components:
+    []
+- !<SceneObject/ce6cee13-e90f-4427-b638-4fcb81df3928>
+  PrefabRemaps:
+    []
+  Name: mid-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 11.483000, z: -0.000001}
+    rotation: {x: 1.265800, y: 6.113890, z: -3.274570}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 805d60b6-1bef-42d0-a51d-0b7f3b8bfe4b
+  Components:
+    []
+- !<SceneObject/cf314287-1348-4ea2-954b-5031a92e97e5>
+  PrefabRemaps:
+    []
+  Name: thumb-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.122509, y: 3.547690, z: -0.000037}
+    rotation: {x: -119.537003, y: -11.132400, z: -6.501390}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a5fe30ec-3b1f-4a3d-a460-f4432615f4a7
+  Components:
+    []
+- !<SceneObject/d031fb51-584a-4d4c-8f8c-5d9a9070503b>
+  PrefabRemaps:
+    []
+  Name: HandVisuals
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a703b3a3-e61c-44d3-82f5-77948a9441d1
+    - !<own> 573cecf3-5799-454f-8a9f-826eb7e25552
+  Components:
+    []
+- !<SceneObject/d05f80da-5ab6-45ca-8904-6d65c892edad>
+  PrefabRemaps:
+    []
+  Name: Configuration
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 854d6ac0-8455-4571-87fd-d6406b3da993
+    - !<own> f5124302-8295-47f1-8077-eb7a25f432c4
+- !<SceneObject/d0b4ce0b-e92f-45c6-9f9c-3b4e9fbfa2b8>
+  PrefabRemaps:
+    []
+  Name: mid-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.166710, z: -0.000003}
+    rotation: {x: 0.000035, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b87e02c9-943e-4387-adef-faa0291ba58b
+  Components:
+    []
+- !<SceneObject/d41e433c-cdd8-4047-8013-0eafc977b04e>
+  PrefabRemaps:
+    []
+  Name: wrist_to_mid
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000001, y: -0.000006, z: 0.000002}
+    rotation: {x: -0.519322, y: -5.969350, z: -5.521840}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5881061f-9b7c-42a5-bdee-240fb1e78158
+  Components:
+    []
+- !<SceneObject/d421e9ba-a302-4d00-a01e-4b13d2899bc2>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.218160, z: -0.000003}
+    rotation: {x: 0.000050, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> defa21ad-ba56-4fe7-b4a8-37d3ac84bf2d
+  Components:
+    []
+- !<SceneObject/d7303b6d-0487-448b-8498-098fb805851d>
+  PrefabRemaps:
+    []
+  Name: index-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.837170, z: 0.000001}
+    rotation: {x: -0.000113, y: -0.000000, z: -0.000031}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6131237d-ba5e-4a1f-a100-80c176b73e55
+  Components:
+    []
+- !<SceneObject/d7be73da-3738-4c6d-bea5-8503a36dcde1>
+  PrefabRemaps:
+    []
+  Name: Text Prompt Button Text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.250000, y: 1.250000, z: 1.250000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c355bab2-0612-4fae-86d7-afe93b4cdbcc
+- !<ScriptComponent/d944f73c-75ee-457e-a2f8-a79cb70a0408>
+  PrefabRemaps:
+    []
+  Name: PinchButton
+  Enabled: true
+  ScriptAsset: !<reference> a54c5722-d3fb-4aa5-97ff-f7425978bc59
+  ScriptInputsDefault:
+    editEventCallbacks: true
+    customFunctionForOnButtonPinched: true
+    onButtonPinchedFunctionNames: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      editEventCallbacks: false
+      customFunctionForOnButtonPinched: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      onButtonPinchedFunctionNames: !<string[]>
+        []
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/d971e3b1-9f65-4928-a8b7-708d67da3e9c>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.218160, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/d9ea854f-5888-464e-9278-be871ec863c7>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.218170, z: 0.000000}
+    rotation: {x: -0.000148, y: 0.000148, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c0b9bb24-67e2-4ce5-af3f-bb7b8f2d804f
+  Components:
+    []
+- !<SceneObject/dbb09f20-002c-4cef-ac71-5c9531919ebd>
+  PrefabRemaps:
+    []
+  Name: mid-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 3.166730, z: 0.000002}
+    rotation: {x: -0.000207, y: -0.000205, z: -0.000014}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 37bf6b5c-fd84-4320-a660-735aa25bdf84
+  Components:
+    []
+- !<SceneObject/de1a0f29-c7ca-404d-95f5-77e38567a688>
+  PrefabRemaps:
+    []
+  Name: "[EXAMPLE] OpenAI Connector"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -4.518452, z: -110.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6850f894-4b43-4d1b-b9f2-5bba19c507fb
+    - !<own> ca3295f3-3171-4387-97ec-913b90dfb980
+  Components:
+    []
+- !<SceneObject/decd5550-3568-4e32-9e01-a9fe286cf01f>
+  PrefabRemaps:
+    []
+  Name: ring-3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.001444, y: 2.703710, z: 0.000020}
+    rotation: {x: 88.973000, y: 4.975880, z: 4.973150}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4d79543f-3519-49a1-a08e-6ccb185c1fa1
+  Components:
+    []
+- !<SceneObject/defa21ad-ba56-4fe7-b4a8-37d3ac84bf2d>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.218160, z: 0.000000}
+    rotation: {x: -0.000051, y: -0.000000, z: 0.000012}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d971e3b1-9f65-4928-a8b7-708d67da3e9c
+  Components:
+    []
+- !<SceneObject/e0d3582d-bf3c-44cf-97d8-765c87f5aa1c>
+  PrefabRemaps:
+    []
+  Name: index-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.837150, z: -0.000002}
+    rotation: {x: -0.000039, y: -0.000040, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> fa871fe5-0fe5-4dfb-a37d-88f16e97863f
+  Components:
+    []
+- !<DeviceTracking/e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1>
+  PrefabRemaps:
+    []
+  Name: Device Tracking
+  Enabled: true
+  DeviceTrackingMode: World
+  RotationOptions: !<RotationOptions/00000000-0000-0000-0000-000000000000>
+    InvertRotation: false
+  SurfaceOptions: !<SurfaceOptions/00000000-0000-0000-0000-000000000000>
+    EnhanceWithNativeAR: false
+- !<SceneObject/e85ae15a-94fe-486d-bee1-c6fe443b2418>
+  PrefabRemaps:
+    []
+  Name: RightHandModel
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> afc7b077-5e02-4900-aa27-76b3c43d0bdf
+    - !<own> 071c7399-d240-46d9-adc7-bdd07b289234
+  Components:
+    - !<own> 6acfa7cf-1b7d-4d19-8dc4-62783a45a78b
+- !<SceneObject/f13158cc-c1c6-49ce-b78c-dde4afafd2dd>
+  PrefabRemaps:
+    []
+  Name: pinky-3_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 2.218170, z: 0.000001}
+    rotation: {x: 0.000101, y: -0.000115, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1dcc9d63-b92f-405b-832a-093bafe65ac4
+  Components:
+    []
+- !<SceneObject/f3adddd2-3e87-4554-a006-91e164ef18d8>
+  PrefabRemaps:
+    []
+  Name: MobileInteractor
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 26907fa5-b779-476c-a4c8-3a46e110cd3e
+- !<SceneObject/f443cf96-fa30-42e8-9bdc-f3a717125c39>
+  PrefabRemaps:
+    []
+  Name: ring-2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.001204, y: 3.309390, z: 0.000044}
+    rotation: {x: 0.145073, y: -0.000050, z: -0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0e936f0b-7f8d-4a0b-9695-5a09a528c9eb
+  Components:
+    []
+- !<SceneObject/f46024f2-3574-4b85-ae29-ff338aeb4ba3>
+  PrefabRemaps:
+    []
+  Name: pinky-0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000004, y: 11.453500, z: 0.000011}
+    rotation: {x: -10.793700, y: -13.884800, z: 21.429600}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 25b5c85c-cdfa-4265-8dde-0f685988c792
+  Components:
+    []
+- !<SceneObject/f4a1e791-8f12-4b52-855c-92e1eb8b80e0>
+  PrefabRemaps:
+    []
+  Name: Image and Text Prompt Button
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -5.335827, z: 2.500000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 65e1d7bb-7e74-495f-a678-d8eda1d83a89
+  Components:
+    - !<own> 83c8a670-7976-4508-bd4c-fb719d192104
+    - !<own> 0410ceb5-8d7c-482c-b260-37296d23d0fc
+    - !<own> d944f73c-75ee-457e-a2f8-a79cb70a0408
+    - !<own> 758863f7-34a0-4492-824c-0b8f24c6f2ce
+    - !<own> a55b312d-d9d1-4d68-8b5d-acd1be364147
+    - !<own> b5d71ecb-2965-4ccc-a3f3-1b98e6df44e2
+- !<ScriptComponent/f5124302-8295-47f1-8077-eb7a25f432c4>
+  PrefabRemaps:
+    []
+  Name: SIKLogLevelConfiguration
+  Enabled: true
+  ScriptAsset: !<reference> ff7d0aa1-32aa-4b47-84b7-340260da1ef0
+  ScriptInputsDefault:
+    _debugModeEnabled: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      logLevelFilter: 3
+      _debugModeEnabled: false
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/fa871fe5-0fe5-4dfb-a37d-88f16e97863f>
+  PrefabRemaps:
+    []
+  Name: index-3_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 2.837150, z: -0.000000}
+    rotation: {x: 0.000038, y: 0.000042, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 82e4d3ce-7671-4de7-b916-e0921f8c286b
+  Components:
+    []
+- !<SceneObject/fa893903-fe39-4de8-869a-ddc5c6b23f94>
+  PrefabRemaps:
+    []
+  Name: thumb-3_end_end_end_end
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.549810, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/fbd41660-37a9-4f0b-8889-71191ba08f98>
+  PrefabRemaps:
+    []
+  Name: wrist_to_mid
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000001, y: -0.000005, z: 0.000002}
+    rotation: {x: -0.519104, y: -5.758140, z: 5.627940}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ce6cee13-e90f-4427-b638-4fcb81df3928
+  Components:
+    []

@@ -1,0 +1,59 @@
+- !<Material/82391403-9747-4988-b9dc-7562cd643d32>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> 137f46a5-b5df-4bd4-83ad-45b8fbfbd95a
+- !<PassInfo/137f46a5-b5df-4bd4-83ad-45b8fbfbd95a>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Extend
+  FrustumCullPad: 1.000000
+  InstanceCount: 1
+  Defines:
+    - ENABLE_GLTF_LIGHTING
+    - NODE_10_DROPLIST_ITEM 0
+    - NODE_11_DROPLIST_ITEM 0
+    - NODE_30_DROPLIST_ITEM 0
+    - NODE_32_DROPLIST_ITEM 0
+    - NODE_37_DROPLIST_ITEM 0
+    - NODE_44_DROPLIST_ITEM 0
+    - NODE_47_DROPLIST_ITEM 0
+    - NODE_60_DROPLIST_ITEM 0
+    - NODE_7_DROPLIST_ITEM 0
+    - NODE_8_DROPLIST_ITEM 0
+    - Tweak_N30 0
+    - Tweak_N32 0
+    - Tweak_N37 0
+    - Tweak_N44 0
+    - Tweak_N47 0
+    - Tweak_N60 0
+  BlendMode: PremultipliedAlphaAuto
+  Properties:
+    Port_SpecularAO_N036:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColorFactor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 0.000000, w: 1.000000}
+    colorMultiplier:
+      typeIdx: 1
+      value: 0.000000
+    emissiveFactor:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    metallicFactor:
+      typeIdx: 1
+      value: 0.000000
+    roughnessFactor:
+      typeIdx: 1
+      value: 0.600000
+  Pass: !<reference> d00e8fa2-85cf-4b48-9d0b-960c6f56621e
+  RTCaster: false
+  RTReceiver: false

@@ -1,0 +1,34 @@
+- !<ObjectPrefab/a800cfe8-7c5b-4543-b6af-cb3e18e4ed0b>
+  PackagePath: ""
+  objects:
+    - !<own> f7d00c68-e737-4e99-84cc-56da45d7ff01
+  LazyLoading: false
+  RetainAssets: true
+- !<VFXComponent/f225516f-2adf-4bac-a59a-e89a1f42ca46>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> c403bf42-b482-4aef-8906-13532712a354
+- !<SceneObject/f7d00c68-e737-4e99-84cc-56da45d7ff01>
+  PrefabRemaps:
+    []
+  Name: Custom Mesh Emitter
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -28.166780, z: 0.000092}
+    rotation: {x: -0.000000, y: -0.000001, z: 0.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f225516f-2adf-4bac-a59a-e89a1f42ca46

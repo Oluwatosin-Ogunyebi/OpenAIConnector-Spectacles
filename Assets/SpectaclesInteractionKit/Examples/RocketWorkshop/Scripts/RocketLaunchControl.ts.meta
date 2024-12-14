@@ -1,0 +1,66 @@
+- !<AssetImportMetadata/72d58551-f9c0-4b1e-a8a9-ccc5e02b24f6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 2f5377a1-ce12-43b0-94b5-bb534d951cc5
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 2f5377a1-ce12-43b0-94b5-bb534d951cc5
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1680d65a-3b7b-487b-b350-f646ca09ca48
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/badb2f13-36ac-43ba-b134-953ada848683>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1680d65a-3b7b-487b-b350-f646ca09ca48>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    animationAButton: false
+    animationBButton: false
+    animationCButton: false
+    flightPathText: false
+    launchButton: false
+    launchPlatform: false
+    launchPlatformToggleButton: false
+    launchSparks: false
+    rocketAnimationPlayer: false
+    rocketConf: false
+    slider: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - slider: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      animationAButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      animationBButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      animationCButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      launchButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rocketAnimationPlayer: !<reference.AnimationPlayer> 00000000-0000-0000-0000-000000000000
+      launchSparks: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rocketConf: !<MappingBased.RocketConfigurator> 00000000-0000-0000-0000-000000000000
+      flightPathText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      launchPlatformToggleButton: !<MappingBased.ToggleButton> 00000000-0000-0000-0000-000000000000
+      launchPlatform: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Slider slider
+    - // @input SceneObject animationAButton
+    - // @input SceneObject animationBButton
+    - // @input SceneObject animationCButton
+    - // @input SceneObject launchButton
+    - // @input RocketConfigurator rocketConf
+    - // @input SceneObject launchSparks
+    - // @input Component.AnimationPlayer rocketAnimationPlayer
+    - // @input Component.Text flightPathText
+    - // @input ToggleButton launchPlatformToggleButton
+    - // @input SceneObject launchPlatform

@@ -1,0 +1,80 @@
+- !<AssetImportMetadata/e5bec3c9-8172-4b55-b3d3-c3c32c32dcd6>
+  ImporterSettings: !<AssetImporterSettings/e71442f9-dee6-4fa7-89a7-c08712c0957a>
+    {}
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7876e94e-1942-4993-ab2d-d35e572dbe74
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7876e94e-1942-4993-ab2d-d35e572dbe74
+  PackageType: NotAPackage
+  AssetDataMap:
+    TypeScriptAsset: !<own> 059eae64-6c0c-45cd-95e0-1adb996d46a5
+  PackagePolicy: CannotBeUnpacked
+  DependentFiles:
+    []
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/059eae64-6c0c-45cd-95e0-1adb996d46a5>
+  Icon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    _drawDebug: false
+    _maxRaycastDistance: false
+    _touchpadScrollSpeed: false
+    indirectDragThreshold: false
+    indirectTargetingVolumeMultiplier: false
+    initializePositionAndRotationFilter: false
+    sphereCastEnabled: false
+    spherecastDistanceThresholds: false
+    spherecastRadii: false
+    touchpadDragThreshold: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - sphereCastEnabled: false
+      indirectTargetingVolumeMultiplier: !<float> 1.000000
+      spherecastRadii: !<float[]>
+        - 0.500000
+        - 2.000000
+        - 4.000000
+      spherecastDistanceThresholds: !<float[]>
+        - 0.000000
+        - 12.000000
+        - 30.000000
+      _maxRaycastDistance: !<float> 500.000000
+      indirectDragThreshold: !<float> 3.000000
+      touchpadDragThreshold: 0.050000
+      _touchpadScrollSpeed: !<float> 250.000000
+      initializePositionAndRotationFilter: true
+      _drawDebug: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"group_start", "label":"Interactor"}'
+    - // @input bool _drawDebug = false
+    - '// @ui {"widget":"group_start", "label":"Spherecast Configuration"}'
+    - // @input bool sphereCastEnabled = false
+    - '// @input number[] spherecastRadii = "{0.5, 2.0, 4.0}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
+    - '// @input number[] spherecastDistanceThresholds = "{0, 12, 30}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Targeting Configuration"}'
+    - // @input float _maxRaycastDistance = 500
+    - // @input float indirectTargetingVolumeMultiplier = 1
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Indirect Drag Provider"}'
+    - // @input float indirectDragThreshold = 3.0
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Mobile Interactor"}'
+    - '// @input bool initializePositionAndRotationFilter = true {"hint":"Initialize Mobile Input Data Provider with Position and Rotation Filtering"}'
+    - // @input float _touchpadScrollSpeed = 250
+    - // @input float touchpadDragThreshold = 0.05
+    - '// @ui {"widget":"group_end"}'
+  SvgIcon: ""

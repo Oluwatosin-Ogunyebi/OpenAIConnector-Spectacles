@@ -1,0 +1,125 @@
+- !<AssetImportMetadata/abe3b99a-9574-4758-a37b-a972371e4c62>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 14449a5e-9326-47ae-8d5f-62a8f843e4eb
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 14449a5e-9326-47ae-8d5f-62a8f843e4eb
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 6bc5ac10-5e1d-4261-9ede-380dd69849af
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/2222b2f9-36c1-4f1f-bd51-d0ee1a877b78>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<LookAtComponent/14c48eae-831e-4d67-8ee7-77bc1449f421>
+  PrefabRemaps:
+    []
+  Name: Look At
+  Enabled: true
+  LookAtMode: LookAtPoint
+  AimVectors: NegativeZAimYUp
+  WorldUpVector: ObjectY
+  Target: !<reference> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
+  OffsetRotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+- !<RenderMeshVisual/161913fe-658e-48f8-8844-158b5bff550e>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0f8287ff-7d4d-4c01-b401-870cd595eaa9
+  Mesh: !<reference> 35a4e144-ff4f-4a15-a078-30a51e345d09
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    edit34: 1.000000
+- !<SceneObject/18069741-020d-49ed-b875-db705fa26da4>
+  PrefabRemaps:
+    []
+  Name: glow_plane
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -0.043960, z: -0.100000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 2.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 950a464d-6ae2-47af-86b4-ecc7dc20b8a7
+- !<ObjectPrefab/26074378-e02e-4202-a648-006c2eea9543>
+  PackagePath: ""
+  objects:
+    - !<own> 99ed53f6-f6fe-4952-8a27-6846a34ddda6
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/6bc5ac10-5e1d-4261-9ede-380dd69849af>
+  SourceRemaps:
+    - 08e1aa3f-e798-4882-a617-82f6a1dba5a8: 161913fe-658e-48f8-8844-158b5bff550e
+    - 226033a6-f882-4719-accb-8fa66129d5c6: 91797b44-65e0-4772-bafb-16eb7c5f85d6
+    - 2d99c365-b5c7-41ab-8d65-1f381e9b836a: 950a464d-6ae2-47af-86b4-ecc7dc20b8a7
+    - 7556017b-5006-4169-858c-f642f6f5d762: 99ed53f6-f6fe-4952-8a27-6846a34ddda6
+    - 97ec75e6-7cb9-4c59-a1e7-1ac0655c732c: 14c48eae-831e-4d67-8ee7-77bc1449f421
+    - ceadac8d-3f6b-4b09-99b3-aaf77a2aa5f5: 18069741-020d-49ed-b875-db705fa26da4
+  SourceState: !<own> 26074378-e02e-4202-a648-006c2eea9543
+- !<SceneObject/91797b44-65e0-4772-bafb-16eb7c5f85d6>
+  PrefabRemaps:
+    []
+  Name: blendshapes1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.727880, z: 0.000000}
+    rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
+    scale: {x: 0.900000, y: 0.900000, z: 0.900000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 18069741-020d-49ed-b875-db705fa26da4
+  Components:
+    - !<own> 161913fe-658e-48f8-8844-158b5bff550e
+    - !<own> 14c48eae-831e-4d67-8ee7-77bc1449f421
+- !<RenderMeshVisual/950a464d-6ae2-47af-86b4-ecc7dc20b8a7>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 100
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 413b6df7-b0ec-4f04-98b7-1175ad9a9569
+  Mesh: !<reference> a811791a-01e1-46e8-9602-c9c445b82518
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/99ed53f6-f6fe-4952-8a27-6846a34ddda6>
+  PrefabRemaps:
+    []
+  Name: engine_exhaust
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 4.000000, y: 4.000000, z: 4.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 91797b44-65e0-4772-bafb-16eb7c5f85d6
+  Components:
+    []
