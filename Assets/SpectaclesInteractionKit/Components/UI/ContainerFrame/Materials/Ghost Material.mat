@@ -98,6 +98,9 @@
     cornerRadius:
       typeIdx: 1
       value: 0.050000
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0.000000
     overrideTimeElapsed:
       typeIdx: 1
       value: 0.000000

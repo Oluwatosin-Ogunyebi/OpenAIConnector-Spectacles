@@ -27,7 +27,6 @@
     buttonForImageAndText: false
     buttonForText: false
     imagePromptText: false
-    imgurClientID: false
     openAIClientID: false
     promptText: false
     responseText: false
@@ -40,7 +39,6 @@
       imagePromptText: Describe the contents of this image.
       promptText: Roast me as a snapchat user.
       openAIClientID: '"YOUR_OPENAI_API_KEY_HERE"'
-      imgurClientID: '"YOUR_IMGUR_CLIENT_ID_HERE"'
   ScriptTypes:
     -
       {}
@@ -48,7 +46,6 @@
     - // @input Interactable buttonForImageAndText
     - // @input Interactable buttonForText
     - // @input Component.Text responseText
-    - '// @input string imagePromptText = "Describe the contents of this image."'
-    - '// @input string promptText = "Roast me as a snapchat user."'
-    - '// @input string openAIClientID = "YOUR_OPENAI_API_KEY_HERE"'
-    - '// @input string imgurClientID = "YOUR_IMGUR_CLIENT_ID_HERE"'
+    - "// @input string imagePromptText = 'Describe the contents of this image.'"
+    - "// @input string promptText = 'Roast me as a snapchat user.'"
+    - "// @input string openAIClientID = 'YOUR_OPENAI_API_KEY_HERE'"

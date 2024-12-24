@@ -3024,7 +3024,6 @@
   ScriptInputsDefault:
     imagePromptText: true
     promptText: true
-    imgurClientID: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -3035,7 +3034,6 @@
       imagePromptText: Describe the contents of this image.
       promptText: Roast me as a snapchat user.
       openAIClientID: ""
-      imgurClientID: '"YOUR_IMGUR_CLIENT_ID_HERE"'
   ScriptTypes:
     "":
       {}
