@@ -47,6 +47,15 @@
     lineWeight:
       typeIdx: 1
       value: 0.250000
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
   Pass: !<reference> d83cd28a-969c-417d-b1b2-e54aa0da9953
   RTCaster: false
   RTReceiver: false

@@ -149,4 +149,13 @@
     height_gradient:
       typeIdx: 1
       value: 0.000000
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
   Pass: !<reference> 2313c029-664f-4f04-8eba-31a1a2fc57df

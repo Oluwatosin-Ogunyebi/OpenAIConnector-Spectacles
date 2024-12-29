@@ -39,6 +39,18 @@
     Port_Center_N047:
       typeIdx: 3
       value: {x: 0.500000, y: 0.500000}
+    Port_Default_N010:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Default_N046:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Default_N077:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Default_N146:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     Port_Import_N017:
       typeIdx: 3
       value: {x: 1.000000, y: 1.000000}
@@ -150,6 +162,15 @@
     outerEdgeStartingColor:
       typeIdx: 5
       value: {x: 0.130000, y: 1.000000, z: 0.820000, w: 1.000000}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
   Pass: !<reference> 666aa455-6dd0-46e9-aa01-06f9859dc70f
   RTCaster: false
   RTReceiver: false

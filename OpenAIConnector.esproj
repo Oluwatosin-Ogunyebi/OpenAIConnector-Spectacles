@@ -10,10 +10,10 @@ viewConfig:
     device: Spectacles (2024)
     cameraFov: nan
     fullFrameAspect: 0.666660
-    viewport: Normal
+    viewport: Maximized
     output: Live
     stereoOutputEye: Center
-    deviceTypeOverride: Spectacles
+    deviceTypeOverride: Unknown
   cameraType: Front
 metaInfo:
   hints:
