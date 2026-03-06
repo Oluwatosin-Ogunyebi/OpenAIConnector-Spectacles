@@ -3,6 +3,34 @@
   PassesInfo:
     - !<own> 5c5bfc01-729c-4c44-9a41-c41b7c22d0e1
 - !<PassInfo/5c5bfc01-729c-4c44-9a41-c41b7c22d0e1>
+  CachedProperties:
+    - baseTexBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - baseTexDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - baseTexUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - normalTexBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - normalTexDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - normalTexUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - overrideTimeDelta:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeElapsed:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeEnabled:
+        typeIdx: 0
+        value: 0
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -70,21 +98,12 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    baseTexBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    baseTexDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     baseTexTransform:
       typeIdx: 7
       value:
         0: {x: 1.000000, y: 0.000000, z: 0.000000}
         1: {x: 0.000000, y: 1.000000, z: 0.000000}
         2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    baseTexUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     colorMultiplier:
       typeIdx: 1
       value: 0.000000
@@ -100,30 +119,10 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    normalTexBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    normalTexDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     normalTexTransform:
       typeIdx: 7
       value:
         0: {x: 1.000000, y: 0.000000, z: 0.000000}
         1: {x: 0.000000, y: 1.000000, z: 0.000000}
         2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    normalTexUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    overrideTimeDelta:
-      typeIdx: 1
-      value: 0.000000
-    overrideTimeElapsed:
-      typeIdx: 1
-      value: 0.000000
-    overrideTimeEnabled:
-      typeIdx: 0
-      value: 0
   Pass: !<reference> 884ebb55-0215-4d8c-a2ea-c0e77839edf6
-  RTCaster: false
-  RTReceiver: false

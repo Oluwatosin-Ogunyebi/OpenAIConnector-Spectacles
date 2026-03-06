@@ -1,28 +1,30 @@
 - !<AssetImportMetadata/e5bec3c9-8172-4b55-b3d3-c3c32c32dcd6>
-  ImporterSettings: !<AssetImporterSettings/e71442f9-dee6-4fa7-89a7-c08712c0957a>
-    {}
   ImportedAssetIds:
     TypeScriptAsset: !<reference> 7876e94e-1942-4993-ab2d-d35e572dbe74
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 7876e94e-1942-4993-ab2d-d35e572dbe74
   PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     TypeScriptAsset: !<own> 059eae64-6c0c-45cd-95e0-1adb996d46a5
-  PackagePolicy: CannotBeUnpacked
   DependentFiles:
     []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/059eae64-6c0c-45cd-95e0-1adb996d46a5>
-  Icon: ""
+  SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
-  InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 146845c3-f136-19dc-76e5-6f0819a29432
   ExportUid: 00000000-0000-0000-0000-000000000000
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     _drawDebug: false
     _maxRaycastDistance: false
@@ -36,9 +38,15 @@
     touchpadDragThreshold: false
   ScriptTypesHidden:
     {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   DefaultScriptInputs:
-    - sphereCastEnabled: false
-      indirectTargetingVolumeMultiplier: !<float> 1.000000
+    - _drawDebug: false
+      sphereCastEnabled: false
       spherecastRadii: !<float[]>
         - 0.500000
         - 2.000000
@@ -48,19 +56,19 @@
         - 12.000000
         - 30.000000
       _maxRaycastDistance: !<float> 500.000000
+      indirectTargetingVolumeMultiplier: !<float> 1.000000
       indirectDragThreshold: !<float> 3.000000
-      touchpadDragThreshold: 0.050000
-      _touchpadScrollSpeed: !<float> 250.000000
       initializePositionAndRotationFilter: true
-      _drawDebug: false
+      _touchpadScrollSpeed: !<float> 250.000000
+      touchpadDragThreshold: 0.050000
   ScriptTypes:
     -
       {}
   InputLines:
     - '// @ui {"widget":"group_start", "label":"Interactor"}'
-    - // @input bool _drawDebug = false
+    - // @input bool _drawDebug
     - '// @ui {"widget":"group_start", "label":"Spherecast Configuration"}'
-    - // @input bool sphereCastEnabled = false
+    - // @input bool sphereCastEnabled
     - '// @input number[] spherecastRadii = "{0.5, 2.0, 4.0}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
     - '// @input number[] spherecastDistanceThresholds = "{0, 12, 30}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
     - '// @ui {"widget":"group_end"}'
@@ -69,7 +77,7 @@
     - // @input float indirectTargetingVolumeMultiplier = 1
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"group_start", "label":"Indirect Drag Provider"}'
-    - // @input float indirectDragThreshold = 3.0
+    - // @input float indirectDragThreshold = 3
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"group_start", "label":"Mobile Interactor"}'
@@ -77,4 +85,3 @@
     - // @input float _touchpadScrollSpeed = 250
     - // @input float touchpadDragThreshold = 0.05
     - '// @ui {"widget":"group_end"}'
-  SvgIcon: ""

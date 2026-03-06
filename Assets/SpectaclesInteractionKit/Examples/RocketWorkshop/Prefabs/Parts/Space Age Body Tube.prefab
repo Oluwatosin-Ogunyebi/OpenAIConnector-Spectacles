@@ -6,15 +6,18 @@
   RetainAssets: true
 - !<SceneObject/0df3160b-9828-4b60-85d9-7dc3eee3de66>
   PrefabRemaps:
-    []
+    - 0df3160b-9828-4b60-85d9-7dc3eee3de66: 0df3160b-9828-4b60-7a26-823c111c2199
+    - 10328bfd-d1c3-41e4-b1c1-46acba594014: 10328bfd-d1c3-41e4-4e3e-b95345a6bfeb
+    - 4020a1ad-ad66-4034-a172-8c2411be3b02: 4020a1ad-ad66-4034-5e8d-73dbee41c4fd
+    - c85915fa-7ed4-425d-8256-2128204d932d: c85915fa-7ed4-425d-7da9-ded7dfb26cd2
   Name: Space Age Body Tube
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: -1.228443, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -1.228443, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

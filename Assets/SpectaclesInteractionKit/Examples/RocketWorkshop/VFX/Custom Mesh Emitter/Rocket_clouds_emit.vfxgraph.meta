@@ -4,12 +4,14 @@
   ImporterName: VFXAssetImporter
   PrimaryAsset: !<reference> c403bf42-b482-4aef-8906-13532712a354
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     VFXGraph: !<own> b8e30032-c9c1-45e3-b95d-b9426f6be8cd
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/eea9aa03-104d-41b3-98c0-4a7ca5dd0f38>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<VFXAssetData/b8e30032-c9c1-45e3-b95d-b9426f6be8cd>

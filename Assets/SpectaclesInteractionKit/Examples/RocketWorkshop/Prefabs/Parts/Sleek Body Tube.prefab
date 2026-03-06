@@ -26,15 +26,16 @@
     {}
 - !<SceneObject/adb9b45a-4e39-425f-8f53-69ddcefcb2f4>
   PrefabRemaps:
-    []
+    - 022215f3-50a8-45c4-b8b9-b0abb84e754e: 022215f3-50a8-45c4-4746-4f5447b18ab1
+    - adb9b45a-4e39-425f-8f53-69ddcefcb2f4: adb9b45a-4e39-425f-70ac-962231034d0b
   Name: Sleek Body Tube
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: -1.228443, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -1.228443, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

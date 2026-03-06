@@ -3,6 +3,22 @@
   PassesInfo:
     - !<own> 15a2c886-564a-497e-aa3e-127ac8eb434f
 - !<PassInfo/15a2c886-564a-497e-aa3e-127ac8eb434f>
+  CachedProperties:
+    - glow_mapBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - glow_mapDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - glow_mapTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - glow_mapUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   DepthWrite: false
   DepthTest: true
   DepthFunction: LessEqual
@@ -59,21 +75,4 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    glow_mapBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    glow_mapDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    glow_mapTransform:
-      typeIdx: 7
-      value:
-        0: {x: 1.000000, y: 0.000000, z: 0.000000}
-        1: {x: 0.000000, y: 1.000000, z: 0.000000}
-        2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    glow_mapUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   Pass: !<reference> e9d616de-bcd9-4fae-b8cd-f33c5f04264a
-  RTCaster: false
-  RTReceiver: false

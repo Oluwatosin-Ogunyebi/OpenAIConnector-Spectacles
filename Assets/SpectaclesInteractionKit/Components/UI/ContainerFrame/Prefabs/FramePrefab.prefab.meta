@@ -4,49 +4,40 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> f1c6a4dc-f29d-42a6-ab05-4b134af253ec
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     ObjectPrefab: !<own> 85ce9d99-2b7d-4c45-acf8-0ae9642cfcee
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/a8cfe49b-ec44-497b-bb8e-45d1e9622dc3>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ColliderComponent/0f9de0f4-fc36-4784-b745-887751900367>
+- !<ObjectPrefabAssetData/85ce9d99-2b7d-4c45-acf8-0ae9642cfcee>
+  Prototype: !<ObjectOwner/2e2f9afb-5113-46f6-b45c-e998ad6bb6c8>
+    PackagePath: ""
+    objects:
+      - !<own> ca8385c0-af3d-4c30-62ba-31de9cfbc4fe
+- !<ColliderComponent/c2324897-2d50-4a2e-59c0-72dd1bb0c885>
   PrefabRemaps:
     []
   Name: Physics Collider
   Enabled: true
-  Shape: !<Box/00000000-0000-0000-0000-000000000000>
-    Size: {x: 1.000000, y: 1.000000, z: 0.050000}
+  Shape: !<Box>
     FitVisual: false
-  ForceCompound: false
+    Size: {x: 1.000000, y: 1.000000, z: 0.050000}
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
   WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  ShowCollider: false
-  Intangible: false
   EnableSmoothing: false
   PositionTension: 30.000000
   RotationTension: 30.000000
-  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/4ab56ee6-752c-4075-a759-db527bdf5709>
-  PrefabRemaps:
-    []
-  Name: FramePrefab
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 0f9de0f4-fc36-4784-b745-887751900367
-    - !<own> 540bdbfa-c00a-48db-bf29-5bc27b893add
-- !<RenderMeshVisual/540bdbfa-c00a-48db-bf29-5bc27b893add>
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<RenderMeshVisual/c87b1bf2-f05c-467e-409d-6ed72c09a40d>
   PrefabRemaps:
     []
   Name: Render Mesh Visual
@@ -66,15 +57,19 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ObjectPrefab/6cc6e2b5-357c-46ff-808b-728cdd43d178>
-  PackagePath: ""
-  objects:
-    - !<own> 4ab56ee6-752c-4075-a759-db527bdf5709
-  LazyLoading: false
-  RetainAssets: true
-- !<ObjectPrefabAssetData/85ce9d99-2b7d-4c45-acf8-0ae9642cfcee>
-  SourceRemaps:
-    - c2324897-2d50-4a2e-a63f-8d22e44f377a: 0f9de0f4-fc36-4784-b745-887751900367
-    - c87b1bf2-f05c-467e-bf62-9128d3f65bf2: 540bdbfa-c00a-48db-bf29-5bc27b893add
-    - ca8385c0-af3d-4c30-9d45-ce2163043b01: 4ab56ee6-752c-4075-a759-db527bdf5709
-  SourceState: !<own> 6cc6e2b5-357c-46ff-808b-728cdd43d178
+- !<SceneObject/ca8385c0-af3d-4c30-62ba-31de9cfbc4fe>
+  PrefabRemaps:
+    []
+  Name: FramePrefab
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c2324897-2d50-4a2e-59c0-72dd1bb0c885
+    - !<own> c87b1bf2-f05c-467e-409d-6ed72c09a40d

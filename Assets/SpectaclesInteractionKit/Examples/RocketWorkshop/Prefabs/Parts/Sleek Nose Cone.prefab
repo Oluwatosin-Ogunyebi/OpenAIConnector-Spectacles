@@ -26,15 +26,16 @@
     {}
 - !<SceneObject/bbf1121c-d325-42b6-8c71-7a5a953abc4e>
   PrefabRemaps:
-    []
+    - 28e73ab9-450a-47c0-82a1-110faeb5a677: 28e73ab9-450a-47c0-7d5e-eef0514a5988
+    - bbf1121c-d325-42b6-8c71-7a5a953abc4e: bbf1121c-d325-42b6-738e-85a56ac543b1
   Name: Sleek Nose Cone
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 8.794556, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 8.794556, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

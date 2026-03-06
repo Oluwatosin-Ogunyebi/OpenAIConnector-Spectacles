@@ -1,28 +1,30 @@
 - !<AssetImportMetadata/be8f10ea-b630-4ddf-a2bc-49439232d353>
-  ImporterSettings: !<AssetImporterSettings/d720b13b-f5e6-408c-b320-236fd974ba5e>
-    {}
   ImportedAssetIds:
     TypeScriptAsset: !<reference> c43e5f10-7849-461a-b196-daa4e553b147
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> c43e5f10-7849-461a-b196-daa4e553b147
   PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     TypeScriptAsset: !<own> 42e21fa4-8521-4f4e-a507-2f4c836de53d
-  PackagePolicy: CannotBeUnpacked
   DependentFiles:
     []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/42e21fa4-8521-4f4e-a507-2f4c836de53d>
-  Icon: ""
+  SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
-  InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: d71c8a77-f47c-b7ef-e620-671e18cd3e98
   ExportUid: 00000000-0000-0000-0000-000000000000
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     disabledMaterial: false
     meshVisuals: false
@@ -32,6 +34,12 @@
     toggledOnSelectMaterial: false
   ScriptTypesHidden:
     {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   DefaultScriptInputs:
     - toggledOffMaterial: !<reference.Material> 5e6e1132-90fd-4c58-86f9-eb992e6747f5
       toggledOffSelectMaterial: !<reference.Material> 5e532a08-3935-4d6f-823a-ad221030c784
@@ -49,5 +57,4 @@
     - // @input Asset.Material toggledOnMaterial
     - // @input Asset.Material toggledOnSelectMaterial
     - // @input Asset.Material disabledMaterial
-    - "// @input Component.RenderMeshVisual[] meshVisuals"
-  SvgIcon: ""
+    - "// @input Component.RenderMeshVisual[] meshVisuals = {}"

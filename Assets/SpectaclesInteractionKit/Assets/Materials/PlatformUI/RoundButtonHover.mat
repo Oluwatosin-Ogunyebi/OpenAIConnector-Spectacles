@@ -3,6 +3,22 @@
   PassesInfo:
     - !<own> b0b2f8b0-50bf-4b87-85b1-f17ed5a0f7e7
 - !<PassInfo/b0b2f8b0-50bf-4b87-85b1-f17ed5a0f7e7>
+  CachedProperties:
+    - simple_round_buttonBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - simple_round_buttonDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - simple_round_buttonTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - simple_round_buttonUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -89,21 +105,4 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    simple_round_buttonBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    simple_round_buttonDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    simple_round_buttonTransform:
-      typeIdx: 7
-      value:
-        0: {x: 1.000000, y: 0.000000, z: 0.000000}
-        1: {x: 0.000000, y: 1.000000, z: 0.000000}
-        2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    simple_round_buttonUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   Pass: !<reference> d590fd4d-d182-47d0-9f79-50b1d4053836
-  RTCaster: false
-  RTReceiver: false

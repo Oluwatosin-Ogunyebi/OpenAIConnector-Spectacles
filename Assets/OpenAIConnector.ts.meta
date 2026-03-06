@@ -4,48 +4,62 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 9ec8165f-e406-443b-9c21-087a390da50e
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     TypeScriptAsset: !<own> 606f840e-3a9a-4fa8-b6b2-e4474feddb8f
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/58fee344-27f5-4582-9e9a-7a3bc561a42e>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/606f840e-3a9a-4fa8-b6b2-e4474feddb8f>
   SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
-  InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
   ComponentUid: 2c05a3fc-7383-463b-95c8-de0ac0fa7340
   ExportUid: 00000000-0000-0000-0000-000000000000
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     buttonForImageAndText: false
     buttonForText: false
     imagePromptText: false
-    openAIClientID: false
+    modelIndex: false
+    openAIApiKey: false
     promptText: false
     responseText: false
+    systemPrompt: false
   ScriptTypesHidden:
     {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   DefaultScriptInputs:
-    - buttonForImageAndText: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
-      buttonForText: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
+    - buttonForImageAndText: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      buttonForText: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
       responseText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       imagePromptText: Describe the contents of this image.
       promptText: Roast me as a snapchat user.
-      openAIClientID: '"YOUR_OPENAI_API_KEY_HERE"'
+      systemPrompt: ""
+      openAIApiKey: YOUR_OPENAI_API_KEY_HERE
+      modelIndex: !<float> 0.000000
   ScriptTypes:
     -
       {}
   InputLines:
-    - // @input Interactable buttonForImageAndText
-    - // @input Interactable buttonForText
+    - // @input AssignableType buttonForImageAndText
+    - // @input AssignableType_1 buttonForText
     - // @input Component.Text responseText
-    - "// @input string imagePromptText = 'Describe the contents of this image.'"
-    - "// @input string promptText = 'Roast me as a snapchat user.'"
-    - "// @input string openAIClientID = 'YOUR_OPENAI_API_KEY_HERE'"
+    - '// @input string imagePromptText = "Describe the contents of this image."'
+    - '// @input string promptText = "Roast me as a snapchat user."'
+    - '// @input string systemPrompt = "You are a helpful assistant."'
+    - '// @input string openAIApiKey = "YOUR_OPENAI_API_KEY_HERE"'
+    - '// @input float modelIndex {"label":"Model Index (see Output panel for options)"}'

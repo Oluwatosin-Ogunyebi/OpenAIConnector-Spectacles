@@ -4,11 +4,13 @@
   ImporterName: MaterialImporter
   PrimaryAsset: !<reference> 7231c7bc-6c14-4331-ad23-9ab928107707
   PackageType: NotAPackage
-  ImporterSettings: !<AssetImporterSettings/08682845-071a-4574-9236-523df78562c9>
+  LegacyPackagePolicy: ~
+  ExtraData:
     {}
   AssetDataMap:
     Material: !<own> 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CannotBeUnpacked
   DependentFiles:
     []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

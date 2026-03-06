@@ -46,15 +46,17 @@
     {}
 - !<SceneObject/ee0c47ff-7f52-4c88-81e2-dcdfed17649e>
   PrefabRemaps:
-    []
+    - 57482350-8b6a-4842-9577-573d4315ce82: 57482350-8b6a-4842-6a88-a8c2bcea317d
+    - 727acf08-d451-4a7d-979f-44206d0151e1: 727acf08-d451-4a7d-6860-bbdf92feae1e
+    - ee0c47ff-7f52-4c88-81e2-dcdfed17649e: ee0c47ff-7f52-4c88-7e1d-232012e89b61
   Name: Space Age Nose Cone
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 8.794556, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 8.794556, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

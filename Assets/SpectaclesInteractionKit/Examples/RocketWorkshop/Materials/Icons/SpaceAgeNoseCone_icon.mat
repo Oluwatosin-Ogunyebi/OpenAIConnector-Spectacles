@@ -3,6 +3,31 @@
   PassesInfo:
     - !<own> 5ad8ef9c-4d64-44e2-9b41-e9df2a7796af
 - !<PassInfo/5ad8ef9c-4d64-44e2-9b41-e9df2a7796af>
+  CachedProperties:
+    - baseTexBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - baseTexDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - baseTexTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - baseTexUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - overrideTimeDelta:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeElapsed:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeEnabled:
+        typeIdx: 0
+        value: 0
   DepthWrite: false
   DepthTest: false
   DepthFunction: LessEqual
@@ -42,30 +67,4 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    baseTexBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    baseTexDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    baseTexTransform:
-      typeIdx: 7
-      value:
-        0: {x: 1.000000, y: 0.000000, z: 0.000000}
-        1: {x: 0.000000, y: 1.000000, z: 0.000000}
-        2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    baseTexUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    overrideTimeDelta:
-      typeIdx: 1
-      value: 0.000000
-    overrideTimeElapsed:
-      typeIdx: 1
-      value: 0.000000
-    overrideTimeEnabled:
-      typeIdx: 0
-      value: 0
   Pass: !<reference> ff93f1bb-0f0b-4e34-8e24-07af75f33935
-  RTCaster: false
-  RTReceiver: false

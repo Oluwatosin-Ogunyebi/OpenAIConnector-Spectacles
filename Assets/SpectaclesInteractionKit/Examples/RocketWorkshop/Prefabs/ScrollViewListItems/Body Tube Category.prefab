@@ -6,15 +6,19 @@
   RetainAssets: true
 - !<SceneObject/061d9000-11d5-47dd-a3a5-780a11c6f638>
   PrefabRemaps:
-    []
+    - 061d9000-11d5-47dd-a3a5-780a11c6f638: 061d9000-11d5-47dd-5c5a-87f5ee3909c7
+    - 8ec129b8-b41b-43db-a2e2-309dc677f94e: 8ec129b8-b41b-43db-5d1d-cf62398806b1
+    - a19ecc15-f241-4055-964c-9cfca8583470: a19ecc15-f241-4055-69b3-630357a7cb8f
+    - a3c28685-071f-455c-aa69-4ea54dbd3266: a3c28685-071f-455c-5596-b15ab242cd99
+    - dd50f5a2-5486-4f2a-bc97-7b95ccf75231: dd50f5a2-5486-4f2a-4368-846a3308adce
   Name: ScrollViewListItem
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.300000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.300000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 8ec129b8-b41b-43db-a2e2-309dc677f94e
   Components:
@@ -25,11 +29,11 @@
   Name: ContactName
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -61,40 +65,45 @@
     top: 2.250000
   OverflowVertical: Overflow
   OverflowHorizontal: Overflow
-  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+  Fill: !<TextFill>
     Mode: Solid
     Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     TileCount: 5.000000
     TileZone: Rect
     TextureStretch: FitWidth
-  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+  BlendMode: PremultipliedAlpha
+  Outline: !<OutlineSettings>
     Enabled: false
-    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
     Size: 0.250000
-  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+  Dropshadow: !<DropshadowSettings>
     Enabled: false
-    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
     OffsetX: 0.250000
     OffsetY: 0.250000
-  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+  Background: !<BackgroundSettings>
     Enabled: false
-    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -104,12 +113,11 @@
       right: 0.000000
       top: 0.000000
     CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+  AdvancedLayout: !<TextAdvancedLayout>
     ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/a3c28685-071f-455c-aa69-4ea54dbd3266>

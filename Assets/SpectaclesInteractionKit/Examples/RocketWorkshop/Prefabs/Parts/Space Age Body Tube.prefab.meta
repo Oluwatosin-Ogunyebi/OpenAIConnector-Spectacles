@@ -4,15 +4,54 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> b90e31d6-12e1-4afa-94d7-31311c34cae3
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     ObjectPrefab: !<own> 4aa76e96-f33a-4aa7-8040-0fab1a1f749f
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/b21ee07d-6fc9-4ae3-8239-11811fbccc25>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<RenderMeshVisual/208e87b7-106d-4254-a14f-6027deac349f>
+- !<SceneObject/0df3160b-9828-4b60-7a26-823c111c2199>
+  PrefabRemaps:
+    []
+  Name: Space Age Body Tube
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -1.228443, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c85915fa-7ed4-425d-7da9-ded7dfb26cd2
+    - !<own> 4020a1ad-ad66-4034-5e8d-73dbee41c4fd
+    - !<own> 10328bfd-d1c3-41e4-4e3e-b95345a6bfeb
+- !<RenderMeshVisual/10328bfd-d1c3-41e4-4e3e-b95345a6bfeb>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7a623639-7e67-444b-8d27-21a3c13c6d91
+  Mesh: !<reference> e90a9324-daec-4d22-8d9b-c7544e21f716
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/4020a1ad-ad66-4034-5e8d-73dbee41c4fd>
   PrefabRemaps:
     []
   Name: component_0
@@ -33,13 +72,11 @@
   BlendShapes:
     {}
 - !<ObjectPrefabAssetData/4aa76e96-f33a-4aa7-8040-0fab1a1f749f>
-  SourceRemaps:
-    - 0df3160b-9828-4b60-85d9-7dc3eee3de66: e4bb185b-fee6-447b-bd5d-3d448170adb6
-    - 10328bfd-d1c3-41e4-b1c1-46acba594014: 8fbe8e21-8a47-44ea-a535-b82ea9688cca
-    - 4020a1ad-ad66-4034-a172-8c2411be3b02: 208e87b7-106d-4254-a14f-6027deac349f
-    - c85915fa-7ed4-425d-8256-2128204d932d: 6cf3c8b8-0f88-4295-8ac4-4466d57b7d2b
-  SourceState: !<own> c426faa3-2934-4553-97dc-a88f1e9bd173
-- !<RenderMeshVisual/6cf3c8b8-0f88-4295-8ac4-4466d57b7d2b>
+  Prototype: !<ObjectOwner/88c0f95b-f2af-43db-be43-3d008c4b3c96>
+    PackagePath: ""
+    objects:
+      - !<own> 0df3160b-9828-4b60-7a26-823c111c2199
+- !<RenderMeshVisual/c85915fa-7ed4-425d-7da9-ded7dfb26cd2>
   PrefabRemaps:
     []
   Name: component_0
@@ -59,46 +96,3 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<RenderMeshVisual/8fbe8e21-8a47-44ea-a535-b82ea9688cca>
-  PrefabRemaps:
-    []
-  Name: component_0
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 7a623639-7e67-444b-8d27-21a3c13c6d91
-  Mesh: !<reference> e90a9324-daec-4d22-8d9b-c7544e21f716
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<ObjectPrefab/c426faa3-2934-4553-97dc-a88f1e9bd173>
-  PackagePath: ""
-  objects:
-    - !<own> e4bb185b-fee6-447b-bd5d-3d448170adb6
-  LazyLoading: false
-  RetainAssets: true
-- !<SceneObject/e4bb185b-fee6-447b-bd5d-3d448170adb6>
-  PrefabRemaps:
-    []
-  Name: Space Age Body Tube
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 8.612383, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 6cf3c8b8-0f88-4295-8ac4-4466d57b7d2b
-    - !<own> 208e87b7-106d-4254-a14f-6027deac349f
-    - !<own> 8fbe8e21-8a47-44ea-a535-b82ea9688cca

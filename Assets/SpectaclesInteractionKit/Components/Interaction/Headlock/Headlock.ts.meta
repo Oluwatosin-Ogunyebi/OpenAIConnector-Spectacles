@@ -1,28 +1,30 @@
 - !<AssetImportMetadata/c9e56019-dbf7-4e31-a307-48bbcc30de5f>
-  ImporterSettings: !<AssetImporterSettings/cc6fe45b-5bdc-4ab6-a5f9-aa43ff4c2a43>
-    {}
   ImportedAssetIds:
     TypeScriptAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
   PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     TypeScriptAsset: !<own> e497ffb3-0001-4bd8-ab08-a8426634f33e
-  PackagePolicy: CannotBeUnpacked
   DependentFiles:
     []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/e497ffb3-0001-4bd8-ab08-a8426634f33e>
-  Icon: ""
+  SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
-  InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: b68e58f3-b071-092e-74c7-b318dbecc818
   ExportUid: 00000000-0000-0000-0000-000000000000
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     _distance: false
     _lockedPitch: false
@@ -40,6 +42,12 @@
     _yawOffsetDegrees: false
   ScriptTypesHidden:
     {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   DefaultScriptInputs:
     - _distance: !<float> 50.000000
       _xzEnabled: true
@@ -66,17 +74,16 @@
     - '// @input float _xzEasing = 1 {"hint":"How fast the camera will follow along the XZ-plane, 0.1 for delayed follow, 1 for instant follow."}'
     - '// @input bool _yEnabled = true {"hint":"If the camera will follow when the user moves their head along Y-axis"}'
     - '// @input float _yEasing = 1 {"hint":"How fast the camera will follow along the Y-axis, 0.1 for delayed follow, 1 for instant follow."}'
-    - '// @input float _translationBuffer = 0 {"hint":"The magnitude of change needed to activate a translation for the target to follow the camera."}'
+    - '// @input float _translationBuffer {"hint":"The magnitude of change needed to activate a translation for the target to follow the camera."}'
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"group_start", "label":"Head Rotation"}'
     - '// @input bool _lockedPitch = true {"hint":"If the camera will NOT follow when the user moves their head along the pitch-axis (looking up/down)"}'
     - '// @input float _pitchEasing = 1 {"hint":"How fast the camera will follow along the pitch-axis, 0.1 for delayed follow, 1 for instant follow."}'
-    - '// @input float _pitchOffsetDegrees = 0 {"hint":"How many degrees of offset from the center point should the target sit"}'
-    - '// @input float _pitchBufferDegrees = 0 {"hint":"How many degrees of leeway along each direction (up/down) before change starts to occur"}'
+    - '// @input float _pitchOffsetDegrees {"hint":"How many degrees of offset from the center point should the target sit"}'
+    - '// @input float _pitchBufferDegrees {"hint":"How many degrees of leeway along each direction (up/down) before change starts to occur"}'
     - '// @input bool _lockedYaw = true {"hint":"If the camera will follow when the user moves their head along the yaw-axis (looking left/right)"}'
     - '// @input float _yawEasing = 1 {"hint":"How fast the camera will follow along the yaw-axis, 0.1 for delayed follow, 1 for instant follow."}'
-    - '// @input float _yawOffsetDegrees = 0 {"hint":"How many degrees of offset from the center point should the target sit"}'
-    - '// @input float _yawBufferDegrees = 0 {"hint":"How many degrees of leeway along each direction (left/right) before change starts to occur"}'
+    - '// @input float _yawOffsetDegrees {"hint":"How many degrees of offset from the center point should the target sit"}'
+    - '// @input float _yawBufferDegrees {"hint":"How many degrees of leeway along each direction (left/right) before change starts to occur"}'
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"group_end"}'
-  SvgIcon: ""

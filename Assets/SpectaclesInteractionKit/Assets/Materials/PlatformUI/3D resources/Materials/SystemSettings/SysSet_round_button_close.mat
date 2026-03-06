@@ -3,6 +3,25 @@
   PassesInfo:
     - !<own> f90a2a4a-c881-4b19-aae9-d7628538e7d2
 - !<PassInfo/f90a2a4a-c881-4b19-aae9-d7628538e7d2>
+  CachedProperties:
+    - additional_settings_btn_refl_texBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - additional_settings_btn_refl_texDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - additional_settings_btn_refl_texUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - iconBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - iconDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - iconUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -113,21 +132,12 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: true
         type: Texture2D
-    additional_settings_btn_refl_texBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    additional_settings_btn_refl_texDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     additional_settings_btn_refl_texTransform:
       typeIdx: 7
       value:
         0: {x: 1.000000, y: 0.000000, z: 0.000000}
         1: {x: 0.000000, y: 1.000000, z: 0.000000}
         2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    additional_settings_btn_refl_texUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     icon:
       typeIdx: 9
       value:
@@ -140,12 +150,6 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    iconBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    iconDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     iconEnabled:
       typeIdx: 2
       value: false
@@ -155,9 +159,4 @@
         0: {x: 1.000000, y: 0.000000, z: 0.000000}
         1: {x: 0.000000, y: 1.000000, z: 0.000000}
         2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    iconUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   Pass: !<reference> f9ece7c0-9dc5-42f9-a7fb-9cadaa480de0
-  RTCaster: false
-  RTReceiver: false

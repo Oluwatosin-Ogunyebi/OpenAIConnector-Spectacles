@@ -4,11 +4,13 @@
   ImporterName: AnimationAssetImporter
   PrimaryAsset: !<reference> 5e05324c-8bed-4592-8b82-d071e80c0111
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     {}
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/c560c9cc-5814-42c2-b227-b1a12bd01abc>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

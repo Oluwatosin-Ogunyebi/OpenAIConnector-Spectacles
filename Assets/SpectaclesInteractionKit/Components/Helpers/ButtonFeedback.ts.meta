@@ -4,25 +4,27 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 99b48019-5088-4691-9ae6-beb39874357f
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     TypeScriptAsset: !<own> e8e9c81c-0f34-40b5-b143-b0d4a262d482
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/fe3f442f-5884-4965-b3aa-a89aa9a0c4d6>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/e8e9c81c-0f34-40b5-b143-b0d4a262d482>
   SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
-  InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 47ab9101-3713-7504-c9dc-5f0bdd368d56
   ExportUid: 00000000-0000-0000-0000-000000000000
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     buttonType: false
     defaultIcon: false
@@ -48,39 +50,45 @@
     useGlowMesh: false
   ScriptTypesHidden:
     {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   DefaultScriptInputs:
-    - renderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+    - buttonType: 0
+      renderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      useGlowMesh: false
+      glowRenderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
       maxBlendShapeWeight: !<float> 1.000000
       meshBlendShapeName: Pinch
       meshIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       meshHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      meshToggledHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      buttonType: 0
-      meshToggledIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       meshPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      meshToggledPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      meshStatePinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      meshStateHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      meshStateIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      onIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
-      defaultIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
-      persistentPinchedState: false
-      useGlowMesh: false
-      glowRenderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
       glowBlendShapeName: Pinch
       glowIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       glowHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       glowPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledPinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshToggledIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStatePinchedMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStateHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshStateIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      persistentPinchedState: false
+      defaultIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      onIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
-    - '// @input int buttonType = 0 {"widget":"combobox", "values":[{"label":"Pinch Button", "value":0}, {"label":"Toggle Button", "value":1}, {"label":"State Button", "value":2}]}'
+    - '// @input int buttonType {"widget":"combobox", "values":[{"label":"Pinch Button", "value":0}, {"label":"Toggle Button", "value":1}, {"label":"State Button", "value":2}]}'
     - '// @ui {"widget":"separator"}'
     - // @input Component.RenderMeshVisual renderMeshVisual
-    - '// @input bool useGlowMesh = false {"showIf":"buttonType", "showIfValue":0}'
+    - '// @input bool useGlowMesh {"showIf":"buttonType", "showIfValue":0}'
     - '// @input Component.RenderMeshVisual glowRenderMeshVisual {"showIf":"useGlowMesh", "showIfValue":true}'
-    - // @input float maxBlendShapeWeight = 1.0
+    - // @input float maxBlendShapeWeight = 1
     - '// @ui {"widget":"separator"}'
     - '// @input string meshBlendShapeName = "Pinch"'
     - // @input Asset.Material meshIdleMaterial
@@ -97,7 +105,7 @@
     - '// @input Asset.Material meshStatePinchedMaterial {"showIf":"buttonType", "showIfValue":2}'
     - '// @input Asset.Material meshStateHoverMaterial {"showIf":"buttonType", "showIfValue":2}'
     - '// @input Asset.Material meshStateIdleMaterial {"showIf":"buttonType", "showIfValue":2}'
-    - '// @input bool persistentPinchedState = false {"showIf":"buttonType", "showIfValue":2}'
+    - '// @input bool persistentPinchedState {"showIf":"buttonType", "showIfValue":2}'
     - '// @ui {"widget":"separator"}'
     - // @input Asset.Texture defaultIcon
     - // @input Asset.Texture onIcon

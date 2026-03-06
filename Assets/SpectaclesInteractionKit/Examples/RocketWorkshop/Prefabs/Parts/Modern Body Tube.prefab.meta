@@ -4,41 +4,32 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> c8ce89d2-0194-47e9-be14-34f061d69200
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     ObjectPrefab: !<own> d3f4706d-e82a-4057-b7fc-a936c2db43cb
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/bb8ca15a-db31-4ce0-9351-84455fdaf485>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/723daa80-26ae-4125-b7a1-8135d58f53cb>
+- !<SceneObject/9688fe8f-ee79-4c75-7291-106e6d5e1dc1>
   PrefabRemaps:
     []
   Name: Modern Body Tube
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 13.478287, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -1.228443, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
-    - !<own> ef8027cf-ce47-4d65-b3b9-1e230538c3c1
-- !<ObjectPrefab/93833062-ab68-4592-a783-d99b4cabad60>
-  PackagePath: ""
-  objects:
-    - !<own> 723daa80-26ae-4125-b7a1-8135d58f53cb
-  LazyLoading: false
-  RetainAssets: true
-- !<ObjectPrefabAssetData/d3f4706d-e82a-4057-b7fc-a936c2db43cb>
-  SourceRemaps:
-    - 9688fe8f-ee79-4c75-8d6e-ef9192a1e23e: 723daa80-26ae-4125-b7a1-8135d58f53cb
-    - a8e195b7-bdc9-4f77-8725-59c2aa65bc3a: ef8027cf-ce47-4d65-b3b9-1e230538c3c1
-  SourceState: !<own> 93833062-ab68-4592-a783-d99b4cabad60
-- !<RenderMeshVisual/ef8027cf-ce47-4d65-b3b9-1e230538c3c1>
+    - !<own> a8e195b7-bdc9-4f77-78da-a63d559a43c5
+- !<RenderMeshVisual/a8e195b7-bdc9-4f77-78da-a63d559a43c5>
   PrefabRemaps:
     []
   Name: component_0
@@ -58,3 +49,8 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ObjectPrefabAssetData/d3f4706d-e82a-4057-b7fc-a936c2db43cb>
+  Prototype: !<ObjectOwner/3e3cb1e1-fca3-4b9f-9308-7508b1109836>
+    PackagePath: ""
+    objects:
+      - !<own> 9688fe8f-ee79-4c75-7291-106e6d5e1dc1

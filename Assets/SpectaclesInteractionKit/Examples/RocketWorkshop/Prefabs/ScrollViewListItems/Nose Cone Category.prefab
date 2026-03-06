@@ -63,40 +63,45 @@
     top: 2.250000
   OverflowVertical: Overflow
   OverflowHorizontal: Overflow
-  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+  Fill: !<TextFill>
     Mode: Solid
     Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     TileCount: 5.000000
     TileZone: Rect
     TextureStretch: FitWidth
-  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+  BlendMode: PremultipliedAlpha
+  Outline: !<OutlineSettings>
     Enabled: false
-    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
     Size: 0.250000
-  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+  Dropshadow: !<DropshadowSettings>
     Enabled: false
-    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
     OffsetX: 0.250000
     OffsetY: 0.250000
-  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+  Background: !<BackgroundSettings>
     Enabled: false
-    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -106,25 +111,28 @@
       right: 0.000000
       top: 0.000000
     CornerRadius: 0.000000
-  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+  AdvancedLayout: !<TextAdvancedLayout>
     ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/8eea4897-15f2-4316-827f-1d33f6d5a214>
   PrefabRemaps:
-    []
+    - 2d475895-1e1b-4569-9750-4afad5f6c70f: 2d475895-1e1b-4569-68af-b5052a0938f0
+    - 3756275a-da57-4868-9b6a-cd9aa5f2b542: 3756275a-da57-4868-6495-32655a0d4abd
+    - 8eea4897-15f2-4316-827f-1d33f6d5a214: 8eea4897-15f2-4316-7d80-e2cc092a5deb
+    - d920d9d0-9035-4f60-873d-5b4e6e91a803: d920d9d0-9035-4f60-78c2-a4b1916e57fc
+    - f26425d8-27c6-4575-bb5b-d3922bf5fac5: f26425d8-27c6-4575-44a4-2c6dd40a053a
   Name: ScrollViewListItem
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.300000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.300000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> d920d9d0-9035-4f60-873d-5b4e6e91a803
   Components:
@@ -135,11 +143,11 @@
   Name: ContactName
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

@@ -4,30 +4,38 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 758ef69b-2594-4113-a1a4-6d869a36a771
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
   AssetDataMap:
     TypeScriptAsset: !<own> cf5e30c5-7aa2-40db-81cb-6df2010939ad
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/f76bee28-e4f4-419f-82f2-19d13b1ceab4>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/cf5e30c5-7aa2-40db-81cb-6df2010939ad>
   SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
-  InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 623c2332-0d5c-6f4b-db30-1af85ad19026
   ExportUid: 00000000-0000-0000-0000-000000000000
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     exhausts: false
     smokes: false
   ScriptTypesHidden:
     {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   DefaultScriptInputs:
     - exhausts: !<reference.SceneObject[]>
         []
@@ -37,5 +45,5 @@
     -
       {}
   InputLines:
-    - "// @input SceneObject[] exhausts"
-    - "// @input SceneObject[] smokes"
+    - "// @input SceneObject[] exhausts = {}"
+    - "// @input SceneObject[] smokes = {}"

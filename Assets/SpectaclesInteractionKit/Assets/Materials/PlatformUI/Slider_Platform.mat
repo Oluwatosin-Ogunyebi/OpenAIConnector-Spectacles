@@ -3,6 +3,8 @@
   PassesInfo:
     - !<own> ed4b21fa-7bd6-4b6b-9dd1-8f7d339487af
 - !<PassInfo/ed4b21fa-7bd6-4b6b-9dd1-8f7d339487af>
+  CachedProperties:
+    []
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -60,5 +62,3 @@
       typeIdx: 1
       value: 0.000000
   Pass: !<reference> d800cff7-378f-4b65-b1ac-b074a1b01cc2
-  RTCaster: false
-  RTReceiver: false
